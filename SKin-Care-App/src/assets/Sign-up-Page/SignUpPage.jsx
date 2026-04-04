@@ -6,18 +6,24 @@ const SignUpPage = () => {
   const [name, setName] = useState("");
   const [age, setAge] = useState("");
   const [gender, setGender] = useState("");
-  const [UserData, setUserData] = useState([]);
+  const [userData, setUserData] = useState([]);
+
  
   const handleSubmit = (e) => {
     e.preventDefault();
     
-    const userInfo = ({ name, age, gender });
-    setUserData((prev) => [...prev, { name, age, gender }]);
-    console.log(userInfo);
+    const userInfo = { name, age, gender };
+    setUserData([...userData, userInfo]);
+    const updatedData = setData.push(userInfo)
+
+    const data =  localStorage.setItem("userData", JSON.stringify(updatedData));
+    const getData = JSON.parse(localStorage.getItem("userData"));
+    console.log(getData)
     console.log("Form submitted")
     setName("");
     setAge("");
     setGender("");
+
   }
   return (
     <div className="min-h-screen bg-white pt-6">
