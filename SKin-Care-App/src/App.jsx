@@ -1,4 +1,6 @@
+import React from "react"
 import SignUpPage from "./assets/Sign-up-Page/SignUpPage"
+
 
 const App = () => {
   return (
