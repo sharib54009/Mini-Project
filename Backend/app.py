@@ -106,6 +106,8 @@ def login():
     if user and check_password_hash(user.password, password):
         session['user_id'] = user.id
         session['name'] = user.name
+        
+        print(f"User {session['name']} logged in successfully.")
         return jsonify({
             'message': 'Login successful',
             'user_id': user.id

@@ -1,6 +1,6 @@
 import {react, useState} from 'react'
-import SignUpPage from "./assets/Login&SignUp/SignUpPage"
-import LoginPage from "./assets/Login&SignUp/LoginPage"
+import SignUpPage from "./assets/SignUp/SignUpPage"
+import LoginPage from "./assets/Login/LoginPage"
 
 
 const App = () => {
