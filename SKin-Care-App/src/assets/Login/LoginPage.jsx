@@ -1,4 +1,5 @@
 import { React, useState } from "react";
+import { Link } from "react-router-dom";
 
 const LoginPage = ({ switchToSignUp }) => {
   const [loginDetails, setLoginDetails] = useState({
@@ -85,26 +86,21 @@ const LoginPage = ({ switchToSignUp }) => {
             )}
           </div>
           <div className="mt-5 px-5">
-            <button
+            <Link to='/home'
               type="submit"
               className="w-full flex items-center justify-center  bg-[#d85167] h-10 rounded-md text-white text-lg"
             >
               Login
-            </button>
+            </Link>
           </div>
         </form>
         <div className=" w-full flex flex-col gap-3 px-5 mt-5 ">
           <h1 className="text-md flex justify-center ">
             Don't have an account?
           </h1>
-          <button
-            onClick={() => {
-              switchToSignUp();
-            }}
-            className="flex justify-center items-center bg-[#d85167] h-10 rounded-md text-white "
-          >
+                  <Link to="/signup" className="flex justify-center items-center bg-[#d85167] h-10 rounded-md text-white ">
             SignUp
-          </button>
+          </Link>
         </div>
       </div>
     </div>

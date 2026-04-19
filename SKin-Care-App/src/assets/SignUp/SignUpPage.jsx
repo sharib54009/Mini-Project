@@ -1,12 +1,17 @@
 import React from "react";
 import { useState } from "react";
 import { SkipBack } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 import Step1 from "./Step1";
 import Step2 from "./Step2";
 import Step3 from "./Step3";
 import Step4 from "./Step4";
 
+
+
+
 const SignUpPage = ({ switchToLogin }) => {
+  const navigate = useNavigate();
   const [step, setStep] = useState(1);
   const [userData, setUserData] = useState({
     name: "",
@@ -104,71 +109,69 @@ const SignUpPage = ({ switchToLogin }) => {
     setStep(step - 1);
   };
 
-  const handleSubmit = async (e, { switchToLogin }) => {
-    e.preventDefault();
+  const handleSubmit = async (e) => {
+  e.preventDefault();
 
-    let newErrors = {};
+  let newErrors = {};
 
-    if (!userData.Phone.trim()) {
-      newErrors.Phone = "Phone is required";
-    }
+  if (!userData.Phone.trim()) {
+    newErrors.Phone = "Phone is required";
+  }
 
-    if (!userData.password.trim()) {
-      newErrors.password = "Password is required";
-    }
+  if (!userData.password.trim()) {
+    newErrors.password = "Password is required";
+  }
 
-    if (Object.keys(newErrors).length > 0) {
-      setErrors(newErrors);
+  if (Object.keys(newErrors).length > 0) {
+    setErrors(newErrors);
+    return;
+  }
+
+  try {
+    const response = await fetch("http://127.0.0.1:5000/signup", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        name: userData.name,
+        age: userData.age,
+        Phone: userData.Phone,
+        password: userData.password,
+        gender: userData.gender,
+      }),
+    });
+
+    const result = await response.json();
+
+    if (!response.ok) {
+      alert(result.message);
       return;
     }
 
-    try {
-      const response = await fetch("http://127.0.0.1:5000/signup", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          name: userData.name,
-          age: userData.age,
-          Phone: userData.Phone,
-          password: userData.password,
-          gender: userData.gender,
-        }),
-      });
+    const userId = result.user_id;
 
-      const result = await response.json();
-      console.log("Signup Response:", result);
+    await fetch("http://127.0.0.1:5000/userdetails", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        user_id: userId,
+        skinType: userData.skinType,
+        skinProblems: userData.skinProblems,
+      }),
+    });
 
-      if (!response.ok) {
-        alert(result.message);
-        return;
-      }
+    alert("Signup successful 🎉");
 
-      const userId = result.user_id;
+    // ✅ correct navigation
+    navigate("/");
 
-      // 2. SEND SKIN DATA
-      const detailsResponse = await fetch("http://127.0.0.1:5000/userdetails", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          user_id: userId,
-          skinType: userData.skinType,
-          skinProblems: userData.skinProblems,
-        }),
-      });
-
-      const detailsResult = await detailsResponse.json();
-      console.log("Details Response:", detailsResult);
-
-      alert("Signup successful 🎉");
-      switchToLogin();
-    } catch (error) {
-      console.error("Error:", error);
-    }
-  };
+  } catch (error) {
+    console.error("Error:", error);
+  }
+};
   return (
     <div className="min-h-screen bg-[#fffaf8]">
       <div className="max-w-md mx-auto bg-[#fffaf8] rounded-lg py-6">

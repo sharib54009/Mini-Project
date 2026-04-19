@@ -1,5 +1,6 @@
 import React from "react";
 import { User } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Step1 = ({
   switchToLogin,
@@ -109,14 +110,17 @@ const Step1 = ({
             <h1 className="text-md flex justify-center ">
               Already have an account?
             </h1>
-            <button
+            {/* <button
               onClick={() => {
                 switchToLogin();
               }}
               className="flex justify-center items-center bg-[#d85167] h-10 rounded-md text-white "
             >
               Sign in
-            </button>
+            </button> */}
+            <Link to="/" className="flex justify-center items-center bg-[#d85167] h-10 rounded-md text-white ">
+              Sign in
+            </Link>
           </div>
         </div>
       )}

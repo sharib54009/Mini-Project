@@ -1,17 +1,29 @@
 import {react, useState} from 'react'
+import {createBrowserRouter, RouterProvider } from 'react-router-dom'
 import SignUpPage from "./assets/SignUp/SignUpPage"
 import LoginPage from "./assets/Login/LoginPage"
+import HomePage from "./assets/HomePage/homePage"
 
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <LoginPage />
+  },
+  {
+    path: "/signup",
+    element: <SignUpPage />
+  },
+  {
+    path: "/home",
+    element: <HomePage />
+  }
+])
 
 const App = () => {
-  const [isLogin, setIsLogin] = useState(true);
-
+ 
   return (
     <div >
-     {isLogin ? (
-      <LoginPage switchToSignUp = {() => setIsLogin(false)} />
-     ) : ( <SignUpPage switchToLogin = {() => setIsLogin(true)} />
-     )}
+    <RouterProvider router={router} />
     </div>
   )
 }
