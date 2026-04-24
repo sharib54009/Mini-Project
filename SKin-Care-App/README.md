@@ -1,16 +1,75 @@
-# React + Vite
+## 📱 Skin Care App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a full-stack skin care application built using React, Tailwind CSS, and Flask. The app focuses on giving users a personalized experience by storing their details, showing routines, and organizing different sections like products and skin logs.
 
-Currently, two official plugins are available:
+## 🛠️ Tech Used
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Frontend: React, Tailwind CSS, React Router DOM
+Backend: Flask, SQLAlchemy
+Database: SQLite
+Icons: Lucide React
 
-## React Compiler
+## 🔐 Authentication
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Users can sign up with basic details (name, age, phone, gender, password)
+Login system verifies credentials using hashed passwords
+On successful login, the app stores userId in local storage
+Session is also maintained on the backend
 
-## Expanding the ESLint configuration
+## 👤 User Data Handling
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+User information is stored in the database
+Additional skin-related data (skin type and problems) is saved separately
+The frontend fetches user data using the stored userId
+
+## 🏠 Home Page
+
+Displays a greeting based on current time (morning, afternoon, evening)
+Shows the logged-in user’s name dynamically
+Displays routine cards for:
+Morning Routine
+Evening Routine
+
+## 🔄 Navigation
+
+Routing handled using React Router
+Main routes:
+/home
+/routines/:type
+/products
+/skin-log
+/profile
+
+## 📅 Routine System
+
+Two routines supported:
+Morning
+Evening
+Navigation is URL-based:
+/routines/morning
+/routines/evening
+Clicking a routine updates both UI and URL
+Active routine is highlighted properly
+
+## 📌 Bottom Navbar
+
+Fixed bottom navigation bar
+Allows switching between main sections
+Active tab is highlighted based on current route
+Handles nested routes like routines correctly
+
+## 🔗 Backend Integration
+
+Frontend communicates with Flask backend using fetch and async/await
+User data is retrieved using:
+GET /user/<user_id>
+Signup, login, and user detail APIs are fully connected
+
+## 🧠 Overall Flow
+
+User signs up or logs in →
+User ID is stored →
+Home page loads →
+User data is fetched →
+Greeting and name are shown →
+User navigates through routines, products, and logs
