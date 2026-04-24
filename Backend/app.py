@@ -108,13 +108,26 @@ def login():
         session['name'] = user.name
         
         print(f"User {session['name']} logged in successfully.")
+
         return jsonify({
             'message': 'Login successful',
             'user_id': user.id
         }), 200
     else:
         return jsonify({'message': 'Invalid credentials'}), 401
-    
+
+
+# ✅ ADD THIS ROUTE (ONLY NEW ADDITION)
+@app.route('/user/<int:user_id>', methods=['GET'])
+def get_user(user_id):
+    user = db.session.get(User, user_id)
+
+    if not user:
+        return jsonify({'message': 'User not found'}), 404
+
+    return jsonify({
+        'name': user.name
+    }), 200
 
 
 if __name__ == '__main__':

@@ -67,7 +67,7 @@ const Step4 = ({
               </button>
               <button
                 type="submit"
-                className="flex-1 h-9 rounded-lg items-center  text-md px-  text-white border active:scale-95 bg-[#d85167]"
+                className="flex-1 h-9 rounded-lg items-center   text-md   text-white border leading-4 active:scale-95 bg-[#d85167]"
               >
                 Start your Skin Care Journey
               </button>

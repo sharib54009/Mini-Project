@@ -1,40 +1,70 @@
 import { React, useState } from "react";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const LoginPage = ({ switchToSignUp }) => {
+
+  const navigate = useNavigate();
+
   const [loginDetails, setLoginDetails] = useState({
     Phone: "",
     password: "",
   });
+
+
+
   const [errors, setErrors] = useState({});
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+ const handleSubmit = async (e) => {
+  e.preventDefault();
 
-    try {
-      const response = await fetch("http://127.0.0.1:5000/login", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          Phone: loginDetails.Phone,
-          password: loginDetails.password,
-        }),
-      });
+  let newErrors = {};
 
-      const result = await response.json();
+  // ✅ VALIDATION FIRST
+  if (!loginDetails.Phone.trim()) {
+    newErrors.Phone = "Phone is required";
+  } else if (isNaN(loginDetails.Phone)) {
+    newErrors.Phone = "Phone must be a number";
+  } else if (loginDetails.Phone.trim().length !== 10) {
+    newErrors.Phone = "Phone must be 10 digits";
+  }
 
-      console.log(result);
+  if (!loginDetails.password.trim()) {
+    newErrors.password = "Password is required";
+  }
 
-      if (response.ok) {
-        alert("Login successful ✅");
-      } else {
-        alert(result.message);
-      }
-    } catch (error) {
-      console.error(error);
+  if (Object.keys(newErrors).length > 0) {
+    setErrors(newErrors);
+    return; // ❌ STOP HERE
+  }
+
+  // ✅ ONLY IF VALID → CALL API
+  try {
+    const response = await fetch("http://127.0.0.1:5000/login", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        Phone: loginDetails.Phone,
+        password: loginDetails.password,
+      }),
+    });
+
+    const result = await response.json();
+    console.log(result);
+
+    if (response.ok) {
+      const userId = result.user_id;
+
+      localStorage.setItem("userId", userId); // ✅ important
+      navigate("/home");
+    } else {
+      alert(result.message);
     }
-  };
+  } catch (error) {
+    console.error(error);
+  }
+};
   return (
     <div className="min-h-screen bg-[#fffaf8]">
       <div className="max-w-md mx-auto bg-[#fffaf8] rounded-lg py-6">
@@ -71,7 +101,7 @@ const LoginPage = ({ switchToSignUp }) => {
               type="password"
               placeholder="Enter Password"
               className={`w-full shadow-2xl bg-[#ffffff] mt-2 px-3 h-10 rounded-lg border  ${
-                errors.Password
+                errors.password
                   ? "border-red-500 text-red-500"
                   : "border-black border"
               }`}
@@ -81,17 +111,20 @@ const LoginPage = ({ switchToSignUp }) => {
                 setErrors((prev) => ({ ...prev, password: "" }));
               }}
             />
-            {errors.Password && (
-              <p className="text-red-500 text-sm mt-1">{errors.Password}</p>
+            {errors.password && (
+              <p className="text-red-500 text-sm mt-1">{errors.password}</p>
             )}
           </div>
           <div className="mt-5 px-5">
-            <Link to='/home'
+            <button
               type="submit"
               className="w-full flex items-center justify-center  bg-[#d85167] h-10 rounded-md text-white text-lg"
+              onSubmit={() => {
+
+              }}
             >
               Login
-            </Link>
+            </button>
           </div>
         </form>
         <div className=" w-full flex flex-col gap-3 px-5 mt-5 ">
