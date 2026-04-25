@@ -1,0 +1,1451 @@
+[
+
+  {
+    "skin_type": "oily",
+    "concerns": {
+      "acne": true,
+      "pigmentation": false,
+      "dryness": false,
+      "oiliness": true,
+      "dullness": false,
+      "blackheads_whiteheads": false,
+      "sensitivity": false,
+      "uneven_skin_tone": false
+    },
+    "label": "Oily + Acne",
+    "routine": {
+      "morning": [
+        "Salicylic Acid Cleanser → Removes excess oil and unclogs pores",
+        "Niacinamide Serum (optional) → Controls oil and reduces acne marks",
+        "Oil-Free / Gel Moisturizer → Hydrates without greasiness",
+        "Sunscreen SPF 30_50 (non-comedogenic) → Prevents acne marks and sun damage"
+      ],
+      "night": [
+        "Gentle Cleanser → Removes dirt, oil, and pollution",
+        "Benzoyl Peroxide OR Salicylic Acid → Treats acne and reduces breakouts",
+        "Lightweight Moisturizer → Prevents excess oil production"
+      ]
+    },
+    "note": "Focuses on controlling excess oil and treating acne while preventing clogged pores and breakouts."
+  },
+  {
+    "skin_type": "oily",
+    "concerns": {
+      "acne": true,
+      "pigmentation": true,
+      "dryness": false,
+      "oiliness": true,
+      "dullness": false,
+      "blackheads_whiteheads": false,
+      "sensitivity": false,
+      "uneven_skin_tone": false
+    },
+    "label": "Oily + Acne + Pigmentation",
+    "routine": {
+      "morning": [
+        "Salicylic Acid Cleanser → Controls oil and prevents breakouts",
+        "Vitamin C Serum → Brightens skin and reduces pigmentation",
+        "Niacinamide Serum (optional) → Controls oil and fades acne marks",
+        "Oil-Free / Gel Moisturizer → Hydrates without clogging pores",
+        "Sunscreen SPF 50 → Prevents pigmentation from worsening"
+      ],
+      "night": [
+        "Gentle Cleanser → Removes dirt and excess oil",
+        "Benzoyl Peroxide → Treats active acne",
+        "Azelaic Acid → Reduces pigmentation and acne marks",
+        "Lightweight Moisturizer → Maintains skin balance"
+      ]
+    },
+    "note": "Combines acne treatment with brightening ingredients to reduce pigmentation and improve skin clarity."
+  },
+  {
+    "skin_type": "oily",
+    "concerns": {
+      "acne": true,
+      "pigmentation": false,
+      "dryness": false,
+      "oiliness": true,
+      "dullness": false,
+      "blackheads_whiteheads": true,
+      "sensitivity": false,
+      "uneven_skin_tone": false
+    },
+    "label": "Oily + Acne + Blackheads/Whiteheads",
+    "routine": {
+      "morning": [
+        "Salicylic Acid Cleanser → Unclogs pores and controls oil",
+        "Niacinamide Serum → Reduces oil and minimizes pores",
+        "Oil-Free Moisturizer → Hydrates without clogging pores",
+        "Sunscreen SPF 50 → Protects skin and prevents marks"
+      ],
+      "night": [
+        "Gentle Cleanser → Removes dirt and oil buildup",
+        "BHA Exfoliant (2_3 times/week) → Clears blackheads and deep cleans pores",
+        "Benzoyl Peroxide (spot treatment) → Targets active acne",
+        "Lightweight Moisturizer → Maintains skin balance"
+      ]
+    },
+    "note": "Focuses on clearing clogged pores while treating acne and controlling excess oil."
+  },
+  {
+    "skin_type": "oily",
+    "concerns": {
+      "acne": false,
+      "pigmentation": false,
+      "dryness": false,
+      "oiliness": true,
+      "dullness": false,
+      "blackheads_whiteheads": true,
+      "sensitivity": false,
+      "uneven_skin_tone": false
+    },
+    "label": "Oily + Blackheads/Whiteheads",
+    "routine": {
+      "morning": [
+        "Salicylic Acid Cleanser → Removes excess oil and unclogs pores",
+        "Niacinamide Serum → Controls oil and reduces pore size",
+        "Oil-Free Moisturizer → Hydrates without clogging pores",
+        "Sunscreen SPF 50 → Protects skin from damage"
+      ],
+      "night": [
+        "Gentle Cleanser → Cleans dirt and oil buildup",
+        "BHA Exfoliant (2_3 times/week) → Removes blackheads and deep cleans pores",
+        "Clay Mask (1_2 times/week) → Absorbs excess oil",
+        "Lightweight Moisturizer → Maintains balance"
+      ]
+    },
+    "note": "Focuses on deep pore cleansing and oil control to reduce blackheads and prevent buildup."
+  },
+    {
+    "skin_type": "oily",
+    "concerns": {
+      "acne": false,
+      "pigmentation": false,
+      "dryness": false,
+      "oiliness": true,
+      "dullness": false,
+      "blackheads_whiteheads": true,
+      "sensitivity": false,
+      "uneven_skin_tone": false
+    },
+    "label": "Oily + Blackheads/Whiteheads",
+    "routine": {
+      "morning": [
+        "Salicylic Acid Cleanser → Removes excess oil and unclogs pores",
+        "Niacinamide Serum (5–10%) → Controls oil and minimizes pores",
+        "Oil-Free / Gel Moisturizer → Hydrates without clogging pores",
+        "Sunscreen SPF 50 (non-comedogenic) → Protects skin and prevents buildup"
+      ],
+      "night": [
+        "Gentle Cleanser → Removes dirt and oil buildup",
+        "BHA Exfoliant (2–3 times/week) → Deep cleans pores and removes blackheads",
+        "Clay Mask (1–2 times/week) → Absorbs excess oil and tightens pores",
+        "Lightweight Moisturizer → Maintains skin balance"
+      ]
+    },
+    "note": "Focuses on deep pore cleansing and oil control to reduce blackheads and prevent future clogging."
+  },
+  {
+    "skin_type": "oily",
+    "concerns": {
+      "acne": false,
+      "pigmentation": true,
+      "dryness": false,
+      "oiliness": true,
+      "dullness": false,
+      "blackheads_whiteheads": false,
+      "sensitivity": false,
+      "uneven_skin_tone": true
+    },
+    "label": "Oily + Pigmentation",
+    "routine": {
+      "morning": [
+        "Gentle / Gel Cleanser → Removes excess oil without over-drying",
+        "Vitamin C Serum → Brightens skin and reduces pigmentation",
+        "Niacinamide Serum → Controls oil and improves uneven tone",
+        "Oil-Free Moisturizer → Hydrates without clogging pores",
+        "Sunscreen SPF 50 (very important) → Prevents pigmentation from worsening"
+      ],
+      "night": [
+        "Gentle Cleanser → Cleans dirt and excess oil",
+        "Alpha Arbutin or Azelaic Acid → Targets dark spots and uneven tone",
+        "Niacinamide (optional) → Supports oil control and repair",
+        "Lightweight Moisturizer → Maintains skin balance"
+      ]
+    },
+    "note": "Combines oil control with brightening ingredients to reduce pigmentation and maintain clear skin."
+  },
+  {
+    "skin_type": "oily",
+    "concerns": {
+      "acne": false,
+      "pigmentation": false,
+      "dryness": false,
+      "oiliness": true,
+      "dullness": true,
+      "blackheads_whiteheads": false,
+      "sensitivity": false,
+      "uneven_skin_tone": false
+    },
+    "label": "Oily + Dullness",
+    "routine": {
+      "morning": [
+        "Gentle / Gel Cleanser → Refreshes skin and removes excess oil",
+        "Vitamin C Serum → Brightens and improves glow",
+        "Niacinamide Serum → Controls oil and smoothens texture",
+        "Oil-Free Moisturizer → Hydrates without greasiness",
+        "Sunscreen SPF 50 → Prevents dullness from sun damage"
+      ],
+      "night": [
+        "Gentle Cleanser → Removes dirt and oil",
+        "AHA/BHA Exfoliation (2–3 times/week) → Removes dead skin and improves brightness",
+        "Hydrating / Niacinamide Serum → Enhances skin texture",
+        "Lightweight Moisturizer → Maintains healthy skin balance"
+      ]
+    },
+    "note": "Focuses on removing dead skin buildup and controlling oil to restore natural glow."
+  },
+  {
+    "skin_type": "oily",
+    "concerns": {
+      "acne": false,
+      "pigmentation": false,
+      "dryness": false,
+      "oiliness": true,
+      "dullness": false,
+      "blackheads_whiteheads": false,
+      "sensitivity": false,
+      "uneven_skin_tone": true
+    },
+    "label": "Oily + Uneven Skin Tone",
+    "routine": {
+      "morning": [
+        "Gentle / Gel Cleanser → Removes oil and impurities",
+        "Vitamin C Serum → Brightens and evens skin tone",
+        "Niacinamide Serum → Improves texture and controls oil",
+        "Oil-Free Moisturizer → Hydrates without clogging pores",
+        "Sunscreen SPF 50 (very important) → Prevents uneven tone from worsening"
+      ],
+      "night": [
+        "Gentle Cleanser → Cleans dirt and oil",
+        "Alpha Arbutin or Azelaic Acid → Targets uneven tone and discoloration",
+        "AHA/BHA Exfoliation (2–3 times/week) → Improves skin texture",
+        "Lightweight Moisturizer → Maintains balance"
+      ]
+    },
+    "note": "Focuses on improving skin tone while controlling oil using brightening and exfoliating ingredients."
+  },
+  {
+    "skin_type": "oily",
+    "concerns": {
+      "acne": false,
+      "pigmentation": false,
+      "dryness": false,
+      "oiliness": true,
+      "dullness": false,
+      "blackheads_whiteheads": false,
+      "sensitivity": true,
+      "uneven_skin_tone": false
+    },
+    "label": "Oily + Sensitivity",
+    "routine": {
+      "morning": [
+        "Gentle Cleanser -> Cleans without irritating skin",
+        "Niacinamide Serum (low %) -> Calms skin and controls oil",
+        "Fragrance-Free Moisturizer -> Protects skin barrier",
+        "Mineral Sunscreen SPF 30-50 -> Prevents irritation and UV damage"
+      ],
+      "night": [
+        "Gentle Cleanser -> Removes dirt and oil gently",
+        "Soothing Serum (Centella / Aloe) -> Reduces redness and irritation",
+        "Lightweight Moisturizer -> Maintains skin barrier"
+      ]
+    },
+    "note": "Focuses on controlling oil while protecting sensitive skin. Uses gentle and soothing ingredients to avoid irritation."
+  },
+  {
+    "skin_type": "oily",
+    "concerns": {
+      "acne": true,
+      "pigmentation": false,
+      "dryness": false,
+      "oiliness": true,
+      "dullness": false,
+      "blackheads_whiteheads": false,
+      "sensitivity": true,
+      "uneven_skin_tone": false
+    },
+    "label": "Oily + Acne + Sensitivity",
+    "routine": {
+      "morning": [
+        "Gentle Cleanser -> Cleans oil without irritation",
+        "Niacinamide Serum (low %) -> Controls oil and soothes skin",
+        "Fragrance-Free Moisturizer -> Maintains hydration and barrier",
+        "Mineral Sunscreen SPF 30-50 -> Protects sensitive skin"
+      ],
+      "night": [
+        "Gentle Cleanser -> Removes dirt and excess oil",
+        "Azelaic Acid or Low % Salicylic Acid -> Treats acne gently",
+        "Soothing Serum -> Reduces redness",
+        "Lightweight Moisturizer -> Repairs skin barrier"
+      ]
+    },
+    "note": "Treats acne while protecting sensitive skin using mild actives and calming ingredients."
+  },
+  {
+    "skin_type": "oily",
+    "concerns": {
+      "acne": true,
+      "pigmentation": false,
+      "dryness": false,
+      "oiliness": true,
+      "dullness": true,
+      "blackheads_whiteheads": false,
+      "sensitivity": false,
+      "uneven_skin_tone": false
+    },
+    "label": "Oily + Acne + Dullness",
+    "routine": {
+      "morning": [
+        "Salicylic Acid Cleanser -> Controls oil and prevents breakouts",
+        "Vitamin C Serum -> Brightens skin and reduces dullness",
+        "Niacinamide Serum -> Balances oil and improves texture",
+        "Oil-Free / Gel Moisturizer -> Hydrates without clogging pores",
+        "Sunscreen SPF 50 -> Prevents dullness from sun damage"
+      ],
+      "night": [
+        "Gentle Cleanser -> Removes dirt and excess oil",
+        "Benzoyl Peroxide or Salicylic Acid -> Treats acne",
+        "Mild Exfoliation (AHA/BHA 2-3 times/week) -> Improves glow",
+        "Lightweight Moisturizer -> Maintains balance"
+      ]
+    },
+    "note": "Focuses on acne control and improving dullness using exfoliation and brightening ingredients."
+  },
+  {
+    "skin_type": "oily",
+    "concerns": {
+      "acne": false,
+      "pigmentation": true,
+      "dryness": false,
+      "oiliness": true,
+      "dullness": true,
+      "blackheads_whiteheads": false,
+      "sensitivity": false,
+      "uneven_skin_tone": true
+    },
+    "label": "Oily + Pigmentation + Dullness",
+    "routine": {
+      "morning": [
+        "Gentle / Gel Cleanser -> Removes excess oil",
+        "Vitamin C Serum -> Brightens and reduces pigmentation",
+        "Niacinamide Serum -> Controls oil and improves tone",
+        "Oil-Free / Gel Moisturizer -> Hydrates without clogging pores",
+        "Sunscreen SPF 50 -> Prevents pigmentation and dullness"
+      ],
+      "night": [
+        "Gentle Cleanser -> Cleans dirt and oil",
+        "Alpha Arbutin or Azelaic Acid -> Targets pigmentation",
+        "Mild Exfoliation (AHA 2-3 times/week) -> Improves brightness",
+        "Lightweight Moisturizer -> Maintains balance"
+      ]
+    },
+    "note": "Targets pigmentation and dullness while controlling oil using brightening and exfoliating ingredients."
+  },
+  {
+    "skin_type": "oily",
+    "concerns": {
+      "acne": false,
+      "pigmentation": true,
+      "dryness": false,
+      "oiliness": true,
+      "dullness": false,
+      "blackheads_whiteheads": true,
+      "sensitivity": false,
+      "uneven_skin_tone": true
+    },
+    "label": "Oily + Blackheads/Whiteheads + Pigmentation",
+    "routine": {
+      "morning": [
+        "Salicylic Acid Cleanser -> Removes oil and unclogs pores",
+        "Vitamin C Serum -> Brightens and reduces pigmentation",
+        "Niacinamide Serum -> Controls oil and improves texture",
+        "Oil-Free / Gel Moisturizer -> Hydrates without clogging pores",
+        "Sunscreen SPF 50 -> Prevents pigmentation from worsening"
+      ],
+      "night": [
+        "Gentle Cleanser -> Cleans dirt and oil buildup",
+        "BHA Exfoliant (2->3 times/week) -> Clears clogged pores",
+        "Alpha Arbutin or Azelaic Acid -> Targets pigmentation",
+        "Lightweight Moisturizer -> Maintains balance"
+      ]
+    }
+  },
+  {
+    "skin_type": "dry",
+    "concerns": {
+      "acne": false,
+      "pigmentation": false,
+      "dryness": true,
+      "oiliness": false,
+      "dullness": false,
+      "blackheads_whiteheads": false,
+      "sensitivity": false,
+      "uneven_skin_tone": false
+    },
+    "label": "Dry + Dryness",
+    "routine": {
+      "morning": [
+        "Gentle Hydrating Cleanser -> Cleans without stripping oils",
+        "Hyaluronic Acid Serum -> Deep hydration",
+        "Rich Moisturizer -> Prevents dryness",
+        "Sunscreen SPF 30_50 -> Protects skin"
+      ],
+      "night": [
+        "Gentle Cleanser -> Maintains moisture",
+        "Hydrating Serum (HA/Glycerin) -> Boosts hydration",
+        "Thick Moisturizer -> Repairs barrier",
+        "Face Oil (optional) -> Locks moisture"
+      ]
+    }
+  },
+  {
+    "skin_type": "dry",
+    "concerns": {
+      "acne": false,
+      "pigmentation": false,
+      "dryness": true,
+      "oiliness": false,
+      "dullness": true,
+      "blackheads_whiteheads": false,
+      "sensitivity": false,
+      "uneven_skin_tone": false
+    },
+    "label": "Dry + Dryness + Dullness",
+    "routine": {
+      "morning": [
+        "Gentle Hydrating Cleanser -> Cleans without stripping moisture",
+        "Hyaluronic Acid Serum -> Deeply hydrates and plumps skin",
+        "Ceramide Moisturizer -> Repairs skin barrier",
+        "Sunscreen SPF 30-50 -> Prevents dryness and damage"
+      ],
+      "night": [
+        "Gentle Cleanser -> Removes dirt while keeping skin soft",
+        "Hydrating Serum -> Boosts moisture levels",
+        "Rich Night Cream -> Nourishes and repairs skin",
+        "Face Oil (optional) -> Locks in hydration"
+      ]
+    },
+    "note": "Focuses on restoring moisture and improving dull, tired-looking skin."
+  },
+  {
+    "skin_type": "dry",
+    "concerns": {
+      "acne": false,
+      "pigmentation": false,
+      "dryness": true,
+      "oiliness": false,
+      "dullness": false,
+      "blackheads_whiteheads": false,
+      "sensitivity": true,
+      "uneven_skin_tone": false
+    },
+    "label": "Dry + Sensitivity",
+    "routine": {
+      "morning": [
+        "Gentle Fragrance-Free Cleanser -> Cleans without irritation",
+        "Soothing Serum (Centella / Hyaluronic Acid) -> Calms and hydrates",
+        "Ceramide Moisturizer -> Strengthens skin barrier",
+        "Mineral Sunscreen SPF 30-50 -> Protects sensitive skin"
+      ],
+      "night": [
+        "Gentle Cleanser -> Removes impurities gently",
+        "Soothing Treatment (Aloe / Centella) -> Reduces redness",
+        "Barrier Repair Cream -> Restores damaged skin barrier",
+        "Face Oil (optional) -> Prevents moisture loss"
+      ]
+    },
+    "note": "Focuses on calming sensitive dry skin while maintaining deep hydration."
+  },
+  {
+    "skin_type": "dry",
+    "concerns": {
+      "acne": false,
+      "pigmentation": true,
+      "dryness": true,
+      "oiliness": false,
+      "dullness": false,
+      "blackheads_whiteheads": false,
+      "sensitivity": false,
+      "uneven_skin_tone": true
+    },
+    "label": "Dry + Pigmentation",
+    "routine": {
+      "morning": [
+        "Gentle Hydrating Cleanser -> Cleans without stripping natural oils",
+        "Vitamin C Serum -> Brightens skin and reduces pigmentation",
+        "Hyaluronic Acid Serum -> Maintains hydration",
+        "Ceramide Moisturizer -> Strengthens skin barrier",
+        "Sunscreen SPF 50 -> Prevents pigmentation from worsening"
+      ],
+      "night": [
+        "Gentle Cleanser -> Removes dirt while keeping moisture",
+        "Alpha Arbutin or Azelaic Acid -> Targets pigmentation",
+        "Hydrating Serum (optional) -> Maintains moisture balance",
+        "Rich Moisturizer -> Repairs and nourishes skin"
+      ]
+    },
+    "note": "Targets pigmentation while maintaining deep hydration and barrier health."
+  },
+  {
+    "skin_type": "dry",
+    "concerns": {
+      "acne": false,
+      "dryness": true,
+      "pigmentation": false,
+      "oiliness": false,
+      "dullness": false,
+      "blackheads_whiteheads": false,
+      "sensitivity": false,
+      "uneven_skin_tone": false
+    },
+    "label": "Dry + Dryness",
+    "routine": {
+      "morning": [
+        "Gentle Hydrating Cleanser -> Cleans without stripping moisture",
+        "Hyaluronic Acid Serum -> Deep hydration",
+        "Rich Moisturizer (Cream-based) -> Prevents dryness",
+        "Sunscreen SPF 30-50 -> Protects skin barrier"
+      ],
+      "night": [
+        "Gentle Cleanser -> Maintains moisture while cleansing",
+        "Hydrating Serum (Hyaluronic Acid / Glycerin) -> Boosts hydration",
+        "Thick Moisturizer / Night Cream -> Repairs skin overnight",
+        "Face Oil (optional) -> Seals moisture"
+      ]
+    },
+    "note": "Focuses on intense hydration and restoring the skin barrier."
+  },
+  {
+    "skin_type": "dry",
+    "concerns": {
+      "acne": false,
+      "dryness": false,
+      "pigmentation": false,
+      "sensitivity": true,
+      "dullness": false,
+      "blackheads_whiteheads": false,
+      "uneven_skin_tone": false
+    },
+    "label": "Dry + Sensitivity",
+    "routine": {
+      "morning": [
+        "Gentle Fragrance-Free Cleanser -> Cleans without irritation",
+        "Soothing Serum (Centella / Hyaluronic Acid) -> Calms and hydrates",
+        "Ceramide Moisturizer -> Repairs skin barrier",
+        "Mineral Sunscreen SPF 30-50 -> Protects sensitive skin"
+      ],
+      "night": [
+        "Gentle Cleanser -> Removes impurities gently",
+        "Soothing Treatment (Aloe / Centella) -> Reduces redness",
+        "Rich Moisturizer -> Nourishes and repairs skin",
+        "Face Oil (optional) -> Locks in moisture"
+      ]
+    },
+    "note": "Focuses on calming sensitive dry skin while maintaining hydration and barrier strength."
+  },
+  {
+    "skin_type": "dry",
+    "concerns": {
+      "acne": false,
+      "dryness": false,
+      "pigmentation": true,
+      "sensitivity": false,
+      "dullness": false,
+      "blackheads_whiteheads": false,
+      "uneven_skin_tone": false
+    },
+    "label": "Dry + Pigmentation",
+    "routine": {
+      "morning": [
+        "Gentle Hydrating Cleanser -> Cleans without stripping moisture",
+        "Vitamin C Serum -> Brightens and reduces pigmentation",
+        "Hyaluronic Acid Serum -> Maintains hydration",
+        "Ceramide Moisturizer -> Strengthens skin barrier",
+        "Sunscreen SPF 50 -> Prevents pigmentation from worsening"
+      ],
+      "night": [
+        "Gentle Cleanser -> Removes dirt while keeping skin soft",
+        "Alpha Arbutin or Azelaic Acid -> Targets pigmentation",
+        "Hydrating Serum -> Maintains moisture balance",
+        "Rich Moisturizer -> Repairs and nourishes skin"
+      ]
+    },
+    "note": "Focuses on reducing pigmentation while maintaining deep hydration."
+  },
+  {
+    "skin_type": "dry",
+    "concerns": {
+      "acne": false,
+      "dryness": false,
+      "pigmentation": false,
+      "sensitivity": false,
+      "dullness": false,
+      "blackheads_whiteheads": false,
+      "uneven_skin_tone": true
+    },
+    "label": "Dry + Uneven Skin Tone",
+    "routine": {
+      "morning": [
+        "Gentle Hydrating Cleanser -> Cleans without stripping oils",
+        "Vitamin C Serum -> Brightens and evens tone",
+        "Hyaluronic Acid Serum -> Hydrates and plumps skin",
+        "Ceramide Moisturizer -> Strengthens barrier",
+        "Sunscreen SPF 50 -> Prevents uneven tone"
+      ],
+      "night": [
+        "Gentle Cleanser -> Removes impurities gently",
+        "Alpha Arbutin or Niacinamide -> Improves uneven tone",
+        "Mild Exfoliation (AHA 1-2 times/week) -> Improves texture",
+        "Rich Moisturizer -> Nourishes and repairs skin"
+      ]
+    },
+    "note": "Focuses on improving uneven tone while maintaining hydration."
+  },
+  {
+    "skin_type": "dry",
+    "concerns": {
+      "acne": false,
+      "dryness": true,
+      "pigmentation": false,
+      "sensitivity": true,
+      "dullness": false,
+      "blackheads_whiteheads": false,
+      "uneven_skin_tone": false
+    },
+    "label": "Dry + Dryness + Sensitivity",
+    "routine": {
+      "morning": [
+        "Gentle Fragrance-Free Cleanser -> Cleans without irritation",
+        "Hydrating + Soothing Serum (Hyaluronic Acid + Centella) -> Hydrates and calms skin",
+        "Barrier Repair Moisturizer (Ceramides) -> Restores skin barrier",
+        "Mineral Sunscreen SPF 30-50 -> Protects sensitive skin"
+      ],
+      "night": [
+        "Gentle Cleanser -> Maintains moisture while cleansing",
+        "Soothing Treatment (Centella / Aloe) -> Reduces irritation",
+        "Rich Moisturizer -> Deeply nourishes skin",
+        "Face Oil (optional) -> Locks in hydration"
+      ]
+    },
+    "note": "Focuses on repairing the skin barrier while calming irritation and dryness."
+  },
+  {
+    "skin_type": "dry",
+    "concerns": {
+      "acne": false,
+      "dryness": false,
+      "pigmentation": true,
+      "sensitivity": false,
+      "dullness": true,
+      "blackheads_whiteheads": false,
+      "uneven_skin_tone": false
+    },
+    "label": "Dry + Dullness + Pigmentation",
+    "routine": {
+      "morning": [
+        "Gentle Hydrating Cleanser -> Cleans without stripping moisture",
+        "Vitamin C Serum -> Brightens skin and reduces pigmentation",
+        "Hyaluronic Acid Serum -> Hydrates and improves texture",
+        "Ceramide Moisturizer -> Strengthens barrier",
+        "Sunscreen SPF 50 -> Prevents pigmentation and dullness"
+      ],
+      "night": [
+        "Gentle Cleanser -> Removes dirt gently",
+        "Alpha Arbutin or Azelaic Acid -> Targets pigmentation",
+        "Mild Exfoliation (AHA 1-2 times/week) -> Improves glow",
+        "Rich Moisturizer -> Repairs and nourishes skin"
+      ]
+    },
+    "note": "Focuses on improving glow while reducing pigmentation."
+  },
+  {
+    "skin_type": "dry",
+    "concerns": {
+      "acne": false,
+      "dryness": false,
+      "pigmentation": true,
+      "sensitivity": true,
+      "dullness": false,
+      "blackheads_whiteheads": false,
+      "uneven_skin_tone": false
+    },
+    "label": "Dry + Sensitivity + Pigmentation",
+    "routine": {
+      "morning": [
+        "Gentle Cleanser -> Cleans without irritation",
+        "Vitamin C (low strength) or Niacinamide -> Brightens gently",
+        "Hyaluronic Acid Serum -> Hydrates and soothes",
+        "Ceramide Moisturizer -> Strengthens skin barrier",
+        "Mineral Sunscreen SPF 30-50 -> Protects sensitive skin"
+      ],
+      "night": [
+        "Gentle Cleanser -> Removes impurities gently",
+        "Azelaic Acid -> Treats pigmentation safely",
+        "Soothing Serum (Centella / Aloe) -> Reduces irritation",
+        "Rich Moisturizer -> Repairs skin barrier"
+      ]
+    },
+    "note": "Focuses on gentle pigmentation treatment while protecting sensitive skin."
+  },
+
+  {
+    "skin_type": "dry",
+    "concerns": {
+      "acne": false,
+      "dryness": true,
+      "pigmentation": false,
+      "sensitivity": false,
+      "dullness": false,
+      "blackheads_whiteheads": false,
+      "uneven_skin_tone": true
+    },
+    "label": "Dry + Dryness + Uneven Skin Tone",
+    "routine": {
+      "morning": [
+        "Gentle Hydrating Cleanser -> Cleans without stripping natural oils",
+        "Vitamin C Serum -> Brightens and improves uneven skin tone",
+        "Hyaluronic Acid Serum -> Deeply hydrates and plumps skin",
+        "Ceramide Moisturizer -> Strengthens skin barrier",
+        "Sunscreen SPF 50 -> Prevents uneven tone from worsening"
+      ],
+      "night": [
+        "Gentle Cleanser -> Removes dirt while maintaining moisture",
+        "Niacinamide or Alpha Arbutin Serum -> Targets uneven tone",
+        "Mild Exfoliation (AHA 1-2 times/week) -> Improves texture",
+        "Rich Moisturizer -> Repairs and nourishes skin"
+      ]
+    },
+    "note": "Focuses on deep hydration while correcting uneven skin tone using gentle brightening ingredients."
+  },
+  {
+    "skin_type": "dry",
+    "concerns": {
+      "acne": false,
+      "dryness": false,
+      "pigmentation": false,
+      "sensitivity": false,
+      "dullness": true,
+      "blackheads_whiteheads": false,
+      "uneven_skin_tone": false
+    },
+    "label": "Dry + Dullness",
+    "routine": {
+      "morning": [
+        "Gentle Hydrating Cleanser -> Cleans without stripping moisture",
+        "Vitamin C Serum -> Brightens skin and improves glow",
+        "Hyaluronic Acid Serum -> Hydrates and plumps skin",
+        "Ceramide Moisturizer -> Nourishes and strengthens barrier",
+        "Sunscreen SPF 30-50 -> Protects skin from dullness and damage"
+      ],
+      "night": [
+        "Gentle Cleanser -> Removes dirt gently",
+        "Mild Exfoliation (AHA 1-2 times/week) -> Removes dead skin cells",
+        "Hydrating Serum -> Boosts moisture levels",
+        "Rich Moisturizer -> Restores and repairs skin"
+      ]
+    },
+    "note": "Focuses on restoring glow and improving dull skin through hydration and gentle exfoliation."
+  },
+    {
+    "skin_type": "combination",
+    "concerns": {
+      "acne": true,
+      "dryness": false,
+      "pigmentation": false,
+      "oiliness": true,
+      "dullness": false,
+      "blackheads_whiteheads": false,
+      "sensitivity": false,
+      "uneven_skin_tone": false
+    },
+    "label": "Combination + Acne",
+    "routine": {
+      "morning": [
+        "Gentle Foaming / Gel Cleanser → Cleans oily T-zone without over-drying cheeks",
+        "Niacinamide Serum → Controls oil in T-zone and reduces acne",
+        "Lightweight / Gel Moisturizer → Hydrates dry areas without clogging pores",
+        "Sunscreen SPF 30_50 → Protects skin and prevents acne marks"
+      ],
+      "night": [
+        "Gentle Cleanser → Removes dirt and excess oil",
+        "Salicylic Acid (BHA) Treatment → Unclogs pores and treats acne",
+        "Benzoyl Peroxide (spot treatment) → Targets active pimples",
+        "Lightweight Moisturizer → Maintains balance"
+      ]
+    },
+    "note": "Balances oily and dry areas while treating acne using targeted oil control and gentle hydration."
+  },
+
+  {
+    "skin_type": "combination",
+    "concerns": {
+      "acne": true,
+      "dryness": false,
+      "pigmentation": false,
+      "oiliness": true,
+      "dullness": false,
+      "blackheads_whiteheads": true,
+      "sensitivity": false,
+      "uneven_skin_tone": false
+    },
+    "label": "Combination + Acne + Blackheads/Whiteheads",
+    "routine": {
+      "morning": [
+        "Gentle Foaming / Gel Cleanser → Cleans oily T-zone and removes impurities",
+        "Niacinamide Serum → Controls oil and reduces acne",
+        "Lightweight / Gel Moisturizer → Hydrates dry areas",
+        "Sunscreen SPF 30_50 → Protects skin"
+      ],
+      "night": [
+        "Gentle Cleanser → Removes dirt and excess oil",
+        "BHA Exfoliant (2_3 times/week) → Clears blackheads/whiteheads",
+        "Benzoyl Peroxide → Treats acne",
+        "Lightweight Moisturizer → Maintains balance"
+      ]
+    },
+    "note": "Targets acne and clogged pores in T-zone while keeping dry areas hydrated."
+  },
+
+  {
+    "skin_type": "combination",
+    "concerns": {
+      "acne": false,
+      "dryness": true,
+      "pigmentation": false,
+      "oiliness": true,
+      "dullness": false,
+      "blackheads_whiteheads": false,
+      "sensitivity": false,
+      "uneven_skin_tone": false
+    },
+    "label": "Combination + Dryness",
+    "routine": {
+      "morning": [
+        "Gentle Foaming / Gel Cleanser → Cleans oily T-zone gently",
+        "Niacinamide Serum → Controls oil and improves texture",
+        "Lightweight Moisturizer → Hydrates skin",
+        "Sunscreen SPF 30_50 → Protects skin"
+      ],
+      "night": [
+        "Gentle Cleanser → Removes dirt and oil",
+        "BHA Exfoliant (2_3 times/week) → Unclogs pores",
+        "Benzoyl Peroxide → Treats acne if present",
+        "Lightweight Moisturizer → Maintains balance"
+      ]
+    },
+    "note": "Balances oily and dry areas while maintaining hydration and preventing breakouts."
+  },
+
+  {
+    "skin_type": "combination",
+    "concerns": {
+      "acne": false,
+      "dryness": false,
+      "pigmentation": true,
+      "oiliness": true,
+      "dullness": false,
+      "blackheads_whiteheads": false,
+      "sensitivity": false,
+      "uneven_skin_tone": true
+    },
+    "label": "Combination + Pigmentation",
+    "routine": {
+      "morning": [
+        "Gentle Foaming / Gel Cleanser → Cleans T-zone",
+        "Vitamin C Serum → Brightens skin",
+        "Niacinamide Serum → Controls oil and evens tone",
+        "Lightweight Moisturizer → Hydrates skin",
+        "Sunscreen SPF 50 → Prevents pigmentation"
+      ],
+      "night": [
+        "Gentle Cleanser → Removes dirt",
+        "Alpha Arbutin / Azelaic Acid → Targets pigmentation",
+        "Mild Exfoliation → Improves texture",
+        "Lightweight Moisturizer → Maintains balance"
+      ]
+    },
+    "note": "Reduces pigmentation while maintaining balance between oily and dry areas."
+  },
+  {
+    "skin_type": "combination",
+    "concerns": {
+      "acne": false,
+      "dryness": false,
+      "pigmentation": false,
+      "oiliness": true,
+      "dullness": false,
+      "blackheads_whiteheads": false,
+      "sensitivity": true,
+      "uneven_skin_tone": false
+    },
+    "label": "Combination + Sensitivity",
+    "routine": {
+      "morning": [
+        "Gentle, Fragrance-Free Cleanser → Cleans without irritating sensitive areas",
+        "Niacinamide Serum (low %) → Calms redness and controls oil",
+        "Lightweight Fragrance-Free Moisturizer → Hydrates and supports barrier",
+        "Mineral Sunscreen SPF 30_50 → Protects with minimal irritation"
+      ],
+      "night": [
+        "Gentle Cleanser → Removes impurities",
+        "Soothing Serum (Centella / Aloe / Panthenol) → Calms irritation",
+        "Lightweight Moisturizer → Maintains balance"
+      ]
+    },
+    "note": "Balances combination skin while protecting sensitive areas using gentle, barrier-repair ingredients."
+  },
+
+  {
+    "skin_type": "combination",
+    "concerns": {
+      "acne": false,
+      "dryness": false,
+      "pigmentation": false,
+      "oiliness": true,
+      "dullness": false,
+      "blackheads_whiteheads": false,
+      "sensitivity": false,
+      "uneven_skin_tone": true
+    },
+    "label": "Combination + Uneven Skin Tone",
+    "routine": {
+      "morning": [
+        "Gentle Foaming / Gel Cleanser → Cleans T-zone gently",
+        "Vitamin C Serum → Brightens and evens tone",
+        "Niacinamide Serum → Controls oil and improves texture",
+        "Lightweight Moisturizer → Hydrates skin",
+        "Sunscreen SPF 50 → Prevents uneven tone"
+      ],
+      "night": [
+        "Gentle Cleanser → Removes dirt and oil",
+        "Alpha Arbutin / Niacinamide → Targets uneven tone",
+        "Mild Exfoliation (AHA 1_2 times/week) → Improves texture",
+        "Lightweight Moisturizer → Maintains balance"
+      ]
+    },
+    "note": "Improves uneven tone while balancing oily and dry areas."
+  },
+
+  {
+    "skin_type": "combination",
+    "concerns": {
+      "acne": true,
+      "dryness": false,
+      "pigmentation": false,
+      "oiliness": true,
+      "dullness": false,
+      "blackheads_whiteheads": false,
+      "sensitivity": true,
+      "uneven_skin_tone": false
+    },
+    "label": "Combination + Acne + Sensitivity",
+    "routine": {
+      "morning": [
+        "Gentle Fragrance-Free Cleanser → Cleans without irritation",
+        "Niacinamide Serum (low %) → Controls oil and soothes skin",
+        "Lightweight Fragrance-Free Moisturizer → Supports barrier",
+        "Mineral Sunscreen SPF 30_50 → Protects sensitive skin"
+      ],
+      "night": [
+        "Gentle Cleanser → Removes impurities",
+        "Mild Acne Treatment (Azelaic Acid / low % Salicylic Acid) → Treats acne gently",
+        "Soothing Serum → Reduces irritation",
+        "Lightweight Moisturizer → Maintains balance"
+      ]
+    },
+    "note": "Treats acne gently while protecting sensitive combination skin."
+  },
+
+  {
+    "skin_type": "combination",
+    "concerns": {
+      "acne": true,
+      "dryness": false,
+      "pigmentation": true,
+      "oiliness": true,
+      "dullness": false,
+      "blackheads_whiteheads": false,
+      "sensitivity": false,
+      "uneven_skin_tone": true
+    },
+    "label": "Combination + Acne + Pigmentation",
+    "routine": {
+      "morning": [
+        "Gentle Foaming / Gel Cleanser → Cleans T-zone",
+        "Vitamin C Serum → Brightens and reduces pigmentation",
+        "Niacinamide Serum → Controls oil and reduces acne marks",
+        "Lightweight Moisturizer → Hydrates skin",
+        "Sunscreen SPF 50 → Prevents pigmentation"
+      ],
+      "night": [
+        "Gentle Cleanser → Removes dirt",
+        "Salicylic Acid (BHA) → Treats acne",
+        "Alpha Arbutin / Azelaic Acid → Targets pigmentation",
+        "Lightweight Moisturizer → Maintains balance"
+      ]
+    },
+    "note": "Treats acne and pigmentation while balancing combination skin."
+  },
+   {
+    "skin_type": "combination",
+    "concerns": {
+      "acne": false,
+      "dryness": false,
+      "pigmentation": false,
+      "oiliness": true,
+      "dullness": false,
+      "blackheads_whiteheads": true,
+      "sensitivity": false,
+      "uneven_skin_tone": false
+    },
+    "label": "Combination + Blackheads/Whiteheads",
+    "routine": {
+      "morning": [
+        "Gentle Foaming / Gel Cleanser → Cleans oily T-zone gently",
+        "Niacinamide Serum → Controls oil and minimizes pores",
+        "Lightweight Moisturizer → Hydrates without clogging pores",
+        "Sunscreen SPF 30_50 → Protects skin"
+      ],
+      "night": [
+        "Gentle Cleanser → Removes dirt and oil",
+        "BHA Exfoliant (2_3 times/week) → Clears pores",
+        "Clay Mask (1_2 times/week) → Absorbs oil",
+        "Lightweight Moisturizer → Maintains balance"
+      ]
+    },
+    "note": "Targets clogged pores in T-zone while maintaining hydration in dry areas."
+  },
+
+  {
+    "skin_type": "combination",
+    "concerns": {
+      "acne": false,
+      "dryness": false,
+      "pigmentation": false,
+      "oiliness": true,
+      "dullness": true,
+      "blackheads_whiteheads": false,
+      "sensitivity": false,
+      "uneven_skin_tone": false
+    },
+    "label": "Combination + Dullness",
+    "routine": {
+      "morning": [
+        "Gentle Foaming / Gel Cleanser → Cleans T-zone",
+        "Vitamin C Serum → Brightens skin",
+        "Niacinamide Serum → Controls oil",
+        "Lightweight Moisturizer → Hydrates skin",
+        "Sunscreen SPF 30_50 → Prevents dullness"
+      ],
+      "night": [
+        "Gentle Cleanser → Removes dirt",
+        "Mild Exfoliation (AHA/BHA 1_2 times/week) → Restores glow",
+        "Hydrating / Niacinamide Serum → Improves texture",
+        "Lightweight Moisturizer → Maintains hydration"
+      ]
+    },
+    "note": "Improves radiance while balancing oily and dry areas."
+  },
+
+  {
+    "skin_type": "combination",
+    "concerns": {
+      "acne": false,
+      "dryness": false,
+      "pigmentation": true,
+      "oiliness": true,
+      "dullness": true,
+      "blackheads_whiteheads": false,
+      "sensitivity": false,
+      "uneven_skin_tone": true
+    },
+    "label": "Combination + Pigmentation + Dullness",
+    "routine": {
+      "morning": [
+        "Gentle Foaming / Gel Cleanser → Cleans T-zone",
+        "Vitamin C Serum → Brightens skin",
+        "Niacinamide Serum → Controls oil and improves tone",
+        "Lightweight Moisturizer → Hydrates skin",
+        "Sunscreen SPF 50 → Prevents pigmentation"
+      ],
+      "night": [
+        "Gentle Cleanser → Removes dirt",
+        "Alpha Arbutin / Azelaic Acid → Targets pigmentation",
+        "Mild Exfoliation (AHA 1_2 times/week) → Improves brightness",
+        "Lightweight Moisturizer → Maintains balance"
+      ]
+    },
+    "note": "Reduces pigmentation and dullness while balancing combination skin."
+  },
+
+  {
+    "skin_type": "combination",
+    "concerns": {
+      "acne": false,
+      "dryness": true,
+      "pigmentation": false,
+      "oiliness": true,
+      "dullness": false,
+      "blackheads_whiteheads": false,
+      "sensitivity": true,
+      "uneven_skin_tone": false
+    },
+    "label": "Combination + Dryness + Sensitivity",
+    "routine": {
+      "morning": [
+        "Gentle Fragrance-Free Cleanser → Cleans without irritation",
+        "Hydrating + Soothing Serum → Hydrates and calms skin",
+        "Barrier Repair Moisturizer → Strengthens skin barrier",
+        "Mineral Sunscreen SPF 30–50 → Protects skin"
+      ],
+      "night": [
+        "Gentle Cleanser → Removes impurities",
+        "Soothing Treatment → Reduces irritation",
+        "Rich Moisturizer → Repairs barrier",
+        "Face Oil (optional) → Locks hydration"
+      ]
+    },
+    "note": "Restores hydration and calms sensitivity while maintaining balance."
+  },
+
+  {
+    "skin_type": "combination",
+    "concerns": {
+      "acne": true,
+      "dryness": false,
+      "pigmentation": false,
+      "oiliness": true,
+      "dullness": true,
+      "blackheads_whiteheads": false,
+      "sensitivity": false,
+      "uneven_skin_tone": false
+    },
+    "label": "Combination + Acne + Dullness",
+    "routine": {
+      "morning": [
+        "Gentle Foaming / Gel Cleanser → Cleans T-zone",
+        "Vitamin C Serum → Brightens skin",
+        "Niacinamide Serum → Controls oil",
+        "Lightweight Moisturizer → Hydrates skin",
+        "Sunscreen SPF 30_50 → Prevents acne marks"
+      ],
+      "night": [
+        "Gentle Cleanser → Removes dirt",
+        "Salicylic Acid (BHA) → Treats acne",
+        "Mild Exfoliation (AHA 1_2 times/week) → Improves glow",
+        "Lightweight Moisturizer → Maintains balance"
+      ]
+    },
+    "note": "Treats acne and dullness while maintaining combination skin balance."
+  },
+  {
+    "skin_type": "normal",
+    "concerns": {
+      "acne": false,
+      "dryness": false,
+      "pigmentation": false,
+      "oiliness": false,
+      "dullness": true,
+      "blackheads_whiteheads": false,
+      "sensitivity": false,
+      "uneven_skin_tone": false
+    },
+    "label": "Normal + Dullness",
+    "routine": {
+      "morning": [
+        "Gentle Cleanser → Cleans without disturbing balance",
+        "Vitamin C Serum → Brightens skin",
+        "Lightweight Moisturizer → Maintains hydration",
+        "Sunscreen SPF 30_50 → Prevents dullness"
+      ],
+      "night": [
+        "Gentle Cleanser → Removes impurities",
+        "Mild Exfoliation (AHA 1_2 times/week) → Restores glow",
+        "Hydrating Serum → Keeps skin soft",
+        "Moisturizer → Maintains barrier"
+      ]
+    },
+    "note": "Improves skin radiance while maintaining natural balance."
+  },
+
+  {
+    "skin_type": "normal",
+    "concerns": {
+      "acne": false,
+      "dryness": false,
+      "pigmentation": true,
+      "oiliness": false,
+      "dullness": false,
+      "blackheads_whiteheads": false,
+      "sensitivity": false,
+      "uneven_skin_tone": true
+    },
+    "label": "Normal + Pigmentation",
+    "routine": {
+      "morning": [
+        "Gentle Cleanser → Cleans skin",
+        "Vitamin C Serum → Brightens and reduces pigmentation",
+        "Niacinamide Serum → Improves tone",
+        "Lightweight Moisturizer → Maintains hydration",
+        "Sunscreen SPF 50 → Prevents pigmentation"
+      ],
+      "night": [
+        "Gentle Cleanser → Removes impurities",
+        "Alpha Arbutin / Azelaic Acid → Targets pigmentation",
+        "Mild Exfoliation (AHA 1_2 times/week) → Improves tone",
+        "Moisturizer → Maintains barrier"
+      ]
+    },
+    "note": "Reduces pigmentation while maintaining balanced skin."
+  },
+
+  {
+    "skin_type": "normal",
+    "concerns": {
+      "acne": false,
+      "dryness": false,
+      "pigmentation": false,
+      "oiliness": false,
+      "dullness": false,
+      "blackheads_whiteheads": false,
+      "sensitivity": false,
+      "uneven_skin_tone": true
+    },
+    "label": "Normal + Uneven Skin Tone",
+    "routine": {
+      "morning": [
+        "Gentle Cleanser → Cleans skin",
+        "Vitamin C Serum → Brightens and evens tone",
+        "Niacinamide Serum → Improves texture",
+        "Lightweight Moisturizer → Maintains hydration",
+        "Sunscreen SPF 50 → Prevents uneven tone"
+      ],
+      "night": [
+        "Gentle Cleanser → Removes impurities",
+        "Alpha Arbutin / Niacinamide → Targets uneven tone",
+        "Mild Exfoliation (AHA 1_2 times/week) → Improves texture",
+        "Moisturizer → Maintains barrier"
+      ]
+    },
+    "note": "Improves uneven skin tone while maintaining natural balance."
+  },
+   {
+    "skin_type": "normal",
+    "concerns": {
+      "acne": false,
+      "dryness": false,
+      "pigmentation": false,
+      "oiliness": false,
+      "dullness": false,
+      "blackheads_whiteheads": false,
+      "sensitivity": true,
+      "uneven_skin_tone": false
+    },
+    "label": "Normal + Sensitivity",
+    "routine": {
+      "morning": [
+        "Gentle, Fragrance-Free Cleanser → Cleans skin without causing irritation",
+        "Soothing Serum (Centella / Aloe / Panthenol) → Calms redness and sensitivity",
+        "Lightweight, Fragrance-Free Moisturizer → Maintains hydration and protects skin barrier",
+        "Mineral Sunscreen SPF 30_50 → Protects skin with minimal irritation"
+      ],
+      "night": [
+        "Gentle Cleanser → Removes dirt and impurities",
+        "Soothing Treatment (Centella / Aloe / Panthenol) → Reduces irritation and supports skin repair",
+        "Moisturizer → Maintains healthy skin barrier"
+      ]
+    },
+    "note": "Focuses on calming sensitive skin while maintaining the natural balance of normal skin."
+  },
+  {
+    "skin_type": "normal",
+    "concerns": {
+      "acne": false,
+      "dryness": false,
+      "pigmentation": true,
+      "oiliness": false,
+      "dullness": true,
+      "blackheads_whiteheads": false,
+      "sensitivity": false,
+      "uneven_skin_tone": false
+    },
+    "label": "Normal + Dullness + Pigmentation",
+    "routine": {
+      "morning": [
+        "Gentle Cleanser → Cleans skin without disturbing natural balance",
+        "Vitamin C Serum → Brightens skin and reduces pigmentation",
+        "Niacinamide Serum → Improves uneven tone and enhances skin texture",
+        "Lightweight Moisturizer → Maintains hydration and smoothness",
+        "Sunscreen SPF 50 → Prevents pigmentation and dullness from worsening"
+      ],
+      "night": [
+        "Gentle Cleanser → Removes dirt and impurities",
+        "Alpha Arbutin or Azelaic Acid Serum → Targets pigmentation and uneven tone",
+        "Mild Exfoliation (AHA 1_2 times/week) → Removes dead skin cells and improves glow",
+        "Moisturizer → Maintains healthy skin barrier"
+      ]
+    },
+    "note": "Focuses on reducing pigmentation and improving dullness while maintaining skin balance."
+  },
+  {
+    "skin_type": "normal",
+    "concerns": {
+      "acne": false,
+      "dryness": false,
+      "pigmentation": false,
+      "oiliness": false,
+      "dullness": true,
+      "blackheads_whiteheads": false,
+      "sensitivity": false,
+      "uneven_skin_tone": true
+    },
+    "label": "Normal + Dullness + Uneven Skin Tone",
+    "routine": {
+      "morning": [
+        "Gentle Cleanser → Cleans skin without disturbing natural balance",
+        "Vitamin C Serum → Brightens skin and reduces dullness",
+        "Niacinamide Serum → Improves uneven tone and enhances skin texture",
+        "Lightweight Moisturizer → Maintains hydration and smoothness",
+        "Sunscreen SPF 50 → Prevents pigmentation and dullness from worsening"
+      ],
+      "night": [
+        "Gentle Cleanser → Removes dirt and impurities",
+        "Alpha Arbutin or Azelaic Acid Serum → Targets uneven skin tone and improves clarity",
+        "Mild Exfoliation (AHA 1_2 times/week) → Removes dead skin cells and boosts glow",
+        "Moisturizer → Maintains healthy skin barrier"
+      ]
+    },
+    "note": "Focuses on improving dullness and uneven skin tone while maintaining natural balance."
+  },
+  {
+    "skin_type": "normal",
+    "concerns": {
+      "acne": false,
+      "dryness": false,
+      "pigmentation": true,
+      "oiliness": false,
+      "dullness": false,
+      "blackheads_whiteheads": false,
+      "sensitivity": false,
+      "uneven_skin_tone": true
+    },
+    "label": "Normal + Pigmentation + Uneven Skin Tone",
+    "routine": {
+      "morning": [
+        "Gentle Cleanser → Cleans skin without disturbing natural balance",
+        "Vitamin C Serum → Brightens skin and helps fade pigmentation",
+        "Niacinamide Serum → Improves uneven skin tone and strengthens barrier",
+        "Lightweight Moisturizer → Maintains hydration and smooth texture",
+        "Sunscreen SPF 50 → Prevents pigmentation from getting darker"
+      ],
+      "night": [
+        "Gentle Cleanser → Removes dirt, oil, and impurities",
+        "Alpha Arbutin or Azelaic Acid Serum → Reduces pigmentation and evens tone",
+        "Mild Exfoliation (AHA 1_2 times/week) → Improves skin clarity",
+        "Moisturizer → Repairs skin barrier"
+      ]
+    },
+    "note": "Focuses on reducing pigmentation and correcting uneven skin tone while maintaining balance."
+  },
+   {
+    "skin_type": "normal",
+    "concerns": {
+      "acne": false,
+      "dryness": false,
+      "pigmentation": false,
+      "oiliness": false,
+      "dullness": true,
+      "blackheads_whiteheads": false,
+      "sensitivity": true,
+      "uneven_skin_tone": false
+    },
+    "label": "Normal + Sensitivity + Dullness",
+    "routine": {
+      "morning": [
+        "Gentle Cleanser → Cleans skin very softly without causing irritation",
+        "Vitamin C (low strength or derivative) → Brightens dull skin and improves natural glow",
+        "Soothing Serum (Niacinamide 2_5% or Panthenol) → Calms skin and strengthens skin barrier",
+        "Lightweight Moisturizer (fragrance-free) → Keeps skin hydrated and reduces sensitivity",
+        "Sunscreen SPF 50 (mineral preferred) → Protects sensitive skin from UV damage and dullness"
+      ],
+      "night": [
+        "Gentle Cleanser → Removes dirt and pollution gently without stripping skin",
+        "Hydrating / Soothing Serum (Hyaluronic Acid or Centella) → Calms skin and restores moisture balance",
+        "Barrier Repair Moisturizer → Repairs and strengthens sensitive skin overnight",
+        "Mild Exfoliation (very gentle, 1 time/week max) → Removes dead skin and improves glow without irritation"
+      ]
+    },
+    "note": "Focuses on improving dullness while protecting and calming sensitive skin. Uses gentle, barrier-supporting ingredients to restore skin health and gradually enhance brightness without irritation."
+  },
+  {
+    "skin_type": "normal",
+    "concerns": {
+      "acne": false,
+      "dryness": false,
+      "pigmentation": true,
+      "oiliness": false,
+      "dullness": false,
+      "blackheads_whiteheads": false,
+      "sensitivity": true,
+      "uneven_skin_tone": false
+    },
+    "label": "Normal + Sensitivity + Pigmentation",
+    "routine": {
+      "morning": [
+        "Gentle Cleanser → Cleans skin softly without irritating sensitive skin",
+        "Vitamin C (low strength / gentle derivative) → Brightens skin and helps reduce pigmentation",
+        "Soothing Serum (Niacinamide 2_5% or Panthenol) → Calms skin and improves uneven tone",
+        "Lightweight Moisturizer (fragrance-free) → Maintains hydration and protects skin barrier",
+        "Sunscreen SPF 50 (mineral preferred) → Prevents pigmentation from worsening"
+      ],
+      "night": [
+        "Gentle Cleanser → Removes dirt and sunscreen gently without stripping skin",
+        "Alpha Arbutin or Azelaic Acid → Targets pigmentation without harsh irritation",
+        "Hydrating / Soothing Serum (Hyaluronic Acid or Centella) → Calms skin and restores moisture",
+        "Barrier Repair Moisturizer → Strengthens skin barrier overnight",
+        "Mild Exfoliation (very gentle, 1 time/week max) → Gradually improves pigmentation"
+      ]
+    },
+    "note": "Focuses on reducing pigmentation while keeping sensitive skin calm. Prioritizes barrier repair and uses gentle brightening ingredients to improve skin tone without irritation."
+  },
+  {
+    "skin_type": "normal",
+    "concerns": {
+      "acne": true,
+      "dryness": false,
+      "pigmentation": false,
+      "oiliness": false,
+      "dullness": false,
+      "blackheads_whiteheads": false,
+      "sensitivity": false,
+      "uneven_skin_tone": false
+    },
+    "label": "Normal + Mild Acne",
+    "routine": {
+      "morning": [
+        "Gentle Cleanser → Removes oil and dirt without over-drying skin",
+        "Niacinamide Serum (4_5%) → Controls oil and reduces acne",
+        "Lightweight Moisturizer → Keeps skin hydrated and prevents irritation",
+        "Sunscreen SPF 50 → Protects acne marks and prevents worsening"
+      ],
+      "night": [
+        "Gentle Cleanser → Cleans pores and removes impurities",
+        "Salicylic Acid (BHA 1_2%) → Unclogs pores and reduces acne formation OR Benzoyl Peroxide (2.5%) → Kills acne-causing bacteria (spot treatment)",
+        "Lightweight Moisturizer → Repairs skin barrier and prevents dryness"
+      ]
+    },
+    "note": "Focuses on controlling mild acne while maintaining normal skin balance. Combines pore cleansing and gentle treatment to reduce breakouts without irritation."
+  }
+
+]
