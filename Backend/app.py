@@ -129,6 +129,36 @@ def get_user(user_id):
         'name': user.name
     }), 200
 
+#recommendation
+@app.route('/recommendation', methods=['GET'])
+def recommendation():
+    #getting user id from session to get specific user details
+    user_id  = session.get('user_id')
+    
+    if not user_id:
+        return jsonify({'message': 'User not logged in'}), 401
+    #getting user data and details from database using user id
+    user_data=user.query.get(user_id)
+    details=user_details.query.filter_by(user_id=user_id).first()
+    
+    if not details:
+        return jsonify({'message': 'User details not found'}), 404
+    #after getting details we filter data according to user details and give recommendation to user
+    username=user_data.username
+    skin_type=details.skin_type
+    concerns=details.concerns
+    
+    #filtering data according to user details and give recommendation to user
+    filtered = df[df["skin_type"] == skin_type]
+    for c in concerns:
+        col = f"concerns.{c}"
+        if col in filtered.columns:
+            filtered = filtered[filtered[col] == True]
+    
+    filtered_data=filtered.to_dict(orient='records')
+    return jsonify({'username': username, 'skin_type': skin_type, 'concerns': concerns, 'recommendations': filtered_data}), 200 
+
+
 
 if __name__ == '__main__':
     with app.app_context():
