@@ -1,11 +1,21 @@
-from flask import Flask, request, jsonify, session
+from flask import Flask, json, request, jsonify, session
 from flask_cors import CORS
 from flask_sqlalchemy import SQLAlchemy
 from werkzeug.security import generate_password_hash, check_password_hash
 from sqlalchemy import JSON
+import pandas as pd 
+import json
+
 
 app = Flask(__name__)
 CORS(app)
+
+def load_data(file_path):
+    with open(file_path, 'r') as file:
+        return json.load(file)
+data = load_data('maindata.json')
+df = pd.json_normalize(data)  # Convert JSON to DataFrame
+
 
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///users.db'
 app.config['SECRET_KEY'] = '123456789'
@@ -129,8 +139,34 @@ def get_user(user_id):
         'name': user.name
     }), 200
 
+#@app.route('/recommendation/<int:user_id>', methods=['GET'])
+def recommendation(user_id):
 
-if __name__ == '__main__':
-    with app.app_context():
-        db.create_all()
-    app.run(debug=True)
+    user_data = User.query.get(user_id)
+    details = UserDetails.query.filter_by(user_id=user_id).first()
+
+    if not user_data:
+        return jsonify({'message': 'User not found'}), 404
+
+    if not details:
+        return jsonify({'message': 'User details not found'}), 404
+
+    username = user_data.name
+    skin_type = details.skinType
+    concerns = details.skinProblems
+
+    filtered = df[df["skin_type"] == skin_type]
+
+    for c in concerns:
+        col = f"concerns.{c}"
+        if col in filtered.columns:
+            filtered = filtered[filtered[col] == True]
+
+    filtered_data = filtered.to_dict(orient='records')
+
+    return jsonify({
+        'username': username,
+        'skin_type': skin_type,
+        'concerns': concerns,
+        'recommendations': filtered_data
+    }), 200
