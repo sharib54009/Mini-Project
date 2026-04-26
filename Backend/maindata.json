@@ -20,7 +20,7 @@
         "Oil-Free / Gel Moisturizer → Hydrates without greasiness",
         "Sunscreen SPF 30_50 (non-comedogenic) → Prevents acne marks and sun damage"
       ],
-      "night": [
+      "evening": [
         "Gentle Cleanser → Removes dirt, oil, and pollution",
         "Benzoyl Peroxide OR Salicylic Acid → Treats acne and reduces breakouts",
         "Lightweight Moisturizer → Prevents excess oil production"
@@ -49,7 +49,7 @@
         "Oil-Free / Gel Moisturizer → Hydrates without clogging pores",
         "Sunscreen SPF 50 → Prevents pigmentation from worsening"
       ],
-      "night": [
+      "evening": [
         "Gentle Cleanser → Removes dirt and excess oil",
         "Benzoyl Peroxide → Treats active acne",
         "Azelaic Acid → Reduces pigmentation and acne marks",
@@ -78,7 +78,7 @@
         "Oil-Free Moisturizer → Hydrates without clogging pores",
         "Sunscreen SPF 50 → Protects skin and prevents marks"
       ],
-      "night": [
+      "evening": [
         "Gentle Cleanser → Removes dirt and oil buildup",
         "BHA Exfoliant (2_3 times/week) → Clears blackheads and deep cleans pores",
         "Benzoyl Peroxide (spot treatment) → Targets active acne",
@@ -107,7 +107,7 @@
         "Oil-Free Moisturizer → Hydrates without clogging pores",
         "Sunscreen SPF 50 → Protects skin from damage"
       ],
-      "night": [
+      "evening": [
         "Gentle Cleanser → Cleans dirt and oil buildup",
         "BHA Exfoliant (2_3 times/week) → Removes blackheads and deep cleans pores",
         "Clay Mask (1_2 times/week) → Absorbs excess oil",
@@ -136,7 +136,7 @@
         "Oil-Free / Gel Moisturizer → Hydrates without clogging pores",
         "Sunscreen SPF 50 (non-comedogenic) → Protects skin and prevents buildup"
       ],
-      "night": [
+      "evening": [
         "Gentle Cleanser → Removes dirt and oil buildup",
         "BHA Exfoliant (2–3 times/week) → Deep cleans pores and removes blackheads",
         "Clay Mask (1–2 times/week) → Absorbs excess oil and tightens pores",
@@ -166,7 +166,7 @@
         "Oil-Free Moisturizer → Hydrates without clogging pores",
         "Sunscreen SPF 50 (very important) → Prevents pigmentation from worsening"
       ],
-      "night": [
+      "evening": [
         "Gentle Cleanser → Cleans dirt and excess oil",
         "Alpha Arbutin or Azelaic Acid → Targets dark spots and uneven tone",
         "Niacinamide (optional) → Supports oil control and repair",
@@ -196,7 +196,7 @@
         "Oil-Free Moisturizer → Hydrates without greasiness",
         "Sunscreen SPF 50 → Prevents dullness from sun damage"
       ],
-      "night": [
+      "evening": [
         "Gentle Cleanser → Removes dirt and oil",
         "AHA/BHA Exfoliation (2–3 times/week) → Removes dead skin and improves brightness",
         "Hydrating / Niacinamide Serum → Enhances skin texture",
@@ -226,7 +226,7 @@
         "Oil-Free Moisturizer → Hydrates without clogging pores",
         "Sunscreen SPF 50 (very important) → Prevents uneven tone from worsening"
       ],
-      "night": [
+      "evening": [
         "Gentle Cleanser → Cleans dirt and oil",
         "Alpha Arbutin or Azelaic Acid → Targets uneven tone and discoloration",
         "AHA/BHA Exfoliation (2–3 times/week) → Improves skin texture",
@@ -255,7 +255,7 @@
         "Fragrance-Free Moisturizer -> Protects skin barrier",
         "Mineral Sunscreen SPF 30-50 -> Prevents irritation and UV damage"
       ],
-      "night": [
+      "evening": [
         "Gentle Cleanser -> Removes dirt and oil gently",
         "Soothing Serum (Centella / Aloe) -> Reduces redness and irritation",
         "Lightweight Moisturizer -> Maintains skin barrier"
@@ -283,7 +283,7 @@
         "Fragrance-Free Moisturizer -> Maintains hydration and barrier",
         "Mineral Sunscreen SPF 30-50 -> Protects sensitive skin"
       ],
-      "night": [
+      "evening": [
         "Gentle Cleanser -> Removes dirt and excess oil",
         "Azelaic Acid or Low % Salicylic Acid -> Treats acne gently",
         "Soothing Serum -> Reduces redness",
@@ -313,7 +313,7 @@
         "Oil-Free / Gel Moisturizer -> Hydrates without clogging pores",
         "Sunscreen SPF 50 -> Prevents dullness from sun damage"
       ],
-      "night": [
+      "evening": [
         "Gentle Cleanser -> Removes dirt and excess oil",
         "Benzoyl Peroxide or Salicylic Acid -> Treats acne",
         "Mild Exfoliation (AHA/BHA 2-3 times/week) -> Improves glow",
@@ -343,7 +343,7 @@
         "Oil-Free / Gel Moisturizer -> Hydrates without clogging pores",
         "Sunscreen SPF 50 -> Prevents pigmentation and dullness"
       ],
-      "night": [
+      "evening": [
         "Gentle Cleanser -> Cleans dirt and oil",
         "Alpha Arbutin or Azelaic Acid -> Targets pigmentation",
         "Mild Exfoliation (AHA 2-3 times/week) -> Improves brightness",
@@ -373,7 +373,7 @@
         "Oil-Free / Gel Moisturizer -> Hydrates without clogging pores",
         "Sunscreen SPF 50 -> Prevents pigmentation from worsening"
       ],
-      "night": [
+      "evening": [
         "Gentle Cleanser -> Cleans dirt and oil buildup",
         "BHA Exfoliant (2->3 times/week) -> Clears clogged pores",
         "Alpha Arbutin or Azelaic Acid -> Targets pigmentation",
@@ -401,7 +401,7 @@
         "Rich Moisturizer -> Prevents dryness",
         "Sunscreen SPF 30_50 -> Protects skin"
       ],
-      "night": [
+      "evening": [
         "Gentle Cleanser -> Maintains moisture",
         "Hydrating Serum (HA/Glycerin) -> Boosts hydration",
         "Thick Moisturizer -> Repairs barrier",
@@ -429,7 +429,7 @@
         "Ceramide Moisturizer -> Repairs skin barrier",
         "Sunscreen SPF 30-50 -> Prevents dryness and damage"
       ],
-      "night": [
+      "evening": [
         "Gentle Cleanser -> Removes dirt while keeping skin soft",
         "Hydrating Serum -> Boosts moisture levels",
         "Rich Night Cream -> Nourishes and repairs skin",
@@ -458,7 +458,7 @@
         "Ceramide Moisturizer -> Strengthens skin barrier",
         "Mineral Sunscreen SPF 30-50 -> Protects sensitive skin"
       ],
-      "night": [
+      "evening": [
         "Gentle Cleanser -> Removes impurities gently",
         "Soothing Treatment (Aloe / Centella) -> Reduces redness",
         "Barrier Repair Cream -> Restores damaged skin barrier",
@@ -488,7 +488,7 @@
         "Ceramide Moisturizer -> Strengthens skin barrier",
         "Sunscreen SPF 50 -> Prevents pigmentation from worsening"
       ],
-      "night": [
+      "evening": [
         "Gentle Cleanser -> Removes dirt while keeping moisture",
         "Alpha Arbutin or Azelaic Acid -> Targets pigmentation",
         "Hydrating Serum (optional) -> Maintains moisture balance",
@@ -517,7 +517,7 @@
         "Rich Moisturizer (Cream-based) -> Prevents dryness",
         "Sunscreen SPF 30-50 -> Protects skin barrier"
       ],
-      "night": [
+      "evening": [
         "Gentle Cleanser -> Maintains moisture while cleansing",
         "Hydrating Serum (Hyaluronic Acid / Glycerin) -> Boosts hydration",
         "Thick Moisturizer / Night Cream -> Repairs skin overnight",
@@ -545,7 +545,7 @@
         "Ceramide Moisturizer -> Repairs skin barrier",
         "Mineral Sunscreen SPF 30-50 -> Protects sensitive skin"
       ],
-      "night": [
+      "evening": [
         "Gentle Cleanser -> Removes impurities gently",
         "Soothing Treatment (Aloe / Centella) -> Reduces redness",
         "Rich Moisturizer -> Nourishes and repairs skin",
@@ -574,7 +574,7 @@
         "Ceramide Moisturizer -> Strengthens skin barrier",
         "Sunscreen SPF 50 -> Prevents pigmentation from worsening"
       ],
-      "night": [
+      "evening": [
         "Gentle Cleanser -> Removes dirt while keeping skin soft",
         "Alpha Arbutin or Azelaic Acid -> Targets pigmentation",
         "Hydrating Serum -> Maintains moisture balance",
@@ -603,7 +603,7 @@
         "Ceramide Moisturizer -> Strengthens barrier",
         "Sunscreen SPF 50 -> Prevents uneven tone"
       ],
-      "night": [
+      "evening": [
         "Gentle Cleanser -> Removes impurities gently",
         "Alpha Arbutin or Niacinamide -> Improves uneven tone",
         "Mild Exfoliation (AHA 1-2 times/week) -> Improves texture",
@@ -631,7 +631,7 @@
         "Barrier Repair Moisturizer (Ceramides) -> Restores skin barrier",
         "Mineral Sunscreen SPF 30-50 -> Protects sensitive skin"
       ],
-      "night": [
+      "evening": [
         "Gentle Cleanser -> Maintains moisture while cleansing",
         "Soothing Treatment (Centella / Aloe) -> Reduces irritation",
         "Rich Moisturizer -> Deeply nourishes skin",
@@ -660,7 +660,7 @@
         "Ceramide Moisturizer -> Strengthens barrier",
         "Sunscreen SPF 50 -> Prevents pigmentation and dullness"
       ],
-      "night": [
+      "Evening": [
         "Gentle Cleanser -> Removes dirt gently",
         "Alpha Arbutin or Azelaic Acid -> Targets pigmentation",
         "Mild Exfoliation (AHA 1-2 times/week) -> Improves glow",
@@ -689,7 +689,7 @@
         "Ceramide Moisturizer -> Strengthens skin barrier",
         "Mineral Sunscreen SPF 30-50 -> Protects sensitive skin"
       ],
-      "night": [
+      "evening": [
         "Gentle Cleanser -> Removes impurities gently",
         "Azelaic Acid -> Treats pigmentation safely",
         "Soothing Serum (Centella / Aloe) -> Reduces irritation",
@@ -719,7 +719,7 @@
         "Ceramide Moisturizer -> Strengthens skin barrier",
         "Sunscreen SPF 50 -> Prevents uneven tone from worsening"
       ],
-      "night": [
+      "evening": [
         "Gentle Cleanser -> Removes dirt while maintaining moisture",
         "Niacinamide or Alpha Arbutin Serum -> Targets uneven tone",
         "Mild Exfoliation (AHA 1-2 times/week) -> Improves texture",
@@ -748,7 +748,7 @@
         "Ceramide Moisturizer -> Nourishes and strengthens barrier",
         "Sunscreen SPF 30-50 -> Protects skin from dullness and damage"
       ],
-      "night": [
+      "evening": [
         "Gentle Cleanser -> Removes dirt gently",
         "Mild Exfoliation (AHA 1-2 times/week) -> Removes dead skin cells",
         "Hydrating Serum -> Boosts moisture levels",
@@ -777,7 +777,7 @@
         "Lightweight / Gel Moisturizer → Hydrates dry areas without clogging pores",
         "Sunscreen SPF 30_50 → Protects skin and prevents acne marks"
       ],
-      "night": [
+      "evening": [
         "Gentle Cleanser → Removes dirt and excess oil",
         "Salicylic Acid (BHA) Treatment → Unclogs pores and treats acne",
         "Benzoyl Peroxide (spot treatment) → Targets active pimples",
@@ -807,7 +807,7 @@
         "Lightweight / Gel Moisturizer → Hydrates dry areas",
         "Sunscreen SPF 30_50 → Protects skin"
       ],
-      "night": [
+      "evening": [
         "Gentle Cleanser → Removes dirt and excess oil",
         "BHA Exfoliant (2_3 times/week) → Clears blackheads/whiteheads",
         "Benzoyl Peroxide → Treats acne",
@@ -837,7 +837,7 @@
         "Lightweight Moisturizer → Hydrates skin",
         "Sunscreen SPF 30_50 → Protects skin"
       ],
-      "night": [
+      "evening": [
         "Gentle Cleanser → Removes dirt and oil",
         "BHA Exfoliant (2_3 times/week) → Unclogs pores",
         "Benzoyl Peroxide → Treats acne if present",
@@ -868,7 +868,7 @@
         "Lightweight Moisturizer → Hydrates skin",
         "Sunscreen SPF 50 → Prevents pigmentation"
       ],
-      "night": [
+      "evening": [
         "Gentle Cleanser → Removes dirt",
         "Alpha Arbutin / Azelaic Acid → Targets pigmentation",
         "Mild Exfoliation → Improves texture",
@@ -897,7 +897,7 @@
         "Lightweight Fragrance-Free Moisturizer → Hydrates and supports barrier",
         "Mineral Sunscreen SPF 30_50 → Protects with minimal irritation"
       ],
-      "night": [
+      "evening": [
         "Gentle Cleanser → Removes impurities",
         "Soothing Serum (Centella / Aloe / Panthenol) → Calms irritation",
         "Lightweight Moisturizer → Maintains balance"
@@ -927,7 +927,7 @@
         "Lightweight Moisturizer → Hydrates skin",
         "Sunscreen SPF 50 → Prevents uneven tone"
       ],
-      "night": [
+      "evening": [
         "Gentle Cleanser → Removes dirt and oil",
         "Alpha Arbutin / Niacinamide → Targets uneven tone",
         "Mild Exfoliation (AHA 1_2 times/week) → Improves texture",
@@ -957,7 +957,7 @@
         "Lightweight Fragrance-Free Moisturizer → Supports barrier",
         "Mineral Sunscreen SPF 30_50 → Protects sensitive skin"
       ],
-      "night": [
+      "evening": [
         "Gentle Cleanser → Removes impurities",
         "Mild Acne Treatment (Azelaic Acid / low % Salicylic Acid) → Treats acne gently",
         "Soothing Serum → Reduces irritation",
@@ -988,7 +988,7 @@
         "Lightweight Moisturizer → Hydrates skin",
         "Sunscreen SPF 50 → Prevents pigmentation"
       ],
-      "night": [
+      "evening": [
         "Gentle Cleanser → Removes dirt",
         "Salicylic Acid (BHA) → Treats acne",
         "Alpha Arbutin / Azelaic Acid → Targets pigmentation",
@@ -1017,7 +1017,7 @@
         "Lightweight Moisturizer → Hydrates without clogging pores",
         "Sunscreen SPF 30_50 → Protects skin"
       ],
-      "night": [
+      "evening": [
         "Gentle Cleanser → Removes dirt and oil",
         "BHA Exfoliant (2_3 times/week) → Clears pores",
         "Clay Mask (1_2 times/week) → Absorbs oil",
@@ -1048,7 +1048,7 @@
         "Lightweight Moisturizer → Hydrates skin",
         "Sunscreen SPF 30_50 → Prevents dullness"
       ],
-      "night": [
+      "evening": [
         "Gentle Cleanser → Removes dirt",
         "Mild Exfoliation (AHA/BHA 1_2 times/week) → Restores glow",
         "Hydrating / Niacinamide Serum → Improves texture",
@@ -1079,7 +1079,7 @@
         "Lightweight Moisturizer → Hydrates skin",
         "Sunscreen SPF 50 → Prevents pigmentation"
       ],
-      "night": [
+      "evening": [
         "Gentle Cleanser → Removes dirt",
         "Alpha Arbutin / Azelaic Acid → Targets pigmentation",
         "Mild Exfoliation (AHA 1_2 times/week) → Improves brightness",
@@ -1109,7 +1109,7 @@
         "Barrier Repair Moisturizer → Strengthens skin barrier",
         "Mineral Sunscreen SPF 30–50 → Protects skin"
       ],
-      "night": [
+      "evening": [
         "Gentle Cleanser → Removes impurities",
         "Soothing Treatment → Reduces irritation",
         "Rich Moisturizer → Repairs barrier",
@@ -1140,7 +1140,7 @@
         "Lightweight Moisturizer → Hydrates skin",
         "Sunscreen SPF 30_50 → Prevents acne marks"
       ],
-      "night": [
+      "evening": [
         "Gentle Cleanser → Removes dirt",
         "Salicylic Acid (BHA) → Treats acne",
         "Mild Exfoliation (AHA 1_2 times/week) → Improves glow",
@@ -1169,7 +1169,7 @@
         "Lightweight Moisturizer → Maintains hydration",
         "Sunscreen SPF 30_50 → Prevents dullness"
       ],
-      "night": [
+      "evening": [
         "Gentle Cleanser → Removes impurities",
         "Mild Exfoliation (AHA 1_2 times/week) → Restores glow",
         "Hydrating Serum → Keeps skin soft",
@@ -1200,7 +1200,7 @@
         "Lightweight Moisturizer → Maintains hydration",
         "Sunscreen SPF 50 → Prevents pigmentation"
       ],
-      "night": [
+      "evening": [
         "Gentle Cleanser → Removes impurities",
         "Alpha Arbutin / Azelaic Acid → Targets pigmentation",
         "Mild Exfoliation (AHA 1_2 times/week) → Improves tone",
@@ -1231,7 +1231,7 @@
         "Lightweight Moisturizer → Maintains hydration",
         "Sunscreen SPF 50 → Prevents uneven tone"
       ],
-      "night": [
+      "evening  ": [
         "Gentle Cleanser → Removes impurities",
         "Alpha Arbutin / Niacinamide → Targets uneven tone",
         "Mild Exfoliation (AHA 1_2 times/week) → Improves texture",
@@ -1260,7 +1260,7 @@
         "Lightweight, Fragrance-Free Moisturizer → Maintains hydration and protects skin barrier",
         "Mineral Sunscreen SPF 30_50 → Protects skin with minimal irritation"
       ],
-      "night": [
+      "evening": [
         "Gentle Cleanser → Removes dirt and impurities",
         "Soothing Treatment (Centella / Aloe / Panthenol) → Reduces irritation and supports skin repair",
         "Moisturizer → Maintains healthy skin barrier"
@@ -1289,7 +1289,7 @@
         "Lightweight Moisturizer → Maintains hydration and smoothness",
         "Sunscreen SPF 50 → Prevents pigmentation and dullness from worsening"
       ],
-      "night": [
+      "evening": [
         "Gentle Cleanser → Removes dirt and impurities",
         "Alpha Arbutin or Azelaic Acid Serum → Targets pigmentation and uneven tone",
         "Mild Exfoliation (AHA 1_2 times/week) → Removes dead skin cells and improves glow",
@@ -1319,7 +1319,7 @@
         "Lightweight Moisturizer → Maintains hydration and smoothness",
         "Sunscreen SPF 50 → Prevents pigmentation and dullness from worsening"
       ],
-      "night": [
+      "evening": [
         "Gentle Cleanser → Removes dirt and impurities",
         "Alpha Arbutin or Azelaic Acid Serum → Targets uneven skin tone and improves clarity",
         "Mild Exfoliation (AHA 1_2 times/week) → Removes dead skin cells and boosts glow",
@@ -1349,7 +1349,7 @@
         "Lightweight Moisturizer → Maintains hydration and smooth texture",
         "Sunscreen SPF 50 → Prevents pigmentation from getting darker"
       ],
-      "night": [
+      "evening": [
         "Gentle Cleanser → Removes dirt, oil, and impurities",
         "Alpha Arbutin or Azelaic Acid Serum → Reduces pigmentation and evens tone",
         "Mild Exfoliation (AHA 1_2 times/week) → Improves skin clarity",
@@ -1379,7 +1379,7 @@
         "Lightweight Moisturizer (fragrance-free) → Keeps skin hydrated and reduces sensitivity",
         "Sunscreen SPF 50 (mineral preferred) → Protects sensitive skin from UV damage and dullness"
       ],
-      "night": [
+      "evening": [
         "Gentle Cleanser → Removes dirt and pollution gently without stripping skin",
         "Hydrating / Soothing Serum (Hyaluronic Acid or Centella) → Calms skin and restores moisture balance",
         "Barrier Repair Moisturizer → Repairs and strengthens sensitive skin overnight",
@@ -1409,7 +1409,7 @@
         "Lightweight Moisturizer (fragrance-free) → Maintains hydration and protects skin barrier",
         "Sunscreen SPF 50 (mineral preferred) → Prevents pigmentation from worsening"
       ],
-      "night": [
+      "evening": [
         "Gentle Cleanser → Removes dirt and sunscreen gently without stripping skin",
         "Alpha Arbutin or Azelaic Acid → Targets pigmentation without harsh irritation",
         "Hydrating / Soothing Serum (Hyaluronic Acid or Centella) → Calms skin and restores moisture",
@@ -1439,7 +1439,7 @@
         "Lightweight Moisturizer → Keeps skin hydrated and prevents irritation",
         "Sunscreen SPF 50 → Protects acne marks and prevents worsening"
       ],
-      "night": [
+      "evening": [
         "Gentle Cleanser → Cleans pores and removes impurities",
         "Salicylic Acid (BHA 1_2%) → Unclogs pores and reduces acne formation OR Benzoyl Peroxide (2.5%) → Kills acne-causing bacteria (spot treatment)",
         "Lightweight Moisturizer → Repairs skin barrier and prevents dryness"

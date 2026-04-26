@@ -1,28 +1,33 @@
-from flask import Flask, json, request, jsonify, session
+from flask import Flask, request, jsonify, session
 from flask_cors import CORS
 from flask_sqlalchemy import SQLAlchemy
 from werkzeug.security import generate_password_hash, check_password_hash
 from sqlalchemy import JSON
-import pandas as pd 
 import json
-
+import os
 
 app = Flask(__name__)
 CORS(app)
 
-def load_data(file_path):
-    with open(file_path, 'r') as file:
+# LOAD JSON
+def load_data(file_name):
+    base_dir = os.path.dirname(__file__)
+    file_path = os.path.join(base_dir, file_name)
+    with open(file_path, 'r', encoding='utf-8') as file:
         return json.load(file)
+
 data = load_data('maindata.json')
-df = pd.json_normalize(data)  # Convert JSON to DataFrame
 
-
+# CONFIG
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///users.db'
 app.config['SECRET_KEY'] = '123456789'
 
 db = SQLAlchemy(app)
 
-# USER TABLE
+# =========================
+# MODELS
+# =========================
+
 class User(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(80), nullable=False)
@@ -31,29 +36,32 @@ class User(db.Model):
     password = db.Column(db.String(120), nullable=False)
     gender = db.Column(db.String(10), nullable=False)
 
-# USER DETAILS TABLE
+
 class UserDetails(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)
     skinType = db.Column(db.String(20), nullable=False)
     skinProblems = db.Column(JSON, nullable=False)
 
-# SIGNUP ROUTE
+# =========================
+# ROUTES
+# =========================
+
+# SIGNUP
 @app.route('/signup', methods=['POST'])
 def signup():
-    data = request.json
+    data_req = request.json
 
-    name = data.get('name')
-    age = data.get('age')
-    Phone = data.get('Phone')
-    password = data.get('password')
-    gender = data.get('gender')
+    name = data_req.get('name')
+    age = data_req.get('age')
+    Phone = data_req.get('Phone')
+    password = data_req.get('password')
+    gender = data_req.get('gender')
 
     if not name or not Phone or not password:
         return jsonify({'message': 'Missing fields'}), 400
 
-    existing_user = User.query.filter_by(Phone=Phone).first()
-    if existing_user:
+    if User.query.filter_by(Phone=Phone).first():
         return jsonify({'message': 'User already exists'}), 400
 
     new_user = User(
@@ -67,23 +75,26 @@ def signup():
     db.session.add(new_user)
     db.session.commit()
 
-    return jsonify({
-        'message': 'User created successfully',
-        'user_id': new_user.id
-    }), 201
+    return jsonify({'user_id': new_user.id}), 201
 
 
-# SAVE SKIN DATA
+# USER DETAILS (✅ FIXED HERE)
 @app.route('/userdetails', methods=['POST'])
 def userdetails():
-    data = request.json
+    data_req = request.json
 
-    user_id = data.get('user_id')
-    skinType = data.get('skinType')
-    skinProblems = data.get('skinProblems')
+    user_id = data_req.get('user_id')
+    skinType = data_req.get('skinType')
+    skinProblems = data_req.get('skinProblems')
 
     if not user_id:
         return jsonify({'message': 'User ID missing'}), 400
+
+    # ✅ NORMALIZE DATA (CRITICAL FIX)
+    skinType = skinType.strip().lower()
+    skinProblems = [
+        p.strip().lower().replace(" ", "_") for p in skinProblems
+    ]
 
     new_details = UserDetails(
         user_id=user_id,
@@ -94,40 +105,27 @@ def userdetails():
     db.session.add(new_details)
     db.session.commit()
 
-    return jsonify({'message': 'User details saved successfully'}), 201
+    return jsonify({'message': 'User details saved'}), 201
 
 
-# LOGIN ROUTE
+# LOGIN
 @app.route('/login', methods=['POST'])
 def login():
-    data = request.json
+    data_req = request.json
 
-    Phone = data.get('Phone')
-    password = data.get('password')
-
-    if not password:
-        return jsonify({'message': 'Password missing'}), 400
-
-    if not Phone:
-        return jsonify({'message': 'Phone missing'}), 400
+    Phone = data_req.get('Phone')
+    password = data_req.get('password')
 
     user = User.query.filter_by(Phone=Phone).first()
 
     if user and check_password_hash(user.password, password):
         session['user_id'] = user.id
-        session['name'] = user.name
-        
-        print(f"User {session['name']} logged in successfully.")
+        return jsonify({'user_id': user.id}), 200
 
-        return jsonify({
-            'message': 'Login successful',
-            'user_id': user.id
-        }), 200
-    else:
-        return jsonify({'message': 'Invalid credentials'}), 401
+    return jsonify({'message': 'Invalid credentials'}), 401
 
 
-# ✅ ADD THIS ROUTE (ONLY NEW ADDITION)
+# GET USER
 @app.route('/user/<int:user_id>', methods=['GET'])
 def get_user(user_id):
     user = db.session.get(User, user_id)
@@ -135,38 +133,64 @@ def get_user(user_id):
     if not user:
         return jsonify({'message': 'User not found'}), 404
 
-    return jsonify({
-        'name': user.name
-    }), 200
+    return jsonify({'name': user.name}), 200
 
-#@app.route('/recommendation/<int:user_id>', methods=['GET'])
-def recommendation(user_id):
 
-    user_data = User.query.get(user_id)
+# RECOMMENDATION (✅ CLEAN FINAL VERSION)
+@app.route('/recommendation/<int:user_id>/<string:time>', methods=['GET'])
+def recommendation(user_id, time):
+
+    user_data = db.session.get(User, user_id)
     details = UserDetails.query.filter_by(user_id=user_id).first()
 
-    if not user_data:
-        return jsonify({'message': 'User not found'}), 404
+    if not user_data or not details:
+        return jsonify({'message': 'No routine found'}), 404
 
-    if not details:
-        return jsonify({'message': 'User details not found'}), 404
-
-    username = user_data.name
     skin_type = details.skinType
-    concerns = details.skinProblems
+    user_concerns = details.skinProblems
 
-    filtered = df[df["skin_type"] == skin_type]
+    matched = None
 
-    for c in concerns:
-        col = f"concerns.{c}"
-        if col in filtered.columns:
-            filtered = filtered[filtered[col] == True]
+    for item in data:
+        if item.get("skin_type") != skin_type:
+            continue
 
-    filtered_data = filtered.to_dict(orient='records')
+        item_concerns = item.get("concerns", {})
+
+        for c in user_concerns:
+            if c in item_concerns and item_concerns[c] == True:
+                matched = item
+                break
+
+        if matched:
+            break
+
+    if not matched:
+        return jsonify({'message': 'No routine found'}), 404
+
+    routine_data = matched.get("routine", {})
+    routine_data_lower = {k.lower(): v for k, v in routine_data.items()}
+
+    time_key = time.lower()
+
+    # handle evening/night mismatch
+    if time_key == "evening" and "night" in routine_data_lower:
+        routine = routine_data_lower["night"]
+    else:
+        routine = routine_data_lower.get(time_key, [])
+
+    if not routine:
+        return jsonify({'message': 'No routine found'}), 404
 
     return jsonify({
-        'username': username,
-        'skin_type': skin_type,
-        'concerns': concerns,
-        'recommendations': filtered_data
+        "routine": routine
     }), 200
+
+
+# RUN
+if __name__ == '__main__':
+    with app.app_context():
+        db.create_all()
+
+    print("🚀 Server running...")
+    app.run(debug=True)

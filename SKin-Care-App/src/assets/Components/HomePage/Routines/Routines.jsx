@@ -5,12 +5,38 @@ import { useNavigate } from "react-router-dom";
 
 const Routines = () => {
   const navigate = useNavigate();
-  const { type } = useParams();
   const [active, setActive] = useState("morning");
+  const { type } = useParams();
+const [routine, setRoutine] = useState([]);
+
 
   useEffect(() => {
     setActive(type === "evening" ? "evening" : "morning");
   }, [type]);
+
+  useEffect(() => {
+  const fetchRoutine = async () => {
+    const userId = localStorage.getItem("userId");
+  try {
+    const res = await fetch(
+      `http://127.0.0.1:5000/recommendation/${userId}/${type}`
+    );
+
+    const data = await res.json();
+
+    if (res.ok) {
+      setRoutine(data.routine || []);
+    } else {
+      setRoutine([]); // prevent crash
+    }
+  } catch (err) {
+    console.error(err);
+    setRoutine([]); // prevent crash
+  }
+};
+
+  if (type) fetchRoutine();
+}, [type]);
 
   return (
     <div className="w-full h-screen  bg-[#faede7]">
@@ -49,9 +75,19 @@ const Routines = () => {
           </div>
         </div>
       </div>
-      <div className="px-4 mt-3 ">
-        <div className="w-full px-4 py-3  bg-white rounded-lg">Routines to be displayed</div>
-      </div>
+     
+
+      <div className="px-4 mt-4">
+  <div className="bg-white rounded-lg p-4 space-y-2">
+    {routine && routine.length > 0 ? (
+  routine.map((step, idx) => (
+    <div key={idx}>{step}</div>
+  ))
+) : (
+  <p>No routine available</p>
+)}
+  </div>
+</div>
     </div>
   );
 };
