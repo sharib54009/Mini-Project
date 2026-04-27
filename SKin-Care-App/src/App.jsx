@@ -1,5 +1,4 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-
 import LoginPage from "./assets/Components/Login/LoginPage";
 import SignUpPage from "./assets/Components/SignUp/SignUpPage";
 import HomePage from "./assets/Components/HomePage/Home/HomePage";
@@ -8,6 +7,7 @@ import Products from "./assets/Components/HomePage/Products/Products";
 import Layout from "./assets/Components/Layout";
 import Skin_Log from "./assets/Components/HomePage/Skin-Log/Skin_Log";
 import Profile from "./assets/Components/HomePage/Profile/Profile";
+import { Navigate } from "react-router-dom";
 
 const router = createBrowserRouter([
   { path: "/", element: <LoginPage /> },
@@ -22,14 +22,14 @@ const router = createBrowserRouter([
     ),
   },
 
-  {
-  path: "/routines",
-  element: (
-    <Layout>
-      <Routines />
-    </Layout>
-  ),
-},
+//   {
+//   path: "/routines",
+//   element: (
+//     <Layout>
+//       <Routines />
+//     </Layout>
+//   ),
+// },
 
   {
   path: "/routines/:type",
@@ -63,6 +63,7 @@ const router = createBrowserRouter([
       </Layout>
     ),
   },
+  
 ]);
 
 function App() {

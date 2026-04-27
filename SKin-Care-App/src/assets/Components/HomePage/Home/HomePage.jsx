@@ -43,7 +43,7 @@ const Nav2Elems = [
   {
     logo: <Droplets size={20} />,
     text: "Routines",
-    path: "/routines",
+    path: "/routines/morning",
     bg: "bg-pink-100",
     iconColor: "text-pink-500",
   },
