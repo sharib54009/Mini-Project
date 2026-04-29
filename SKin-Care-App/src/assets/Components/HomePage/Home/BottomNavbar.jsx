@@ -1,8 +1,8 @@
-import React from 'react'
+import React from "react";
 import { Home, Droplets, Package, NotepadText, User } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 
-const navItems = [
+let navItems = [
   { icon: Home, label: "Home", path: "/home" },
   { icon: Droplets, label: "Routine", path: "/routines/morning" },
   { icon: Package, label: "Products", path: "/products" },
@@ -15,15 +15,12 @@ const BottomNavbar = () => {
 
   return (
     <div className="fixed bottom-0 w-full bg-white border-t flex justify-around py-2">
-      
       {navItems.map((item, idx) => {
         const Icon = item.icon;
 
-        const isActive =
-          item.path === "/routines"
-            ? location.pathname.startsWith("/routines")
-            : location.pathname === item.path;
-
+        const isActive = item.path.startsWith("/routines")
+          ? location.pathname.startsWith("/routines")
+          : location.pathname === item.path;
         return (
           <Link
             key={idx}
@@ -37,9 +34,8 @@ const BottomNavbar = () => {
           </Link>
         );
       })}
-
     </div>
   );
 };
 
-export default BottomNavbar
+export default BottomNavbar;

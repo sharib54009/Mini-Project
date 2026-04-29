@@ -22,14 +22,14 @@ const router = createBrowserRouter([
     ),
   },
 
-//   {
-//   path: "/routines",
-//   element: (
-//     <Layout>
-//       <Routines />
-//     </Layout>
-//   ),
-// },
+  {
+  path: "/routines",
+  element: (
+    <Layout>
+      <Routines />
+    </Layout>
+  ),
+},
 
   {
   path: "/routines/:type",
