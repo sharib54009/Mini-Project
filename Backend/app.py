@@ -43,6 +43,12 @@ class UserDetails(db.Model):
     skinType = db.Column(db.String(20), nullable=False)
     skinProblems = db.Column(JSON, nullable=False)
 
+class Product(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    user_id = db.Column(db.Integer, db.ForeignKey('User.id'), nullable=False)
+    name = db.Column(db.String(100), nullable=False)
+    type = db.Column(db.String(50), nullable=False)
+
 # =========================
 # ROUTES
 # =========================
@@ -186,7 +192,29 @@ def recommendation(user_id, time):
         "routine": routine
     }), 200
 
+@app.route('/products', methods=['GET', 'POST'])
+def products_page():
+    data_req=request.json()
 
+    user_id = session.get('user_id')
+
+    if request.method == 'POST':
+        product_name = data_req.get('product_name')
+        product_type = data_req.get('product_type')
+
+        pdadd = Product(
+            user_id=user_id,
+            name=product_name,
+            type=product_type
+        )
+
+        db.session.add(pdadd)
+        db.session.commit()
+
+    # ✅ Always fetch products
+    outpd = Product.query.filter_by(user_id=user_id).all()
+
+    return jsonify({'products': [{'id': p.id, 'name': p.name, 'type': p.type} for p in outpd]})
 # RUN
 if __name__ == '__main__':
     with app.app_context():
