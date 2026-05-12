@@ -43,11 +43,7 @@ class UserDetails(db.Model):
     skinType = db.Column(db.String(20), nullable=False)
     skinProblems = db.Column(JSON, nullable=False)
 
-class Product(db.Model):
-    id = db.Column(db.Integer, primary_key=True)
-    user_id = db.Column(db.Integer, db.ForeignKey('User.id'), nullable=False)
-    name = db.Column(db.String(100), nullable=False)
-    type = db.Column(db.String(50), nullable=False)
+
 
 # =========================
 # ROUTES
@@ -192,15 +188,50 @@ def recommendation(user_id, time):
         "routine": routine
     }), 200
 
+# =========================
+# PRODUCT MODEL
+# =========================
+
+class Product(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+
+    # ✅ FIXED FOREIGN KEY
+    user_id = db.Column(
+        db.Integer,
+        db.ForeignKey('user.id'),
+        nullable=False
+    )
+
+    name = db.Column(db.String(100), nullable=False)
+    type = db.Column(db.String(100), nullable=False)
+
+
+# =========================
+# PRODUCTS ROUTE
+# =========================
+
 @app.route('/products', methods=['GET', 'POST'])
 def products_page():
-    data_req=request.json()
 
     user_id = session.get('user_id')
 
+    if not user_id:
+        return jsonify({'message': 'User not logged in'}), 401
+
+    # =====================
+    # ADD PRODUCT
+    # =====================
     if request.method == 'POST':
+
+        data_req = request.json
+
         product_name = data_req.get('product_name')
         product_type = data_req.get('product_type')
+
+        if not product_name or not product_type:
+            return jsonify({
+                'message': 'Missing product details'
+            }), 400
 
         pdadd = Product(
             user_id=user_id,
@@ -211,10 +242,25 @@ def products_page():
         db.session.add(pdadd)
         db.session.commit()
 
-    # ✅ Always fetch products
+        return jsonify({
+            'message': 'Product added successfully'
+        }), 201
+
+    # =====================
+    # GET PRODUCTS
+    # =====================
     outpd = Product.query.filter_by(user_id=user_id).all()
 
-    return jsonify({'products': [{'id': p.id, 'name': p.name, 'type': p.type} for p in outpd]})
+    return jsonify({
+        'products': [
+            {
+                'id': p.id,
+                'name': p.name,
+                'type': p.type
+            }
+            for p in outpd
+        ]
+    }), 200
 # RUN
 if __name__ == '__main__':
     with app.app_context():
