@@ -6,7 +6,7 @@ const RouProSkinNavs = ({logo, text, path, bg, iconColor}) => {
     <div>
       <div >
         <Link to={path}>
-          <div className={`bg-white w-fit px-4  gap-1 shadow-gray shadow-2xl rounded-lg py-3 flex flex-col justify-center items-center `}>
+          <div className={`bg-white w-full px-4  gap-1 shadow-gray shadow-2xl rounded-lg py-3 flex flex-col justify-center items-center `}>
             <div className={`w-fit p-2 rounded-md flex- items-center justify-center ${bg}`}>
              <span className={`${iconColor}`}>
              {logo}

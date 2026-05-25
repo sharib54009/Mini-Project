@@ -14,7 +14,7 @@ const BottomNavbar = () => {
   const location = useLocation();
 
   return (
-    <div className="fixed bottom-0 w-full bg-white border-t flex justify-around py-2">
+    <div className=" fixed w-full max-w-md left-1/2 -translate-x-1/2 bottom-0  right-0 bg-white border-t flex justify-around py-2">
       {navItems.map((item, idx) => {
         const Icon = item.icon;
 

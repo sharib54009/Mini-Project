@@ -113,7 +113,7 @@ const HomePage = () => {
           </div>
         </div>
 
-        <div className="flex gap-7 mt-5 justify-center">
+        <div className="flex gap-7 mt-5 justify-between px-3">
           {Nav2Elems.map((elem, idx) => (
             <RouProSkinNavs
               key={idx}
