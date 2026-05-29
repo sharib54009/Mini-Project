@@ -841,12 +841,16 @@ def routine_log():
                 )
             )
 
-            completed_indexes = (
-    data_req.get(
-        'completed_indexes',
-        []
-    )
-)
+            completed_indexes = data_req.get('completed_indexes', [])
+            # ensure completed_indexes is a list of ints
+            if isinstance(completed_indexes, str):
+                try:
+                    completed_indexes = json.loads(completed_indexes)
+                except Exception:
+                    completed_indexes = []
+
+            if not isinstance(completed_indexes, list):
+                completed_indexes = []
 
             total_steps = int(
                 data_req.get(
@@ -854,6 +858,13 @@ def routine_log():
                     0
                 )
             )
+
+            # normalize routine_type and date formatting to avoid duplicates
+            if isinstance(routine_type, str):
+                routine_type = routine_type.strip().lower()
+
+            if isinstance(date, str):
+                date = date.strip()
 
             if (
                 not user_id
@@ -901,12 +912,12 @@ def routine_log():
             # DON'T SAVE EMPTY
             # =====================
 
-            if completed_steps <= 0:
+            if completed_steps < 0:
 
                 return jsonify({
                     'message':
-                        'No steps completed'
-                }), 200
+                        'Invalid completed steps'
+                }), 400
 
             # =====================
             # PERCENTAGE
@@ -927,13 +938,9 @@ def routine_log():
 
             existing_log = (
                 RoutineLog.query.filter_by(
-
                     user_id=user_id,
-
                     date=date,
-
                     routine_type=routine_type
-
                 ).first()
             )
 
@@ -1023,7 +1030,7 @@ def routine_log():
         logs = (
             RoutineLog.query.filter_by(
                 user_id=user_id
-            ).all()
+            ).order_by(RoutineLog.id.desc()).all()
         )
 
         output = []
@@ -1053,8 +1060,6 @@ def routine_log():
                 'completion_percentage':
                     log.completion_percentage,
 
-                'completed_indexes':
-                    log.completed_indexes,
 
                 'created_at':
                     log.created_at.strftime(
