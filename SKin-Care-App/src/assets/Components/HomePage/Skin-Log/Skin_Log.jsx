@@ -1,11 +1,8 @@
-import React from 'react'
+import React from 'react';
+import SkinLogPage from './SkinLogPage';
 
 const Skin_Log = () => {
-  return (
-    <div>
-     this is skin log page
-    </div>
-  )
-}
+  return <SkinLogPage />;
+};
 
-export default Skin_Log
+export default Skin_Log;
