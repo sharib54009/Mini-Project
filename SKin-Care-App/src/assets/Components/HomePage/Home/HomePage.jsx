@@ -4,8 +4,8 @@ import RoutinesDashBoard from "./RoutinesDashBoard";
 import RouProSkinNavs from "./RouProSkinNavs";
 import SkinCheck from "./SkinCheck";
 import AddProducts from "./AddProducts";
-import BottomNavbar from "./BottomNavbar";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import {
   SunMedium,
   MoonStar,
@@ -13,6 +13,7 @@ import {
   Droplets,
   Package,
   NotepadText,
+  User as UserIcon,
 } from "lucide-react";
 
 
@@ -92,46 +93,45 @@ const HomePage = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-[#faede7]">
-      <div className="max-w-md mx-auto  rounded-lg py-6">
+    <div className="min-h-full flex flex-col justify-center space-y-5">
+      <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
         <User userName={userName} />
-
-        <div className="px-3">
-          <div className="bg-white w-full px-5 py-5  mt-4 rounded-lg shadow-gray shadow-2xl ">
-            <h1 className="text-xs font-semibold  ">TODAY'S ROUTINES</h1>
-            {RoutineElems.map((elem, idx) => (
-              <RoutinesDashBoard
-                key={idx}
-                logo={elem.logo}
-                text={elem.text}
-                option={elem.option}
-                bg={elem.bg}
-                iconColor={elem.iconColor}
-                type={elem.type}
-              />
-            ))}
-          </div>
-        </div>
-
-        <div className="flex gap-7 mt-5 justify-between px-3">
-          {Nav2Elems.map((elem, idx) => (
-            <RouProSkinNavs
-              key={idx}
-              logo={elem.logo}
-              text={elem.text}
-              bg={elem.bg}
-              iconColor={elem.iconColor}
-              path={elem.path}
-            />
-          ))}
-        </div>
-
-        <SkinCheck />
-        <AddProducts />
-        <BottomNavbar />
+        <Link to="/profile" className="app-button app-button-secondary inline-flex items-center gap-2">
+          <UserIcon size={18} />
+          Profile
+        </Link>
       </div>
 
+      <div className="app-card app-section mt-4 space-y-4">
+        <h1 className="text-xs font-semibold">TODAY'S ROUTINES</h1>
+        {RoutineElems.map((elem, idx) => (
+          <RoutinesDashBoard
+            key={idx}
+            logo={elem.logo}
+            text={elem.text}
+            option={elem.option}
+            bg={elem.bg}
+            iconColor={elem.iconColor}
+            type={elem.type}
+          />
+        ))}
+      </div>
 
+      <div className="grid grid-cols-3 gap-4">
+        {Nav2Elems.map((elem, idx) => (
+          <RouProSkinNavs
+            key={idx}
+            logo={elem.logo}
+            text={elem.text}
+            bg={elem.bg}
+            iconColor={elem.iconColor}
+            path={elem.path}
+          />
+        ))}
+      </div>
+
+      <SkinCheck />
+      <AddProducts />
     </div>
   );
 };

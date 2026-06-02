@@ -1,16 +1,18 @@
 import React from "react";
 import { SunMedium, MoonStar } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
-const RoutineTabs = ({ navigate, currentType }) => {
+const RoutineTabs = ({ currentType }) => {
+  const navigate = useNavigate();
+
   return (
     <div className="px-4 mt-6">
-      <div className="w-full flex p-1 gap-2 rounded-lg bg-white">
+      <div className="app-card-sm p-1 w-full flex gap-2">
         <div
           onClick={() => navigate("/routines/morning")}
-          className={`flex-1 rounded-xl flex items-center justify-center gap-2 py-3 cursor-pointer transition-all duration-200 ${
+          className={`flex-1 rounded-2xl flex items-center justify-center gap-2 py-3 cursor-pointer transition-all duration-200 ${
             currentType === "morning" ? "bg-pink-100 text-pink-500" : "bg-white text-gray-700"
-          }`}
-        >
+          }`}>
           <SunMedium size={22} />
 
           <h1 className="text-lg font-semibold">Morning</h1>
@@ -18,10 +20,9 @@ const RoutineTabs = ({ navigate, currentType }) => {
 
         <div
           onClick={() => navigate("/routines/evening")}
-          className={`flex-1 rounded-xl flex items-center justify-center gap-2 py-3 cursor-pointer transition-all duration-200 ${
+          className={`flex-1 rounded-2xl flex items-center justify-center gap-2 py-3 cursor-pointer transition-all duration-200 ${
             currentType === "evening" ? "bg-pink-100 text-pink-500" : "bg-white text-gray-700"
-          }`}
-        >
+          }`}>
           <MoonStar size={20} />
 
           <h1 className="text-lg font-semibold">Evening</h1>

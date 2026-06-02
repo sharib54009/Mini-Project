@@ -214,13 +214,30 @@ useEffect(() => {
         routineLength: routine.length,
       });
 
+      // Try to restore from localStorage first (fast, reliable for navigation)
+      const storageKey = `routines_${userId || 'anon'}_${selectedFormattedDate}_${normalizedType}`;
+      const stored = localStorage.getItem(storageKey);
+
+      if (stored) {
+        try {
+          const parsed = JSON.parse(stored);
+          const valid = Array.isArray(parsed)
+            ? parsed.map(Number).filter((n) => !Number.isNaN(n) && n >= 0 && n < routine.length)
+            : [];
+
+          const unique = [...new Set(valid)].sort((a, b) => a - b);
+          setCompletedSteps(unique);
+          return;
+        } catch (err) {
+          // ignore and fall through to server logs
+        }
+      }
+
       const currentLog = savedLogs.find(
         (log) =>
           log.date === selectedFormattedDate &&
           (log.routine_type || "").toLowerCase() === normalizedType,
       );
-
-      console.log("FOUND LOG", currentLog);
 
       if (currentLog) {
         const raw = Array.isArray(currentLog.completed_indexes)
@@ -313,16 +330,25 @@ useEffect(() => {
         ? prev.filter((i) => i !== index)
         : [...prev, index].sort((a, b) => a - b);
 
+      // persist locally for quick restore on navigation
+      try {
+        const normalizedType = (currentType || "morning").toLowerCase();
+        const storageKey = `routines_${userId || 'anon'}_${selectedFormattedDate}_${normalizedType}`;
+        localStorage.setItem(storageKey, JSON.stringify(next));
+      } catch (err) {
+        console.log("localStorage save failed", err);
+      }
+
       saveLog(next);
       return next;
     });
   };
 
     return (
-  <div className="w-full min-h-screen bg-[#faede7] pb-40">
+  <div className="w-full bg-[#faede7] pb-40">
           {/* HEADER */}
 
-        <h1 className="font-semibold text-2xl px-4 py-10">Routines</h1>
+        <h1 className="app-page-title px-4 py-10">Routines</h1>
 
         
         <Calendar

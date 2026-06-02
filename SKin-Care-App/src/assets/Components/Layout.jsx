@@ -2,19 +2,12 @@ import BottomNavbar from "./HomePage/Home/BottomNavbar";
 
 const Layout = ({ children }) => {
   return (
-    <div className="min-h-screen bg-gray-200 flex justify-center">
-
-      {/* APP CONTAINER */}
-      <div className="w-full max-w-md min-h-screen bg-[#faede7] relative">
-
-        {/* PAGE CONTENT */}
-        <div >
+    <div className="app-container">
+      <div className="app-shell flex flex-col">
+        <div className="px-4 pb-24 flex-1">
           {children}
         </div>
-
-        {/* BOTTOM NAVBAR */}
         <BottomNavbar />
-
       </div>
     </div>
   );

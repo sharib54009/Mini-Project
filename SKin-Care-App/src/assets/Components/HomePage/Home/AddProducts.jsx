@@ -4,15 +4,15 @@ import { Plus } from 'lucide-react'
 
 const AddProducts = () => {
   return (
-    <div className='px-3 mt-5 '>
+    <div className='px-3 mt-5'>
       <Link to="/products">
-      <div className=' py-3  w-full bg-white rounded-lg flex flex-col shadow-2xl mb-10 justify-center items-center'>
-        <Plus />
-        <h1> Add Products</h1>
-      </div>
+        <div className='app-card-sm py-4 w-full flex flex-col justify-center items-center gap-2'>
+          <Plus />
+          <h1 className='text-base font-semibold'>Add Products</h1>
+        </div>
       </Link>
     </div>
-  )
-}
+  );
+};
 
 export default AddProducts

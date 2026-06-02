@@ -29,15 +29,11 @@ const Step1 = ({
           </div>
 
           <div className="mb-4">
-            <label className="text-sm  font-medium">Your Name</label>
+            <label className="text-sm font-medium">Your Name</label>
             <input
-              className={`w-full px-3 shadow-2xl h-10 mt-2 bg-[#fcf9f7] rounded-lg border ${
-                errors.name
-                  ? "border-red-500 text-red-500"
-                  : "border-black border"
-              }`}
+              className={`app-input mt-2 ${errors.name ? "border-red-500 text-red-500" : ""}`}
               type="text"
-              placeholder="Enter your Name"
+              placeholder="Enter your name"
               value={userData.name}
               onChange={(e) => {
                 setUserData({ ...userData, name: e.target.value });
@@ -52,13 +48,9 @@ const Step1 = ({
           <div className="mb-4">
             <label className="text-sm font-medium">Age</label>
             <input
-              className={`w-full shadow-2xl px-3 h-10 mt-2 bg-[#fcf9f7] rounded-lg border ${
-                errors.age
-                  ? "border-red-500 text-red-500"
-                  : "border-black border"
-              }`}
+              className={`app-input mt-2 ${errors.age ? "border-red-500 text-red-500" : ""}`}
               type="number"
-              placeholder="Enter your Age"
+              placeholder="Enter your age"
               value={userData.age}
               onChange={(e) => {
                 setUserData({ ...userData, age: e.target.value });
@@ -81,11 +73,11 @@ const Step1 = ({
                   }}
                   key={type}
                   type="button"
-                  className={`flex-1  h-9 rounded-full ${
+                  className={`flex-1 h-11 app-pill ${
                     userData.gender === type
-                      ? "bg-[#d85167] text-white "
-                      : "bg-[#fcf9f7] text-gray-600 border"
-                  } ${errors.gender ? "border-red-500" : "border-black"}`}
+                      ? "app-pill-selected"
+                      : "bg-[var(--surface-soft)] text-gray-600"
+                  } ${errors.gender ? "border-red-500" : ""}`}
                 >
                   {type}
                 </button>
@@ -101,24 +93,14 @@ const Step1 = ({
               handleNext();
             }}
             type="button"
-            className="w-full  bg-[#d85167] active:scale-90 text-white py-2 rounded-md"
+            className="app-button app-button-primary w-full"
           >
             Continue
           </button>
 
-          <div className=" w-full flex flex-col gap-3  mt-5 ">
-            <h1 className="text-md flex justify-center ">
-              Already have an account?
-            </h1>
-            {/* <button
-              onClick={() => {
-                switchToLogin();
-              }}
-              className="flex justify-center items-center bg-[#d85167] h-10 rounded-md text-white "
-            >
-              Sign in
-            </button> */}
-            <Link to="/" className="flex justify-center items-center bg-[#d85167] h-10 rounded-md text-white ">
+          <div className="w-full flex flex-col gap-3 mt-5">
+            <h1 className="text-md flex justify-center">Already have an account?</h1>
+            <Link to="/" className="app-button app-button-primary w-full justify-center text-center">
               Sign in
             </Link>
           </div>

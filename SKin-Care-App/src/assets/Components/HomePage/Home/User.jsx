@@ -12,11 +12,10 @@ const User = ({ userName }) => {
 
   return (
     <div className='flex flex-col px-4'>
-      <h1 className="text-lg   font-semibold">
-      {getGreeting()}
-      
-    </h1>
-    <span className="text-gray-500 font-bold text-xl"> {userName} 👋</span>
+      <h1 className="text-3xl font-bold tracking-tight leading-tight">
+        {getGreeting()}
+      </h1>
+      <span className="text-gray-500 text-lg mt-2 font-medium">{userName} 👋</span>
     </div>
   );
 };

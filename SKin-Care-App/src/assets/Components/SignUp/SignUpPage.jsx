@@ -174,7 +174,7 @@ const SignUpPage = ({ switchToLogin }) => {
 };
   return (
     <div className="min-h-screen bg-[#fffaf8]">
-      <div  className="max-w-md mx-auto bg-[#fffaf8] rounded-lg py-6">
+      <div className="max-w-md mx-auto bg-[#fffaf8] rounded-3xl py-6 shadow-lg border border-gray-200">
         <form
           onSubmit={(e) => {
             handleSubmit(e);

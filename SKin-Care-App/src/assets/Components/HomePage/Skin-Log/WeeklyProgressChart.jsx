@@ -4,9 +4,9 @@ const WeeklyProgressChart = ({ weeklyData }) => {
   const maxPercentage = 100;
 
   return (
-    <div className="bg-white rounded-lg shadow-sm p-5 mb-6">
+    <div className="app-card-sm p-5 mb-6">
       <h2 className="text-lg font-bold text-gray-900 mb-4">Weekly Progress</h2>
-      
+
       <div className="flex items-end justify-between h-40 gap-2">
         {weeklyData && weeklyData.length > 0 ? (
           weeklyData.map((dayData, index) => {

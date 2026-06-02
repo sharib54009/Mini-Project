@@ -22,14 +22,14 @@ const ImprovementCard = ({ improvements, weeklyCompletion, logsCount }) => {
   const status = getStatus();
 
   return (
-    <div className="bg-white rounded-lg shadow-sm p-5 mb-6">
+    <div className="app-card-sm p-5 mb-6">
       <h2 className="text-lg font-bold text-gray-900 mb-4 flex items-center gap-2">
         <Sparkles size={20} className="text-pink-500" />
         Skin Improvements
       </h2>
 
       {status === 'insufficient' && (
-        <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 flex gap-3">
+        <div className="bg-blue-50 border border-blue-200 rounded-2xl p-4 flex gap-3">
           <AlertCircle size={20} className="text-blue-600 flex-shrink-0 mt-0.5" />
           <div>
             <p className="text-sm font-semibold text-blue-900 mb-1">Keep Going! 💪</p>
@@ -41,7 +41,7 @@ const ImprovementCard = ({ improvements, weeklyCompletion, logsCount }) => {
       )}
 
       {status === 'low' && (
-        <div className="bg-amber-50 border border-amber-200 rounded-lg p-4 flex gap-3">
+        <div className="bg-amber-50 border border-amber-200 rounded-2xl p-4 flex gap-3">
           <AlertCircle size={20} className="text-amber-600 flex-shrink-0 mt-0.5" />
           <div>
             <p className="text-sm font-semibold text-amber-900 mb-1">Boost Your Consistency</p>
@@ -60,7 +60,7 @@ const ImprovementCard = ({ improvements, weeklyCompletion, logsCount }) => {
           {improvements && improvements.length > 0 ? (
             <div className="space-y-2">
               {improvements.map((improvement, index) => (
-                <div key={index} className="flex gap-3 items-start bg-pink-50 p-3 rounded-lg">
+                <div key={index} className="flex gap-3 items-start bg-pink-50 p-3 rounded-2xl">
                   <span className="text-pink-500 text-lg">✓</span>
                   <p className="text-sm text-gray-700">{improvement}</p>
                 </div>
@@ -81,8 +81,8 @@ const ImprovementCard = ({ improvements, weeklyCompletion, logsCount }) => {
           </p>
           {improvements && improvements.length > 0 ? (
             <div className="space-y-2">
-              {improvements.map((improvement, index) => (
-                <div key={index} className="flex gap-3 items-start bg-green-50 p-3 rounded-lg">
+                  {improvements.map((improvement, index) => (
+                <div key={index} className="flex gap-3 items-start bg-green-50 p-3 rounded-2xl">
                   <span className="text-green-500 text-lg">✓</span>
                   <p className="text-sm text-gray-700">{improvement}</p>
                 </div>
@@ -103,8 +103,8 @@ const ImprovementCard = ({ improvements, weeklyCompletion, logsCount }) => {
           </p>
           {improvements && improvements.length > 0 ? (
             <div className="space-y-2">
-              {improvements.map((improvement, index) => (
-                <div key={index} className="flex gap-3 items-start bg-emerald-50 p-3 rounded-lg">
+                  {improvements.map((improvement, index) => (
+                <div key={index} className="flex gap-3 items-start bg-emerald-50 p-3 rounded-2xl">
                   <span className="text-emerald-500 text-lg">✨</span>
                   <p className="text-sm text-gray-700 font-medium">{improvement}</p>
                 </div>

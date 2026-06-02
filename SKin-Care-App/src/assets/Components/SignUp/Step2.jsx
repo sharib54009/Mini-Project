@@ -17,7 +17,7 @@ const Step2 = ({
       {step === 2 && (
         <div className="py-5">
           <h1 className="font-md text-2xl px-5">Select Skin Type</h1>
-          <div className="flex flex-col   py-7  gap-5">
+          <div className="flex flex-col py-7 gap-4">
             {skinTypes.map((type) => (
               <button
                 key={type}
@@ -26,10 +26,10 @@ const Step2 = ({
                   handleSkinType(type);
                   setErrors((prev) => ({ ...prev, skinType: "" }));
                 }}
-                className={`w-full shadow-2xl h-12 flex justify-start items-center px-5 rounded-xl text-md border border-black  ${
+                className={`w-full h-12 flex items-center px-5 rounded-2xl text-md transition ${
                   userData.skinType === type
-                    ? "bg-[#d85167] text-white  "
-                    : "bg-[#fcf9f7] text-gray-600"
+                    ? "app-button app-button-primary"
+                    : "app-button app-button-secondary"
                 } ${errors.skinType ? "border-red-500" : ""}`}
               >
                 {type}
@@ -37,15 +37,15 @@ const Step2 = ({
             ))}
           </div>
           {errors.skinType && (
-            <p className="text-red-500 mb-10  text-sm ">{errors.skinType}</p>
+            <p className="text-red-500 mb-10 text-sm">{errors.skinType}</p>
           )}
-          <div className="flex justify-between  gap-5 ">
+          <div className="flex justify-between gap-5">
             <button
               onClick={() => {
                 handleBack();
               }}
               type="button"
-              className="flex-1  h-9 rounded-full bg-gray-50 text-gray-600 border border-black active:scale-95 "
+              className="app-button app-button-secondary flex-1 h-11"
             >
               Back
             </button>
@@ -54,7 +54,7 @@ const Step2 = ({
                 handleNext();
               }}
               type="button"
-              className="flex-1 h-9 rounded-full  text-white border active:scale-95 bg-[#d85167]"
+              className="app-button app-button-primary flex-1 h-11"
             >
               Next
             </button>
