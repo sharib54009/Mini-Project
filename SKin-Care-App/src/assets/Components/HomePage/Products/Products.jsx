@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Plus, X, Trash2 } from "lucide-react";
+import { apiFetch } from "../../../../api/api";
 
 const Products = () => {
   const [products, setProducts] = useState([]);
@@ -18,9 +19,7 @@ const Products = () => {
     try {
       const userId = localStorage.getItem("userId");
 
-      const res = await fetch(
-        `http://127.0.0.1:5000/products?user_id=${userId}`,
-      );
+      const res = await apiFetch(`/products?user_id=${userId}`);
 
       const data = await res.json();
 
@@ -42,7 +41,7 @@ const Products = () => {
     if (!productName || !productType) return;
 
     try {
-      const res = await fetch("http://127.0.0.1:5000/products", {
+      const res = await apiFetch("/products", {
         method: "POST",
 
         headers: {
@@ -82,7 +81,7 @@ const Products = () => {
 
   const handleDelete = async (id) => {
     try {
-      const res = await fetch(`http://127.0.0.1:5000/products/${id}`, {
+      const res = await apiFetch(`/products/${id}`, {
         method: "DELETE",
       });
 

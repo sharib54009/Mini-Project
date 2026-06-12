@@ -6,6 +6,7 @@ import SkinCheck from "./SkinCheck";
 import AddProducts from "./AddProducts";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { apiFetch } from "../../../../api/api";
 import {
   SunMedium,
   MoonStar,
@@ -75,7 +76,7 @@ const HomePage = () => {
 
         if (!userId) return;
 
-        const response = await fetch(`http://127.0.0.1:5000/user/${userId}`);
+        const response = await apiFetch(`/user/${userId}`);
         const data = await response.json();
         
 

@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { SkipBack } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import { apiFetch } from "../../../api/api";
 import Step1 from "./Step1";
 import Step2 from "./Step2";
 import Step3 from "./Step3";
@@ -128,7 +129,7 @@ const SignUpPage = ({ switchToLogin }) => {
   }
 
   try {
-    const response = await fetch("http://127.0.0.1:5000/signup", {
+    const response = await apiFetch("/signup", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -151,7 +152,7 @@ const SignUpPage = ({ switchToLogin }) => {
 
     const userId = result.user_id;
 
-    await fetch("http://127.0.0.1:5000/userdetails", {
+    await apiFetch("/userdetails", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

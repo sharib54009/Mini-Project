@@ -6,6 +6,7 @@
   import RoutineTabs from "./RoutineTabs";
   import ProgressBar from "./ProgressBar";
   import RoutineList from "./RoutineList";
+  import { apiFetch } from "../../../../api/api";
 
   const Routines = () => {
     const navigate = useNavigate();
@@ -152,9 +153,7 @@ useEffect(() => {
 
       const fetchRoutine = async () => {
         try {
-          const res = await fetch(
-            `http://127.0.0.1:5000/recommendation/${userId}/${type}`,
-          );
+          const res = await apiFetch(`/recommendation/${userId}/${type}`);
 
           const data = await res.json();
 
@@ -179,9 +178,7 @@ useEffect(() => {
 
    const fetchLogs = async () => {
   try {
-    const res = await fetch(
-      `http://127.0.0.1:5000/routinelog?user_id=${userId}`,
-    );
+    const res = await apiFetch(`/routinelog?user_id=${userId}`);
 
     const data = await res.json();
 
@@ -283,7 +280,7 @@ useEffect(() => {
 
         console.log("SAVE LOG DEBUG", { bodyData });
 
-        const res = await fetch("http://127.0.0.1:5000/routinelog", {
+        const res = await apiFetch("/routinelog", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

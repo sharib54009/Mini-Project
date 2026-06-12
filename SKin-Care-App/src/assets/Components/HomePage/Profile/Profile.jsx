@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { User, Sparkles, LogOut, Save } from "lucide-react";
+import { apiFetch } from "../../../../api/api";
 
 const skinTypes = ["dry", "oily", "combination", "normal", "sensitive"];
 
@@ -45,7 +46,7 @@ const Profile = () => {
 
     const fetchProfile = async () => {
       try {
-        const res = await fetch(`http://127.0.0.1:5000/profile/${userId}`);
+        const res = await apiFetch(`/profile/${userId}`);
 
         const data = await res.json();
 
@@ -112,7 +113,7 @@ const Profile = () => {
     try {
       setSaving(true);
 
-      const res = await fetch("http://127.0.0.1:5000/profile/update", {
+      const res = await apiFetch("/profile/update", {
         method: "PUT",
 
         headers: {

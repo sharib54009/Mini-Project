@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+import { api } from '../../../../api/api';
 import SkinLogHeader from './SkinLogHeader';
 import WeeklyProgressChart from './WeeklyProgressChart';
 import ImprovementCard from './ImprovementCard';
@@ -25,9 +25,7 @@ const SkinLog = () => {
 
       try {
         setLoading(true);
-        const response = await axios.get(
-          `http://localhost:5000/skinlog/${userId}`
-        );
+        const response = await api.get(`/skinlog/${userId}`);
         setData(response.data);
         setError(null);
       } catch (err) {
