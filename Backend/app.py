@@ -6,7 +6,7 @@ from werkzeug.security import (
     check_password_hash
 )
 from sqlalchemy import JSON
-from datetime import datetime
+from datetime import datetime, timedelta
 import json
 import os
 import secrets
@@ -1298,7 +1298,6 @@ def update_profile():
     '/skinlog/<int:user_id>',
     methods=['GET']
 )
-
 def get_skinlog(user_id):
 
     try:
@@ -1316,8 +1315,7 @@ def get_skinlog(user_id):
         if not user_details:
 
             return jsonify({
-                'message':
-                    'User details not found'
+                'message': 'User details not found'
             }), 404
 
         skin_problems = (
@@ -1331,113 +1329,249 @@ def get_skinlog(user_id):
         all_logs = (
             RoutineLog.query.filter_by(
                 user_id=user_id
-            ).order_by(RoutineLog.created_at.desc()).all()
+            )
+            .order_by(
+                RoutineLog.created_at.desc()
+            )
+            .all()
         )
 
         # =====================
-        # GET LAST 7 DAYS DATA
+        # CURRENT WEEK
         # =====================
 
-        today = datetime.now()
-        seven_days_ago = today - \
-            __import__('datetime').timedelta(days=7)
+        today = datetime.now().date()
 
-        logs_last_7_days = [
-            log for log in all_logs
-            if datetime.strptime(
+        weekday = today.weekday()
+
+        sunday = (
+            today -
+            timedelta(days=(weekday + 1) % 7)
+        )
+
+        saturday = (
+            sunday +
+            timedelta(days=6)
+        )
+
+        logs_current_week = [
+
+            log
+
+            for log in all_logs
+
+            if sunday <=
+            datetime.strptime(
                 log.date,
                 "%d/%m/%Y"
-            ) >= seven_days_ago
+            ).date()
+
+            <= saturday
+
         ]
 
         # =====================
-        # CALCULATE METRICS
+        # DAILY STATS
         # =====================
 
-        # Weekly Completion %
-        total_completion = 0
-        if logs_last_7_days:
-            total_completion = sum(
-                [log.completion_percentage
-                 for log in logs_last_7_days]
-            ) / len(logs_last_7_days)
+        daily_stats = {}
 
-        # Active Days (unique dates in last 7 days)
-        unique_dates_last_7 = list(set(
-            [log.date for log in logs_last_7_days]
-        ))
-        active_days = len(unique_dates_last_7)
+        for log in logs_current_week:
 
-        # =====================
-        # CALCULATE STREAK
-        # =====================
+            if log.date not in daily_stats:
 
-        streak = 0
-        if logs_last_7_days:
-            sorted_logs = sorted(
-                logs_last_7_days,
-                key=lambda x: datetime.strptime(
-                    x.date,
-                    "%d/%m/%Y"
-                ),
-                reverse=True
+                daily_stats[log.date] = {
+
+                    'completed_steps': 0,
+
+                    'total_steps': 0,
+
+                    'completion_percentage': 0,
+
+                    'morning_steps': 0,
+
+                    'morning_total': 0,
+
+                    'evening_steps': 0,
+
+                    'evening_total': 0
+                }
+
+            stats = daily_stats[log.date]
+
+            stats['completed_steps'] += (
+                log.completed_steps
             )
 
-            unique_dates_sorted = list(set(
-                [log.date for log in sorted_logs]
-            ))
+            stats['total_steps'] += (
+                log.total_steps
+            )
 
-            dates_as_datetime = [
-                datetime.strptime(date, "%d/%m/%Y")
-                for date in unique_dates_sorted
-            ]
+            if log.routine_type == "morning":
 
-            dates_as_datetime.sort(reverse=True)
+                stats['morning_steps'] += (
+                    log.completed_steps
+                )
+
+                stats['morning_total'] += (
+                    log.total_steps
+                )
+
+            elif log.routine_type == "evening":
+
+                stats['evening_steps'] += (
+                    log.completed_steps
+                )
+
+                stats['evening_total'] += (
+                    log.total_steps
+                )
+
+        # =====================
+        # DAILY %
+        # =====================
+
+        for stats in daily_stats.values():
+
+            if stats['total_steps'] > 0:
+
+                stats['completion_percentage'] = round(
+
+                    (
+                        stats['completed_steps']
+                        /
+                        stats['total_steps']
+                    ) * 100,
+
+                    1
+
+                )
+
+        # =====================
+        # WEEKLY DATA
+        # =====================
+
+        weekly_data = []
+
+        days_of_week = [
+            'Sun',
+            'Mon',
+            'Tue',
+            'Wed',
+            'Thu',
+            'Fri',
+            'Sat'
+        ]
+
+        total_completion_sum = 0
+
+        for i in range(7):
+
+            current_date = (
+                sunday +
+                timedelta(days=i)
+            )
+
+            date_str = current_date.strftime(
+                "%d/%m/%Y"
+            )
+
+            stats = daily_stats.get(
+                date_str
+            )
+
+            percentage = (
+
+                stats['completion_percentage']
+
+                if stats
+
+                else 0
+
+            )
+
+            total_completion_sum += percentage
+
+            weekly_data.append({
+
+                'day': days_of_week[i],
+
+                'percentage': round(
+                    percentage,
+                    1
+                )
+
+            })
+
+        total_completion = round(
+            total_completion_sum / 7,
+            1
+        )
+
+        # =====================
+        # ACTIVE DAYS
+        # =====================
+
+        active_days = len([
+
+            day
+
+            for day in weekly_data
+
+            if day['percentage'] > 0
+
+        ])
+
+        # =====================
+        # STREAK
+        # =====================
+
+        unique_dates = sorted(
+
+            [
+
+                datetime.strptime(
+                    date,
+                    "%d/%m/%Y"
+                ).date()
+
+                for date, stats in daily_stats.items()
+
+                if stats['completion_percentage'] > 0
+
+            ],
+
+            reverse=True
+
+        )
+
+        streak = 0
+
+        if unique_dates:
 
             streak = 1
-            for i in range(len(dates_as_datetime) - 1):
+
+            for i in range(
+
+                len(unique_dates) - 1
+
+            ):
+
                 diff = (
-                    dates_as_datetime[i]
-                    - dates_as_datetime[i + 1]
+
+                    unique_dates[i]
+                    -
+                    unique_dates[i + 1]
+
                 ).days
 
                 if diff == 1:
+
                     streak += 1
+
                 else:
+
                     break
-
-        # =====================
-        # WEEKLY DATA (last 7 days)
-        # =====================
-
-        days_of_week = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
-        weekly_data = []
-
-        for i in range(7, 0, -1):
-            current_date = (
-                today - 
-                __import__('datetime').timedelta(days=i)
-            )
-
-            date_str = current_date.strftime("%d/%m/%Y")
-
-            day_of_week = days_of_week[
-                current_date.weekday()
-            ]
-
-            day_percentage = 0
-
-            for log in logs_last_7_days:
-                if log.date == date_str:
-                    day_percentage = max(
-                        day_percentage,
-                        log.completion_percentage
-                    )
-
-            weekly_data.append({
-                'day': day_of_week,
-                'percentage': round(day_percentage, 1)
-            })
 
         # =====================
         # IMPROVEMENTS
@@ -1445,130 +1579,61 @@ def get_skinlog(user_id):
 
         improvements = []
 
-        if len(all_logs) < 7:
+        if active_days >= 3:
 
-            improvements = []
+            if total_completion >= 30:
 
-        elif total_completion < 50:
+                improvements.append(
+                    "Improved routine consistency"
+                )
 
-            improvements = []
+            if total_completion >= 70:
 
-        elif total_completion < 75:
+                improvements.append(
+                    "Visible skincare progress expected"
+                )
 
-            # Minor improvements
+            if total_completion >= 90:
+
+                improvements.append(
+                    "Outstanding consistency maintained"
+                )
+
             if "acne" in skin_problems:
-                improvements.extend([
-                    "Acne may begin to stabilize",
-                    "Reduced inflammation expected",
-                ])
+
+                improvements.append(
+                    "Acne control may improve with continued consistency"
+                )
 
             if "pigmentation" in skin_problems:
-                improvements.extend([
-                    "Slight improvement in skin tone",
-                    "Reduced pigmentation visibility",
-                ])
+
+                improvements.append(
+                    "Skin tone may become more even over time"
+                )
 
             if "dryness" in skin_problems:
-                improvements.extend([
-                    "Gradual improvement in hydration",
-                    "Enhanced moisture retention",
-                ])
 
-            if "sensitivity" in skin_problems:
-                improvements.extend([
-                    "Reduced sensitivity reactions",
-                    "Calmer skin appearance",
-                ])
+                improvements.append(
+                    "Skin hydration levels may improve"
+                )
 
             if "oiliness" in skin_problems:
-                improvements.extend([
-                    "Better oil control",
-                    "Reduced shine throughout day",
-                ])
 
-        elif total_completion < 90:
-
-            # Good improvements
-            if "acne" in skin_problems:
-                improvements.extend([
-                    "Noticeable acne reduction",
-                    "Reduced inflammation and redness",
-                    "Improved skin texture",
-                ])
-
-            if "pigmentation" in skin_problems:
-                improvements.extend([
-                    "Clear improvement in skin tone",
-                    "Reduced dark spots visibility",
-                    "More even complexion",
-                ])
-
-            if "dryness" in skin_problems:
-                improvements.extend([
-                    "Visibly improved hydration",
-                    "Reduced flakiness",
-                    "Smoother skin texture",
-                ])
+                improvements.append(
+                    "Oil production may become more balanced"
+                )
 
             if "sensitivity" in skin_problems:
-                improvements.extend([
-                    "Significantly reduced sensitivity",
-                    "Calmer, more resilient skin",
-                    "Fewer irritation reactions",
-                ])
 
-            if "oiliness" in skin_problems:
-                improvements.extend([
-                    "Strong oil control throughout day",
-                    "Significantly reduced shine",
-                    "Balanced complexion",
-                ])
+                improvements.append(
+                    "Skin barrier may become stronger"
+                )
 
-        else:
-
-            # Excellent improvements
-            if "acne" in skin_problems:
-                improvements.extend([
-                    "Significant acne reduction",
-                    "Clear skin appearance",
-                    "Strong inflammation control",
-                    "Noticeably improved texture",
-                ])
-
-            if "pigmentation" in skin_problems:
-                improvements.extend([
-                    "Major improvement in skin tone",
-                    "Significantly reduced spots",
-                    "Brightened complexion",
-                    "More even skin color",
-                ])
-
-            if "dryness" in skin_problems:
-                improvements.extend([
-                    "Excellent hydration levels",
-                    "Completely eliminated dryness",
-                    "Supple, glowing skin",
-                    "Improved elasticity",
-                ])
-
-            if "sensitivity" in skin_problems:
-                improvements.extend([
-                    "Nearly eliminated sensitivity",
-                    "Strong skin barrier",
-                    "Resilient skin response",
-                    "Excellent tolerance",
-                ])
-
-            if "oiliness" in skin_problems:
-                improvements.extend([
-                    "Perfect oil balance",
-                    "All-day matte finish",
-                    "Perfectly balanced complexion",
-                    "Minimal shine throughout day",
-                ])
-
-        # Remove duplicates
-        improvements = list(dict.fromkeys(improvements))
+        improvements = list(
+            dict.fromkeys(
+                improvements
+            )
+        )
 
         # =====================
         # INSIGHTS
@@ -1576,104 +1641,79 @@ def get_skinlog(user_id):
 
         insights = []
 
-        if all_logs:
+        if total_completion < 30:
 
-            # Morning vs Evening routine consistency
-            morning_logs = [
-                log for log in all_logs[:14]
-                if log.routine_type == 'morning'
-            ]
+            insights.append(
+                "⚠️ Your routine consistency is currently low."
+            )
 
-            evening_logs = [
-                log for log in all_logs[:14]
-                if log.routine_type == 'evening'
-            ]
+        elif total_completion >= 70:
 
-            if morning_logs and evening_logs:
+            insights.append(
+                "✨ Excellent consistency this week."
+            )
 
-                morning_avg = sum([
-                    log.completion_percentage
-                    for log in morning_logs
-                ]) / len(morning_logs)
+        morning_logs = [
 
-                evening_avg = sum([
-                    log.completion_percentage
-                    for log in evening_logs
-                ]) / len(evening_logs)
+            log
 
-                if morning_avg > evening_avg + 15:
-                    insights.append(
-                        "🌅 Morning routines are more consistent "
-                        "than evening routines. "
-                        "Try to focus more on your night routine "
-                        "for better results."
-                    )
+            for log in all_logs
 
-                elif evening_avg > morning_avg + 15:
-                    insights.append(
-                        "🌙 Evening routines are more consistent "
-                        "than morning routines. "
-                        "Don't skip your morning routine for optimal skin health."
-                    )
+            if log.routine_type == 'morning'
 
-                else:
-                    insights.append(
-                        "⚖️ Great balance! Your morning and "
-                        "evening routines are equally consistent."
-                    )
+        ]
 
-            elif morning_logs and not evening_logs:
+        evening_logs = [
+
+            log
+
+            for log in all_logs
+
+            if log.routine_type == 'evening'
+
+        ]
+
+        if morning_logs and evening_logs:
+
+            morning_avg = sum([
+
+                log.completion_percentage
+
+                for log in morning_logs
+
+            ]) / len(morning_logs)
+
+            evening_avg = sum([
+
+                log.completion_percentage
+
+                for log in evening_logs
+
+            ]) / len(evening_logs)
+
+            if morning_avg > evening_avg + 15:
+
                 insights.append(
-                    "🌅 You're doing a great job with morning "
-                    "routines. "
-                    "Consider adding an evening routine too!"
+                    "🌅 Morning routine consistency is stronger than evening."
                 )
 
-            elif evening_logs and not morning_logs:
+            elif evening_avg > morning_avg + 15:
+
                 insights.append(
-                    "🌙 You're doing a great job with evening "
-                    "routines. "
-                    "Consider adding a morning routine too!"
+                    "🌙 Evening routine consistency is stronger than morning."
                 )
 
-            # Overall consistency improvement
-            if len(all_logs) >= 14:
+            else:
 
-                recent_logs = all_logs[:7]
-                older_logs = all_logs[7:14]
-
-                if recent_logs and older_logs:
-
-                    recent_avg = sum([
-                        log.completion_percentage
-                        for log in recent_logs
-                    ]) / len(recent_logs)
-
-                    older_avg = sum([
-                        log.completion_percentage
-                        for log in older_logs
-                    ]) / len(older_logs)
-
-                    if recent_avg > older_avg + 10:
-                        insights.append(
-                            "📈 Excellent! Your routine consistency "
-                            "has improved compared to last week. "
-                            "Keep it up!"
-                        )
-
-                    elif older_avg > recent_avg + 10:
-                        insights.append(
-                            "📉 Your consistency has dipped recently. "
-                            "Try to get back on track with your "
-                            "routines."
-                        )
-
-            # Streak observation
-            if streak >= 5:
                 insights.append(
-                    f"🔥 Amazing streak of {streak} days! "
-                    "Your commitment to skincare is showing!"
+                    "⚖️ Morning and evening routines are well balanced."
                 )
+
+        if streak >= 3:
+
+            insights.append(
+                f"🔥 You are on a {streak}-day streak."
+            )
 
         # =====================
         # RESPONSE
@@ -1681,7 +1721,7 @@ def get_skinlog(user_id):
 
         return jsonify({
 
-            'weeklyCompletion': round(total_completion, 1),
+            'weeklyCompletion': total_completion,
 
             'activeDays': active_days,
 
@@ -1699,7 +1739,10 @@ def get_skinlog(user_id):
 
     except Exception as e:
 
-        print("ERROR:", e)
+        print(
+            "SKINLOG ERROR:",
+            e
+        )
 
         return jsonify({
 

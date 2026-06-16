@@ -55,7 +55,7 @@ const Calendar = ({
         {calendarDays.map((item, idx) => {
           const isSelected = item.fullDate === selectedFormattedDate;
 
-          const hasData = savedLogs.some((log) => log.date === item.fullDate);
+          const hasData = savedLogs.some((log) => log.date === item.fullDate && Number(log.completed_steps) > 0);
 
           const isToday = item.fullDate === todayFormatted;
 

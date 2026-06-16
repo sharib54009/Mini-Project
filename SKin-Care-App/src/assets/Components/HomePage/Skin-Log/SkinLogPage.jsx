@@ -15,6 +15,42 @@ const SkinLog = () => {
 
   const userId = localStorage.getItem('userId');
 
+  // Normalize incoming weeklyData into Sunday -> Saturday order
+  const normalizeWeeklyData = (raw = []) => {
+    if (!Array.isArray(raw) || raw.length === 0) return [];
+
+    const shortNames = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+    const longNames = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+
+    // Build lookup by common keys: day (short/long) or date (dd/mm/yyyy)
+    const lookup = new Map();
+
+    raw.forEach((item) => {
+      let key = null;
+      if (item.day) key = String(item.day).trim();
+      else if (item.date) {
+        const parts = String(item.date).split('/');
+        if (parts.length === 3) {
+          const d = new Date(parts[2], parts[1] - 1, parts[0]);
+          key = d.toLocaleDateString('en-US', { weekday: 'short' });
+        }
+      }
+
+      if (key) lookup.set(key, item);
+    });
+
+    // Build ordered array Sun->Sat
+    const ordered = shortNames.map((short, i) => {
+      const long = longNames[i];
+      const item = lookup.get(short) || lookup.get(long);
+      const percentage = item ? (item.percentage ?? item.percent ?? item.value ?? 0) : 0;
+      return { day: short, percentage };
+    });
+
+    return ordered;
+  };
+
+
   useEffect(() => {
     const fetchSkinLogData = async () => {
       if (!userId) {
@@ -41,6 +77,15 @@ const SkinLog = () => {
 
     fetchSkinLogData();
   }, [userId]);
+
+  const weeklyData = normalizeWeeklyData(data?.weeklyData || []);
+  const dashboardReady = (() => {
+    const activeDays = Number(data?.activeDays || 0);
+    const hasWeeklyProgress = weeklyData.some(
+      (entry) => Number(entry.percentage || 0) > 0
+    );
+    return activeDays >= 1 || hasWeeklyProgress || Number(data?.logsCount || 0) >= 1;
+  })();
 
   if (loading) {
     return (
@@ -86,25 +131,61 @@ const SkinLog = () => {
 
       {/* Main Content */}
       <div className="max-w-md mx-auto px-4 py-6 space-y-6">
-        {/* Dashboard Section */}
-        <SkinLogHeader
-          weeklyCompletion={data?.weeklyCompletion || 0}
-          streak={data?.streak || 0}
-          activeDays={data?.activeDays || 0}
-        />
+          {/* Dashboard Section: show only when user has at least 1 active day this week or some weekly progress exists */}
+          {dashboardReady ? (
+            <>
+              <SkinLogHeader
+                weeklyCompletion={data?.weeklyCompletion || 0}
+                streak={data?.streak || 0}
+                activeDays={data?.activeDays || 0}
+              />
 
-        {/* Weekly Progress Chart */}
-        <WeeklyProgressChart weeklyData={data?.weeklyData || []} />
+              {/* Weekly Progress Chart (normalized Sunday→Saturday) */}
+              <WeeklyProgressChart weeklyData={weeklyData} />
 
-        {/* Improvements Section */}
-        <ImprovementCard
-          improvements={data?.improvements || []}
-          weeklyCompletion={data?.weeklyCompletion || 0}
-          logsCount={data?.logsCount || 0}
-        />
+              {/* Completed Day Summary */}
+              <div className="app-card-sm p-5">
+                <h2 className="text-lg font-semibold text-gray-900 mb-3">Completed days</h2>
+                {weeklyData.some((entry) => Number(entry.percentage || 0) > 0) ? (
+                  <div className="space-y-2">
+                    {weeklyData
+                      .filter((entry) => Number(entry.percentage || 0) > 0)
+                      .map((entry) => (
+                        <div key={entry.day} className="flex items-center justify-between bg-pink-50 rounded-2xl p-3">
+                          <span className="font-medium text-gray-900">{entry.day}</span>
+                          <span className="text-sm text-pink-700 font-semibold">{entry.percentage}%</span>
+                        </div>
+                      ))}
+                  </div>
+                ) : (
+                  <p className="text-sm text-gray-600">No completed days recorded yet for this week.</p>
+                )}
+              </div>
 
-        {/* Insights Section */}
-        <InsightCard insights={data?.insights || []} />
+              {/* Improvements Section */}
+              <ImprovementCard
+                improvements={data?.improvements || []}
+                weeklyCompletion={data?.weeklyCompletion || 0}
+                logsCount={data?.logsCount || 0}
+              />
+
+              {/* Insights Section */}
+              <InsightCard insights={data?.insights || []} />
+            </>
+          ) : (
+            <div className="app-card-sm p-6 text-center">
+              <h2 className="text-lg font-semibold mb-2">Almost there!</h2>
+              <p className="text-sm text-gray-600 mb-4">
+                Complete at least <strong>1 day</strong> of your routines this week to unlock the Skin Log dashboard and personalized insights.
+              </p>
+              <button
+                onClick={() => navigate('/routines/morning')}
+                className="bg-pink-500 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-pink-600 transition"
+              >
+                Start a Routine
+              </button>
+            </div>
+          )}
       </div>
     </div>
   );
