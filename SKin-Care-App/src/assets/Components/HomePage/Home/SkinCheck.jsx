@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { CircleArrowRight } from 'lucide-react'
 const SkinCheck = () => {
   return (
-    <div className='px-3'>
+    <div className=''>
       <div className='mt-3 app-card-sm px-3 py-4 flex flex-col'>
         <Link to="/skin-log" className="space-y-2">
           <h1 className='text-xs font-semibold'>TODAY'S SKIN</h1>

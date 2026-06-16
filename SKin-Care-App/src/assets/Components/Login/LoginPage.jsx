@@ -1,4 +1,4 @@
-import { React, useState } from "react";
+import { React, useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { apiFetch } from "../../../api/api";
@@ -15,6 +15,14 @@ const LoginPage = ({ switchToSignUp }) => {
 
 
   const [errors, setErrors] = useState({});
+  
+  useEffect(() => {
+    // If already logged in, send to home
+    const isLoggedIn = localStorage.getItem("isLoggedIn");
+    if (isLoggedIn === "true") {
+      navigate("/home");
+    }
+  }, []);
  const handleSubmit = async (e) => {
   e.preventDefault();
 
@@ -57,7 +65,9 @@ const LoginPage = ({ switchToSignUp }) => {
     if (response.ok) {
       const userId = result.user_id;
 
+      // persist auth
       localStorage.setItem("userId", userId); // ✅ important
+      localStorage.setItem("isLoggedIn", "true");
       navigate("/home");
     } else {
       alert(result.message);

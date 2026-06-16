@@ -1,0 +1,1479 @@
+{
+  "Wedding": {
+    "1": {
+      "morning": [
+        "Gentle cleanser",
+        "Hydrating toner",
+        "Brightening vitamin C serum",
+        "Hydrating moisturizer",
+        "Lightweight sunscreen SPF 50"
+      ],
+      "evening": [
+        "Gentle cleanser",
+        "Hydrating toner",
+        "Overnight hydrating mask",
+        "Lip balm"
+      ],
+      "tips": [
+        "Stay hydrated - drink lots of water",
+        "Get 8-9 hours of sleep",
+        "Avoid new skincare products - stick to your routine",
+        "Use a silk pillowcase to reduce friction"
+      ],
+      "warnings": [
+        "⚠️ Do NOT try new products today",
+        "⚠️ Avoid excessive sun exposure",
+        "⚠️ Keep makeup minimal and let skin breathe"
+      ]
+    },
+    "3": {
+      "morning": [
+        "Gentle cleanser",
+        "Hydrating toner",
+        "Vitamin C serum",
+        "Hydrating serum",
+        "Moisture-boosting moisturizer",
+        "Sunscreen SPF 50"
+      ],
+      "evening": [
+        "Gentle cleanser",
+        "Hydrating toner",
+        "Hyaluronic acid serum",
+        "Nourishing night cream"
+      ],
+      "tips": [
+        "Apply hydrating sheet mask every night",
+        "Sleep 8+ hours",
+        "Avoid alcohol and caffeine",
+        "Gentle facial massage for lymphatic drainage"
+      ],
+      "warnings": [
+        "⚠️ No exfoliation in the last 2 days before event",
+        "⚠️ Avoid new treatments or procedures",
+        "⚠️ Stay away from hot water - use lukewarm"
+      ]
+    },
+    "7": {
+      "morning": [
+        "Gentle cleanser",
+        "Hydrating toner",
+        "Niacinamide serum",
+        "Hydrating essence",
+        "Lightweight moisturizer",
+        "Sunscreen SPF 50"
+      ],
+      "evening": [
+        "Gentle cleanser",
+        "Hydrating toner",
+        "Retinol serum (start low strength)",
+        "Hydrating night cream"
+      ],
+      "tips": [
+        "Exfoliate gently 2-3 times this week",
+        "Use hydrating sheet masks 3x",
+        "Increase water intake",
+        "Light exercise for circulation",
+        "Avoid stress - practice meditation"
+      ],
+      "warnings": [
+        "⚠️ Do NOT use harsh exfoliants",
+        "⚠️ Skip retinol in the final 2 days",
+        "⚠️ Avoid facial waxing/threading - 3 days before only"
+      ]
+    },
+    "14": {
+      "morning": [
+        "Gentle cleanser",
+        "Hydrating toner",
+        "Niacinamide serum",
+        "Vitamin C serum (alternate days)",
+        "Hydrating moisturizer",
+        "Sunscreen SPF 50"
+      ],
+      "evening": [
+        "Gentle cleanser",
+        "Hydrating toner",
+        "Hyaluronic acid serum",
+        "Retinol serum (2-3x weekly)",
+        "Nourishing night cream"
+      ],
+      "tips": [
+        "Gentle exfoliation 2x weekly with chemical exfoliant",
+        "Hydrating masks 2x weekly",
+        "Include collagen-boosting serum",
+        "Increase antioxidant intake through diet",
+        "Prioritize sleep - 7-8 hours daily",
+        "Increase water to 2-3 liters daily"
+      ],
+      "warnings": [
+        "⚠️ Avoid new skincare products completely",
+        "⚠️ No professional treatments (facials, laser) in final week",
+        "⚠️ Avoid very hot showers"
+      ]
+    },
+    "21": {
+      "morning": [
+        "Gentle cleanser",
+        "Hydrating toner",
+        "Niacinamide serum",
+        "Vitamin C serum",
+        "Hydrating essence",
+        "Moisturizer",
+        "Sunscreen SPF 50"
+      ],
+      "evening": [
+        "Gentle cleanser",
+        "Hydrating toner",
+        "Hyaluronic acid serum",
+        "Retinol or retinoid serum",
+        "Peptide eye cream",
+        "Night cream"
+      ],
+      "tips": [
+        "Chemical exfoliation 2x weekly (gentle BHAs/AHAs)",
+        "Hydrating masks 3x weekly",
+        "Include brightening treatments",
+        "Weekly relaxation ritual for skin rejuvenation",
+        "Collagen supplements if desired",
+        "Consistent 8-hour sleep schedule",
+        "3L water daily minimum"
+      ],
+      "warnings": [
+        "⚠️ Stop trying new products by day 14",
+        "⚠️ No professional facial/laser treatments after day 14",
+        "⚠️ Avoid swimming in chlorinated pools",
+        "⚠️ Protect skin from pollution and sun"
+      ]
+    },
+    "30": {
+      "morning": [
+        "Gentle cleanser",
+        "Hydrating toner",
+        "Niacinamide serum (5%)",
+        "Vitamin C serum",
+        "Hydrating essence",
+        "Moisturizer with peptides",
+        "Sunscreen SPF 50"
+      ],
+      "evening": [
+        "Gentle cleanser",
+        "Hydrating toner",
+        "Hyaluronic acid serum",
+        "Retinol serum (gradually increase)",
+        "Peptide eye cream",
+        "Restorative night cream"
+      ],
+      "tips": [
+        "Week 1: Focus on hydration and glow prep",
+        "Week 2: Add gentle exfoliation 2x weekly",
+        "Week 3: Introduce brightening treatments",
+        "Week 4: Intensive hydration and resting phase",
+        "Drink 3L water daily",
+        "Sleep 8-9 hours nightly",
+        "Regular cardio exercise",
+        "Anti-inflammatory diet (omega-3s, berries)"
+      ],
+      "warnings": [
+        "⚠️ Week 1-2: Test all new products",
+        "⚠️ Week 3: Stop all new treatments",
+        "⚠️ Week 4: Rest and maintain - no changes",
+        "⚠️ Avoid excess sun, alcohol, and stress"
+      ]
+    },
+    "45": {
+      "morning": [
+        "Gentle cleanser",
+        "Hydrating toner",
+        "Niacinamide serum",
+        "Vitamin C serum",
+        "Hydrating essence",
+        "Moisturizer with antioxidants",
+        "Sunscreen SPF 50"
+      ],
+      "evening": [
+        "Gentle cleanser",
+        "Hydrating toner",
+        "Hyaluronic acid serum",
+        "Retinol serum",
+        "Peptide eye cream",
+        "Night repair cream"
+      ],
+      "tips": [
+        "Weeks 1-2: Deep hydration phase",
+        "Weeks 3-4: Gentle exfoliation and brightening",
+        "Week 5-6: Intensive treatment phase",
+        "Final week: Maintenance and rest",
+        "Weekly professional hydrating facials recommended",
+        "Increase antioxidant foods",
+        "Consistent exercise routine",
+        "Stress management practices"
+      ],
+      "warnings": [
+        "⚠️ Batch test new products early (weeks 1-2 only)",
+        "⚠️ No professional treatments after week 3",
+        "⚠️ Protect from sun and environmental damage",
+        "⚠️ Avoid known allergens and irritants"
+      ]
+    },
+    "60": {
+      "morning": [
+        "Gentle cleanser",
+        "Hydrating toner",
+        "Niacinamide serum (5%)",
+        "Vitamin C serum",
+        "Brightening essence",
+        "Antioxidant moisturizer",
+        "Sunscreen SPF 50"
+      ],
+      "evening": [
+        "Gentle cleanser",
+        "Hydrating toner",
+        "Hyaluronic acid serum",
+        "Retinol serum (2-3x weekly)",
+        "Peptide eye cream",
+        "Rich night cream"
+      ],
+      "tips": [
+        "Weeks 1-2: Foundation building - hydration focus",
+        "Weeks 3-4: Gentle exfoliation routine",
+        "Weeks 5-6: Treatment acceleration",
+        "Weeks 7-8: Intensive care and glow maximization",
+        "Fortnightly professional facials",
+        "Daily 3L water intake",
+        "Consistent 8+ hour sleep",
+        "Dietary focus on skin-healthy foods",
+        "Regular exercise for circulation"
+      ],
+      "warnings": [
+        "⚠️ Weeks 1-3: Introduce new products gradually",
+        "⚠️ Week 4+: Freeze all new treatments",
+        "⚠️ Avoid direct sun exposure",
+        "⚠️ No harsh treatments or extractions"
+      ]
+    },
+    "90": {
+      "morning": [
+        "Gentle cleanser",
+        "Hydrating toner",
+        "Niacinamide serum",
+        "Vitamin C serum",
+        "Hydrating essence",
+        "Antioxidant moisturizer",
+        "Sunscreen SPF 50"
+      ],
+      "evening": [
+        "Gentle cleanser",
+        "Hydrating toner",
+        "Hyaluronic acid serum",
+        "Retinol serum (2-3x weekly)",
+        "Peptide eye cream",
+        "Restorative night cream"
+      ],
+      "tips": [
+        "Months 1: Skin assessment and hydration foundation",
+        "Months 2: Introduce targeted treatments",
+        "Months 3: Intensive care phase",
+        "Final weeks: Glow maximization and maintenance",
+        "Weekly professional hydrating facials (optional)",
+        "Consistent skincare regime is key",
+        "Daily hydration: 3-4L water",
+        "Nightly 8-9 hour sleep schedule",
+        "Regular aerobic exercise",
+        "Skin-boosting diet with collagen-support foods"
+      ],
+      "warnings": [
+        "⚠️ Weeks 1-4: Test and introduce new products",
+        "⚠️ Weeks 5-12: No new major treatments",
+        "⚠️ Avoid sun damage consistently",
+        "⚠️ Final 2 weeks: Maintenance mode only"
+      ]
+    }
+  },
+  "Engagement": {
+    "1": {
+      "morning": [
+        "Gentle cleanser",
+        "Brightening toner",
+        "Vitamin C serum",
+        "Hydrating moisturizer",
+        "Sunscreen SPF 50"
+      ],
+      "evening": [
+        "Gentle cleanser",
+        "Hydrating toner",
+        "Hydrating mask",
+        "Lip balm"
+      ],
+      "tips": [
+        "Quick hydration boost",
+        "Sleep early - 8+ hours",
+        "Avoid stress"
+      ],
+      "warnings": [
+        "⚠️ No new products",
+        "⚠️ Minimal makeup exposure"
+      ]
+    },
+    "3": {
+      "morning": [
+        "Gentle cleanser",
+        "Brightening toner",
+        "Vitamin C serum",
+        "Hydrating serum",
+        "Moisturizer",
+        "Sunscreen SPF 50"
+      ],
+      "evening": [
+        "Gentle cleanser",
+        "Toner",
+        "Hyaluronic acid serum",
+        "Night cream"
+      ],
+      "tips": [
+        "Sheet masks nightly",
+        "8+ hours sleep",
+        "Avoid caffeine and alcohol"
+      ],
+      "warnings": [
+        "⚠️ No exfoliation in last 2 days",
+        "⚠️ Avoid new treatments"
+      ]
+    },
+    "7": {
+      "morning": [
+        "Gentle cleanser",
+        "Brightening toner",
+        "Niacinamide serum",
+        "Hydrating essence",
+        "Moisturizer",
+        "Sunscreen SPF 50"
+      ],
+      "evening": [
+        "Gentle cleanser",
+        "Toner",
+        "Retinol serum",
+        "Night cream"
+      ],
+      "tips": [
+        "Gentle exfoliation 2x this week",
+        "Hydrating masks 3x",
+        "Increase water intake",
+        "Meditation for stress relief"
+      ],
+      "warnings": [
+        "⚠️ No harsh exfoliants",
+        "⚠️ Skip retinol in final 2 days"
+      ]
+    },
+    "14": {
+      "morning": [
+        "Gentle cleanser",
+        "Brightening toner",
+        "Niacinamide serum",
+        "Vitamin C serum",
+        "Moisturizer",
+        "Sunscreen SPF 50"
+      ],
+      "evening": [
+        "Gentle cleanser",
+        "Toner",
+        "Hyaluronic acid serum",
+        "Retinol serum",
+        "Night cream"
+      ],
+      "tips": [
+        "Chemical exfoliation 2x weekly",
+        "Hydrating masks 2x weekly",
+        "Collagen supplements",
+        "Sleep 7-8 hours daily",
+        "Drink 2-3 liters water"
+      ],
+      "warnings": [
+        "⚠️ No new products",
+        "⚠️ No professional treatments in final week"
+      ]
+    },
+    "30": {
+      "morning": [
+        "Gentle cleanser",
+        "Brightening toner",
+        "Niacinamide serum",
+        "Vitamin C serum",
+        "Hydrating essence",
+        "Moisturizer",
+        "Sunscreen SPF 50"
+      ],
+      "evening": [
+        "Gentle cleanser",
+        "Toner",
+        "Hyaluronic acid serum",
+        "Retinol serum",
+        "Peptide eye cream",
+        "Night cream"
+      ],
+      "tips": [
+        "Week 1: Hydration focus",
+        "Week 2: Add gentle exfoliation",
+        "Week 3: Brightening treatments",
+        "Week 4: Maintenance and rest",
+        "Drink 3L water daily",
+        "Sleep 8-9 hours nightly",
+        "Cardio exercise regularly"
+      ],
+      "warnings": [
+        "⚠️ Stop new products by day 14",
+        "⚠️ No professional treatments after day 14"
+      ]
+    }
+  },
+  "Date Night": {
+    "1": {
+      "morning": [
+        "Gentle cleanser",
+        "Hydrating toner",
+        "Illuminating serum",
+        "Lightweight moisturizer",
+        "Sunscreen"
+      ],
+      "evening": [
+        "Gentle cleanser",
+        "Toner",
+        "Hydrating mask",
+        "Primer moisturizer"
+      ],
+      "tips": [
+        "Light workout for that healthy glow",
+        "Eat light, healthy meal",
+        "Hydrate well",
+        "Get 6+ hours sleep"
+      ],
+      "warnings": [
+        "⚠️ No new products today",
+        "⚠️ Keep makeup fresh and natural"
+      ]
+    },
+    "3": {
+      "morning": [
+        "Gentle cleanser",
+        "Brightening toner",
+        "Vitamin C serum",
+        "Moisturizer",
+        "Sunscreen"
+      ],
+      "evening": [
+        "Gentle cleanser",
+        "Toner",
+        "Hydrating serum",
+        "Night cream"
+      ],
+      "tips": [
+        "Hydrating masks 2x",
+        "Sleep 7+ hours",
+        "Drink plenty of water",
+        "Light exercise for glow"
+      ],
+      "warnings": [
+        "⚠️ Avoid new skincare",
+        "⚠️ Skip exfoliation in final day"
+      ]
+    },
+    "7": {
+      "morning": [
+        "Gentle cleanser",
+        "Brightening toner",
+        "Niacinamide serum",
+        "Hydrating serum",
+        "Moisturizer",
+        "Sunscreen"
+      ],
+      "evening": [
+        "Gentle cleanser",
+        "Toner",
+        "Hyaluronic acid serum",
+        "Light retinol",
+        "Night cream"
+      ],
+      "tips": [
+        "Gentle exfoliation 2x this week",
+        "Hydrating masks 3x",
+        "Stay hydrated",
+        "Light yoga or walking",
+        "Healthy diet with fruits and veggies"
+      ],
+      "warnings": [
+        "⚠️ No new treatments",
+        "⚠️ Avoid excessive sun"
+      ]
+    },
+    "14": {
+      "morning": [
+        "Gentle cleanser",
+        "Brightening toner",
+        "Niacinamide serum",
+        "Vitamin C serum",
+        "Moisturizer",
+        "Sunscreen"
+      ],
+      "evening": [
+        "Gentle cleanser",
+        "Toner",
+        "Hyaluronic acid serum",
+        "Retinol serum",
+        "Night cream"
+      ],
+      "tips": [
+        "2x weekly gentle exfoliation",
+        "2x weekly hydrating masks",
+        "Daily 2L+ water",
+        "7-8 hours sleep",
+        "Regular light exercise"
+      ],
+      "warnings": [
+        "⚠️ Introduce new products in first week only",
+        "⚠️ Avoid facials in final week"
+      ]
+    }
+  },
+  "Party": {
+    "1": {
+      "morning": [
+        "Gentle cleanser",
+        "Hydrating toner",
+        "Illuminating serum",
+        "Hydrating moisturizer",
+        "Sunscreen"
+      ],
+      "evening": [
+        "Gentle cleanser",
+        "Toner",
+        "Sheet mask for instant glow",
+        "Eye cream"
+      ],
+      "tips": [
+        "Stay hydrated throughout the day",
+        "Light meal, no heavy food",
+        "Get 6-8 hours sleep",
+        "Prepare minimal makeup for natural glow"
+      ],
+      "warnings": [
+        "⚠️ No new products",
+        "⚠️ Skip makeup to let skin breathe",
+        "⚠️ Avoid excess sun exposure"
+      ]
+    },
+    "3": {
+      "morning": [
+        "Gentle cleanser",
+        "Brightening toner",
+        "Vitamin C serum",
+        "Moisturizer",
+        "Sunscreen"
+      ],
+      "evening": [
+        "Gentle cleanser",
+        "Toner",
+        "Hydrating serum",
+        "Overnight mask"
+      ],
+      "tips": [
+        "Hydrating masks 2x",
+        "Sleep 7+ hours",
+        "Drink 2L+ water",
+        "Light exercise for circulation"
+      ],
+      "warnings": [
+        "⚠️ Avoid new skincare products",
+        "⚠️ No exfoliation in final day"
+      ]
+    },
+    "7": {
+      "morning": [
+        "Gentle cleanser",
+        "Brightening toner",
+        "Niacinamide serum",
+        "Hydrating essence",
+        "Moisturizer",
+        "Sunscreen"
+      ],
+      "evening": [
+        "Gentle cleanser",
+        "Toner",
+        "Hyaluronic acid serum",
+        "Light retinol",
+        "Night cream"
+      ],
+      "tips": [
+        "Gentle exfoliation 2x",
+        "Hydrating masks 3x",
+        "Increase water intake",
+        "Yoga or light cardio",
+        "Anti-inflammatory diet"
+      ],
+      "warnings": [
+        "⚠️ No harsh treatments",
+        "⚠️ Avoid chlorinated pools"
+      ]
+    },
+    "14": {
+      "morning": [
+        "Gentle cleanser",
+        "Brightening toner",
+        "Niacinamide serum",
+        "Vitamin C serum",
+        "Moisturizer",
+        "Sunscreen"
+      ],
+      "evening": [
+        "Gentle cleanser",
+        "Toner",
+        "Hyaluronic acid serum",
+        "Retinol serum",
+        "Night cream"
+      ],
+      "tips": [
+        "2x weekly gentle exfoliation",
+        "2x weekly hydrating masks",
+        "Daily water intake 2L+",
+        "Consistent 7-8 hour sleep",
+        "Regular cardio or yoga"
+      ],
+      "warnings": [
+        "⚠️ New products only in first week",
+        "⚠️ Skip facials in final week"
+      ]
+    }
+  },
+  "Birthday": {
+    "1": {
+      "morning": [
+        "Gentle cleanser",
+        "Hydrating toner",
+        "Illuminating serum",
+        "Moisturizer",
+        "Sunscreen"
+      ],
+      "evening": [
+        "Gentle cleanser",
+        "Toner",
+        "Hydrating mask",
+        "Eye cream"
+      ],
+      "tips": [
+        "Stay hydrated",
+        "Light meal",
+        "6-8 hours sleep",
+        "Minimal makeup for natural glow"
+      ],
+      "warnings": [
+        "⚠️ No new products today",
+        "⚠️ Skip excessive makeup"
+      ]
+    },
+    "3": {
+      "morning": [
+        "Gentle cleanser",
+        "Brightening toner",
+        "Vitamin C serum",
+        "Moisturizer",
+        "Sunscreen"
+      ],
+      "evening": [
+        "Gentle cleanser",
+        "Toner",
+        "Hydrating serum",
+        "Night cream"
+      ],
+      "tips": [
+        "Hydrating masks 2x",
+        "Sleep 7+ hours",
+        "Drink 2L water",
+        "Light movement"
+      ],
+      "warnings": [
+        "⚠️ Avoid new skincare",
+        "⚠️ No exfoliation in final day"
+      ]
+    },
+    "7": {
+      "morning": [
+        "Gentle cleanser",
+        "Brightening toner",
+        "Niacinamide serum",
+        "Hydrating essence",
+        "Moisturizer",
+        "Sunscreen"
+      ],
+      "evening": [
+        "Gentle cleanser",
+        "Toner",
+        "Hyaluronic acid serum",
+        "Light retinol",
+        "Night cream"
+      ],
+      "tips": [
+        "Gentle exfoliation 2x",
+        "Hydrating masks 3x",
+        "Hydration focus",
+        "Light exercise",
+        "Healthy eating"
+      ],
+      "warnings": [
+        "⚠️ No new treatments",
+        "⚠️ Sun protection priority"
+      ]
+    },
+    "14": {
+      "morning": [
+        "Gentle cleanser",
+        "Brightening toner",
+        "Niacinamide serum",
+        "Vitamin C serum",
+        "Moisturizer",
+        "Sunscreen"
+      ],
+      "evening": [
+        "Gentle cleanser",
+        "Toner",
+        "Hyaluronic acid serum",
+        "Retinol serum",
+        "Night cream"
+      ],
+      "tips": [
+        "2x weekly exfoliation",
+        "2x weekly masks",
+        "Daily 2L water",
+        "Sleep 7-8 hours",
+        "Regular exercise"
+      ],
+      "warnings": [
+        "⚠️ New products first week only",
+        "⚠️ No facials in final week"
+      ]
+    },
+    "30": {
+      "morning": [
+        "Gentle cleanser",
+        "Brightening toner",
+        "Niacinamide serum",
+        "Vitamin C serum",
+        "Hydrating essence",
+        "Moisturizer",
+        "Sunscreen"
+      ],
+      "evening": [
+        "Gentle cleanser",
+        "Toner",
+        "Hyaluronic acid serum",
+        "Retinol serum",
+        "Peptide eye cream",
+        "Night cream"
+      ],
+      "tips": [
+        "Week 1: Hydration prep",
+        "Week 2: Add exfoliation",
+        "Week 3: Intensify treatments",
+        "Week 4: Maintenance",
+        "Daily 3L water",
+        "Nightly 8-9 hour sleep",
+        "Regular exercise routine"
+      ],
+      "warnings": [
+        "⚠️ New products by day 14 cutoff",
+        "⚠️ No professional treatments after day 14",
+        "⚠️ Sun and pollution protection"
+      ]
+    }
+  },
+  "Festival": {
+    "1": {
+      "morning": [
+        "Gentle cleanser",
+        "Hydrating toner",
+        "Illuminating serum",
+        "Moisturizer",
+        "High SPF sunscreen"
+      ],
+      "evening": [
+        "Gentle cleanser",
+        "Toner",
+        "Hydrating mask",
+        "Eye serum"
+      ],
+      "tips": [
+        "Sun protection is key",
+        "Hydrate well",
+        "Light food intake",
+        "Rest 6-8 hours"
+      ],
+      "warnings": [
+        "⚠️ No new products",
+        "⚠️ Maximum sun protection needed",
+        "⚠️ Minimal makeup"
+      ]
+    },
+    "3": {
+      "morning": [
+        "Gentle cleanser",
+        "Brightening toner",
+        "Vitamin C serum",
+        "Moisturizer",
+        "SPF 50 sunscreen"
+      ],
+      "evening": [
+        "Gentle cleanser",
+        "Toner",
+        "Hydrating serum",
+        "Night cream"
+      ],
+      "tips": [
+        "Hydrating masks 2x",
+        "Sleep 7+ hours",
+        "Drink 2L+ water",
+        "Protect from sun"
+      ],
+      "warnings": [
+        "⚠️ Avoid new skincare",
+        "⚠️ No exfoliation day before"
+      ]
+    },
+    "7": {
+      "morning": [
+        "Gentle cleanser",
+        "Brightening toner",
+        "Niacinamide serum",
+        "Hydrating essence",
+        "Moisturizer",
+        "SPF 50 sunscreen"
+      ],
+      "evening": [
+        "Gentle cleanser",
+        "Toner",
+        "Hyaluronic acid serum",
+        "Light retinol",
+        "Night cream"
+      ],
+      "tips": [
+        "Gentle exfoliation 2x",
+        "Hydrating masks 3x",
+        "High water intake for hydration",
+        "Light outdoor activity",
+        "Nutrient-rich diet"
+      ],
+      "warnings": [
+        "⚠️ No harsh treatments",
+        "⚠️ Sun protection essential",
+        "⚠️ Avoid chlorine exposure"
+      ]
+    },
+    "14": {
+      "morning": [
+        "Gentle cleanser",
+        "Brightening toner",
+        "Niacinamide serum",
+        "Vitamin C serum",
+        "Moisturizer",
+        "SPF 50 sunscreen"
+      ],
+      "evening": [
+        "Gentle cleanser",
+        "Toner",
+        "Hyaluronic acid serum",
+        "Retinol serum",
+        "Night cream"
+      ],
+      "tips": [
+        "2x weekly gentle exfoliation",
+        "2x weekly hydrating masks",
+        "Daily 2L+ water",
+        "Nightly 7-8 hour sleep",
+        "Regular light exercise"
+      ],
+      "warnings": [
+        "⚠️ Introduce new products first week only",
+        "⚠️ No facials in final week",
+        "⚠️ Continuous sun protection"
+      ]
+    }
+  },
+  "Function": {
+    "1": {
+      "morning": [
+        "Gentle cleanser",
+        "Hydrating toner",
+        "Illuminating serum",
+        "Moisturizer",
+        "Sunscreen"
+      ],
+      "evening": [
+        "Gentle cleanser",
+        "Toner",
+        "Hydrating mask",
+        "Eye cream"
+      ],
+      "tips": [
+        "Quick hydration boost",
+        "Sleep 6-8 hours",
+        "Stay hydrated",
+        "Minimal stress"
+      ],
+      "warnings": [
+        "⚠️ No new products",
+        "⚠️ Keep makeup natural"
+      ]
+    },
+    "3": {
+      "morning": [
+        "Gentle cleanser",
+        "Brightening toner",
+        "Vitamin C serum",
+        "Moisturizer",
+        "Sunscreen"
+      ],
+      "evening": [
+        "Gentle cleanser",
+        "Toner",
+        "Hydrating serum",
+        "Night cream"
+      ],
+      "tips": [
+        "Hydrating masks 2x",
+        "Sleep 7+ hours",
+        "Drink 2L water",
+        "Avoid stress"
+      ],
+      "warnings": [
+        "⚠️ Avoid new skincare",
+        "⚠️ No exfoliation in final day"
+      ]
+    },
+    "7": {
+      "morning": [
+        "Gentle cleanser",
+        "Brightening toner",
+        "Niacinamide serum",
+        "Hydrating essence",
+        "Moisturizer",
+        "Sunscreen"
+      ],
+      "evening": [
+        "Gentle cleanser",
+        "Toner",
+        "Hyaluronic acid serum",
+        "Light retinol",
+        "Night cream"
+      ],
+      "tips": [
+        "Gentle exfoliation 2x",
+        "Hydrating masks 3x",
+        "Increase water intake",
+        "Light exercise",
+        "Healthy diet"
+      ],
+      "warnings": [
+        "⚠️ No new treatments",
+        "⚠️ Avoid sun damage"
+      ]
+    },
+    "14": {
+      "morning": [
+        "Gentle cleanser",
+        "Brightening toner",
+        "Niacinamide serum",
+        "Vitamin C serum",
+        "Moisturizer",
+        "Sunscreen"
+      ],
+      "evening": [
+        "Gentle cleanser",
+        "Toner",
+        "Hyaluronic acid serum",
+        "Retinol serum",
+        "Night cream"
+      ],
+      "tips": [
+        "2x weekly gentle exfoliation",
+        "2x weekly hydrating masks",
+        "Daily 2L+ water",
+        "Sleep 7-8 hours",
+        "Regular exercise"
+      ],
+      "warnings": [
+        "⚠️ New products first week only",
+        "⚠️ No facials in final week"
+      ]
+    },
+    "30": {
+      "morning": [
+        "Gentle cleanser",
+        "Brightening toner",
+        "Niacinamide serum",
+        "Vitamin C serum",
+        "Hydrating essence",
+        "Moisturizer",
+        "Sunscreen"
+      ],
+      "evening": [
+        "Gentle cleanser",
+        "Toner",
+        "Hyaluronic acid serum",
+        "Retinol serum",
+        "Peptide eye cream",
+        "Night cream"
+      ],
+      "tips": [
+        "Week 1: Hydration prep",
+        "Week 2: Add gentle exfoliation",
+        "Week 3: Intensify care",
+        "Week 4: Maintain and rest",
+        "Daily 3L water",
+        "Sleep 8-9 hours",
+        "Regular exercise"
+      ],
+      "warnings": [
+        "⚠️ Cutoff new products by day 14",
+        "⚠️ No professional treatments after day 14",
+        "⚠️ Protect from environmental damage"
+      ]
+    }
+  },
+  "Photoshoot": {
+    "1": {
+      "morning": [
+        "Gentle cleanser",
+        "Brightening toner",
+        "Illuminating serum",
+        "Hydrating moisturizer",
+        "Primer sunscreen"
+      ],
+      "evening": [
+        "Gentle cleanser",
+        "Toner",
+        "Hydrating mask",
+        "Brightening eye cream"
+      ],
+      "tips": [
+        "Maximum hydration for photogenic skin",
+        "Get 6-8 hours sleep",
+        "Drink plenty of water",
+        "Eat light, nutritious meals"
+      ],
+      "warnings": [
+        "⚠️ No new products today",
+        "⚠️ Keep makeup minimal for natural look",
+        "⚠️ Avoid harsh sun in morning"
+      ]
+    },
+    "3": {
+      "morning": [
+        "Gentle cleanser",
+        "Brightening toner",
+        "Vitamin C serum",
+        "Hydrating serum",
+        "Moisturizer",
+        "Sunscreen"
+      ],
+      "evening": [
+        "Gentle cleanser",
+        "Toner",
+        "Hydrating serum",
+        "Night cream"
+      ],
+      "tips": [
+        "Hydrating masks 2x for maximum glow",
+        "Sleep 7-8 hours",
+        "Drink 2L+ water daily",
+        "Avoid stress - meditate"
+      ],
+      "warnings": [
+        "⚠️ No new skincare products",
+        "⚠️ No exfoliation in final 2 days"
+      ]
+    },
+    "7": {
+      "morning": [
+        "Gentle cleanser",
+        "Brightening toner",
+        "Niacinamide serum",
+        "Vitamin C serum",
+        "Hydrating essence",
+        "Moisturizer",
+        "Sunscreen"
+      ],
+      "evening": [
+        "Gentle cleanser",
+        "Toner",
+        "Hyaluronic acid serum",
+        "Light retinol",
+        "Brightening eye cream",
+        "Night cream"
+      ],
+      "tips": [
+        "Gentle exfoliation 2x for smooth skin",
+        "Hydrating masks 3x",
+        "Increase water to 2.5L+",
+        "Light exercise for natural glow",
+        "Photography-friendly diet (no bloating foods)"
+      ],
+      "warnings": [
+        "⚠️ Avoid harsh treatments",
+        "⚠️ Skip retinol in final 2 days",
+        "⚠️ Protect from sun exposure"
+      ]
+    },
+    "14": {
+      "morning": [
+        "Gentle cleanser",
+        "Brightening toner",
+        "Niacinamide serum",
+        "Vitamin C serum",
+        "Hydrating essence",
+        "Moisturizer",
+        "Sunscreen"
+      ],
+      "evening": [
+        "Gentle cleanser",
+        "Toner",
+        "Hyaluronic acid serum",
+        "Retinol serum",
+        "Brightening eye cream",
+        "Night cream"
+      ],
+      "tips": [
+        "Chemical exfoliation 2x weekly for camera-ready skin",
+        "Hydrating masks 2x weekly",
+        "Collagen supplements for plumpness",
+        "Sleep 7-8 hours nightly",
+        "Drink 2.5-3L water daily",
+        "Light cardio for circulation"
+      ],
+      "warnings": [
+        "⚠️ No new products after first week",
+        "⚠️ No professional treatments in final week",
+        "⚠️ Avoid swimming/chlorine",
+        "⚠️ Sun protection essential"
+      ]
+    },
+    "30": {
+      "morning": [
+        "Gentle cleanser",
+        "Brightening toner",
+        "Niacinamide serum",
+        "Vitamin C serum",
+        "Hydrating essence",
+        "Moisturizer with light coverage",
+        "Sunscreen SPF 50"
+      ],
+      "evening": [
+        "Gentle cleanser",
+        "Toner",
+        "Hyaluronic acid serum",
+        "Retinol serum",
+        "Peptide eye cream",
+        "Night cream"
+      ],
+      "tips": [
+        "Week 1: Maximum hydration for luminosity",
+        "Week 2: Add brightening treatments",
+        "Week 3: Intensive glow prep",
+        "Week 4: Maintenance mode",
+        "Collagen and antioxidant supplements",
+        "Daily 3L water intake",
+        "Consistent 8-hour sleep",
+        "Clean eating for skin clarity",
+        "Light daily exercise for circulation"
+      ],
+      "warnings": [
+        "⚠️ Batch test new products weeks 1-2 only",
+        "⚠️ No professional treatments after week 2",
+        "⚠️ Avoid known triggers and irritants",
+        "⚠️ Maximum sun protection"
+      ]
+    }
+  },
+  "Interview": {
+    "1": {
+      "morning": [
+        "Gentle cleanser",
+        "Hydrating toner",
+        "Illuminating serum",
+        "Moisturizer",
+        "Sunscreen"
+      ],
+      "evening": [
+        "Gentle cleanser",
+        "Toner",
+        "Hydrating mask",
+        "Eye cream"
+      ],
+      "tips": [
+        "Professional appearance prep",
+        "Sleep 6-8 hours",
+        "Stay hydrated",
+        "Minimal natural makeup"
+      ],
+      "warnings": [
+        "⚠️ No new products",
+        "⚠️ Clean, professional look"
+      ]
+    },
+    "3": {
+      "morning": [
+        "Gentle cleanser",
+        "Brightening toner",
+        "Vitamin C serum",
+        "Moisturizer",
+        "Sunscreen"
+      ],
+      "evening": [
+        "Gentle cleanser",
+        "Toner",
+        "Hydrating serum",
+        "Night cream"
+      ],
+      "tips": [
+        "Hydrating masks 2x",
+        "Sleep 7+ hours",
+        "Drink 2L+ water",
+        "Stress reduction techniques"
+      ],
+      "warnings": [
+        "⚠️ Avoid new skincare",
+        "⚠️ No exfoliation in final day"
+      ]
+    },
+    "7": {
+      "morning": [
+        "Gentle cleanser",
+        "Brightening toner",
+        "Niacinamide serum",
+        "Hydrating essence",
+        "Moisturizer",
+        "Sunscreen"
+      ],
+      "evening": [
+        "Gentle cleanser",
+        "Toner",
+        "Hyaluronic acid serum",
+        "Light retinol",
+        "Night cream"
+      ],
+      "tips": [
+        "Gentle exfoliation 2x",
+        "Hydrating masks 3x",
+        "Increase water intake",
+        "Light exercise to reduce stress",
+        "Healthy, balanced diet"
+      ],
+      "warnings": [
+        "⚠️ No new treatments",
+        "⚠️ Avoid excessive sun",
+        "⚠️ Professional appearance priority"
+      ]
+    },
+    "14": {
+      "morning": [
+        "Gentle cleanser",
+        "Brightening toner",
+        "Niacinamide serum",
+        "Vitamin C serum",
+        "Moisturizer",
+        "Sunscreen"
+      ],
+      "evening": [
+        "Gentle cleanser",
+        "Toner",
+        "Hyaluronic acid serum",
+        "Retinol serum",
+        "Night cream"
+      ],
+      "tips": [
+        "2x weekly gentle exfoliation",
+        "2x weekly hydrating masks",
+        "Daily 2L+ water",
+        "Sleep 7-8 hours",
+        "Regular light exercise",
+        "Professional appearance focus"
+      ],
+      "warnings": [
+        "⚠️ New products first week only",
+        "⚠️ No facials in final week",
+        "⚠️ Maintain professional look"
+      ]
+    },
+    "30": {
+      "morning": [
+        "Gentle cleanser",
+        "Brightening toner",
+        "Niacinamide serum",
+        "Vitamin C serum",
+        "Hydrating essence",
+        "Moisturizer",
+        "Sunscreen"
+      ],
+      "evening": [
+        "Gentle cleanser",
+        "Toner",
+        "Hyaluronic acid serum",
+        "Retinol serum",
+        "Peptide eye cream",
+        "Night cream"
+      ],
+      "tips": [
+        "Week 1: Professional skin prep",
+        "Week 2: Add brightening elements",
+        "Week 3: Intensive care phase",
+        "Week 4: Maintenance",
+        "Daily 3L water",
+        "Nightly 8-9 hour sleep",
+        "Regular exercise",
+        "Healthy, professional appearance"
+      ],
+      "warnings": [
+        "⚠️ New products by day 14 cutoff",
+        "⚠️ No professional treatments after day 14",
+        "⚠️ Protect from environmental damage",
+        "⚠️ Professional appearance throughout"
+      ]
+    }
+  },
+  "Other": {
+    "1": {
+      "morning": [
+        "Gentle cleanser",
+        "Hydrating toner",
+        "Brightening serum",
+        "Moisturizer",
+        "Sunscreen"
+      ],
+      "evening": [
+        "Gentle cleanser",
+        "Toner",
+        "Hydrating mask",
+        "Eye cream"
+      ],
+      "tips": [
+        "Basic hydration focus",
+        "Sleep 6-8 hours",
+        "Stay hydrated",
+        "Minimal stress"
+      ],
+      "warnings": [
+        "⚠️ Stick to known products",
+        "⚠️ Natural appearance"
+      ]
+    },
+    "3": {
+      "morning": [
+        "Gentle cleanser",
+        "Brightening toner",
+        "Vitamin C serum",
+        "Moisturizer",
+        "Sunscreen"
+      ],
+      "evening": [
+        "Gentle cleanser",
+        "Toner",
+        "Hydrating serum",
+        "Night cream"
+      ],
+      "tips": [
+        "Hydrating masks 2x",
+        "Sleep 7+ hours",
+        "Drink 2L water",
+        "Stress management"
+      ],
+      "warnings": [
+        "⚠️ No new products",
+        "⚠️ Avoid exfoliation in final day"
+      ]
+    },
+    "7": {
+      "morning": [
+        "Gentle cleanser",
+        "Brightening toner",
+        "Niacinamide serum",
+        "Hydrating essence",
+        "Moisturizer",
+        "Sunscreen"
+      ],
+      "evening": [
+        "Gentle cleanser",
+        "Toner",
+        "Hyaluronic acid serum",
+        "Light retinol",
+        "Night cream"
+      ],
+      "tips": [
+        "Gentle exfoliation 2x",
+        "Hydrating masks 3x",
+        "Increase water intake",
+        "Light exercise",
+        "Balanced diet"
+      ],
+      "warnings": [
+        "⚠️ No harsh treatments",
+        "⚠️ Sun protection needed"
+      ]
+    },
+    "14": {
+      "morning": [
+        "Gentle cleanser",
+        "Brightening toner",
+        "Niacinamide serum",
+        "Vitamin C serum",
+        "Moisturizer",
+        "Sunscreen"
+      ],
+      "evening": [
+        "Gentle cleanser",
+        "Toner",
+        "Hyaluronic acid serum",
+        "Retinol serum",
+        "Night cream"
+      ],
+      "tips": [
+        "2x weekly gentle exfoliation",
+        "2x weekly hydrating masks",
+        "Daily 2L+ water",
+        "Sleep 7-8 hours",
+        "Regular exercise"
+      ],
+      "warnings": [
+        "⚠️ New products first week only",
+        "⚠️ No facials in final week"
+      ]
+    },
+    "30": {
+      "morning": [
+        "Gentle cleanser",
+        "Brightening toner",
+        "Niacinamide serum",
+        "Vitamin C serum",
+        "Hydrating essence",
+        "Moisturizer",
+        "Sunscreen"
+      ],
+      "evening": [
+        "Gentle cleanser",
+        "Toner",
+        "Hyaluronic acid serum",
+        "Retinol serum",
+        "Peptide eye cream",
+        "Night cream"
+      ],
+      "tips": [
+        "Week 1: Prep phase",
+        "Week 2: Treatment phase",
+        "Week 3: Intensive phase",
+        "Week 4: Maintain",
+        "Daily 3L water",
+        "Sleep 8-9 hours",
+        "Regular exercise"
+      ],
+      "warnings": [
+        "⚠️ Cutoff new products by day 14",
+        "⚠️ No professional treatments after day 14"
+      ]
+    }
+  }
+}

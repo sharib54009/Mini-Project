@@ -7,6 +7,8 @@ import Products from "./assets/Components/HomePage/Products/Products";
 import Layout from "./assets/Components/Layout";
 import Skin_Log from "./assets/Components/HomePage/Skin-Log/Skin_Log";
 import Profile from "./assets/Components/HomePage/Profile/Profile";
+import EventGlowPlanner from "./pages/EventGlowPlanner";
+import RequireAuth from "./components/RequireAuth";
 import { Navigate } from "react-router-dom";
 
 const router = createBrowserRouter([
@@ -16,51 +18,73 @@ const router = createBrowserRouter([
   {
     path: "/home",
     element: (
-      <Layout>
-        <HomePage />
-      </Layout>
+      <RequireAuth>
+        <Layout>
+          <HomePage />
+        </Layout>
+      </RequireAuth>
     ),
   },
 
   {
   path: "/routines",
   element: (
-    <Layout>
-      <Routines />
-    </Layout>
+    <RequireAuth>
+      <Layout>
+        <Routines />
+      </Layout>
+    </RequireAuth>
   ),
 },
 
   {
   path: "/routines/:type",
   element: (
-    <Layout>
-      <Routines />
-    </Layout>
+    <RequireAuth>
+      <Layout>
+        <Routines />
+      </Layout>
+    </RequireAuth>
   )
 },
    {
     path: "/products",
     element: (
-      <Layout>
-        <Products />
-      </Layout>
+        <RequireAuth>
+          <Layout>
+            <Products />
+          </Layout>
+        </RequireAuth>
     ),
   },
    {
     path: "/skin-log",
     element: (
-      <Layout>
-        <Skin_Log />
-      </Layout>
+        <RequireAuth>
+          <Layout>
+            <Skin_Log />
+          </Layout>
+        </RequireAuth>
+    ),
+  },
+   {
+    path: "/event-glow",
+    element: (
+        <RequireAuth>
+          <Layout>
+            <EventGlowPlanner />
+          </Layout>
+        </RequireAuth>
     ),
   },
    {
     path: "/profile",
     element: (
-      <Layout>
-        <Profile />
-      </Layout>
+        <RequireAuth>
+          <Layout>
+            <Profile />
+          </Layout>
+        </RequireAuth>
     ),
   },
   

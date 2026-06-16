@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { User, Sparkles, LogOut, Save } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 import { apiFetch } from "../../../../api/api";
 
 const skinTypes = ["dry", "oily", "combination", "normal", "sensitive"];
@@ -147,7 +148,8 @@ const Profile = () => {
 
   const handleLogout = () => {
     localStorage.removeItem("userId");
-
+    localStorage.removeItem("isLoggedIn");
+    // navigate to login
     window.location.href = "/";
   };
 

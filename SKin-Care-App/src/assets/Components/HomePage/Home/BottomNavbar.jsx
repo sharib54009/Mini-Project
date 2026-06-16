@@ -1,10 +1,11 @@
 import React from "react";
-import { Home, Droplets, Package, NotepadText, User } from "lucide-react";
+import { Home, Droplets, Package, NotepadText, User, Sparkles } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 
 let navItems = [
   { icon: Home, label: "Home", path: "/home" },
   { icon: Droplets, label: "Routine", path: "/routines/morning" },
+  { icon: Sparkles, label: "Event Glow", path: "/event-glow" },
   { icon: Package, label: "Products", path: "/products" },
   { icon: NotepadText, label: "Skin-Log", path: "/skin-log" },
   { icon: User, label: "Profile", path: "/profile" },

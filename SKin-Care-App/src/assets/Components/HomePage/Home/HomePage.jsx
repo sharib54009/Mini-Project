@@ -15,6 +15,7 @@ import {
   Package,
   NotepadText,
   User as UserIcon,
+  Sparkles,
 } from "lucide-react";
 
 
@@ -94,16 +95,18 @@ const HomePage = () => {
   }, []);
 
   return (
-    <div className="min-h-full flex flex-col justify-center space-y-5">
-      <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-        <User userName={userName} />
-        <Link to="/profile" className="app-button app-button-secondary inline-flex items-center gap-2">
+    <div className="min-h-screen flex flex-col gap-4 px-4 py-4">
+      <div className="flex items-center justify-between gap-4 w-full">
+        <div className="flex-1">
+          <User userName={userName} />
+        </div>
+        <Link to="/profile" className="app-button app-button-secondary inline-flex items-center gap-2 flex-shrink-0">
           <UserIcon size={18} />
           Profile
         </Link>
       </div>
 
-      <div className="app-card app-section mt-4 space-y-4">
+      <div className="app-card app-section space-y-4">
         <h1 className="text-xs font-semibold">TODAY'S ROUTINES</h1>
         {RoutineElems.map((elem, idx) => (
           <RoutinesDashBoard
@@ -118,7 +121,7 @@ const HomePage = () => {
         ))}
       </div>
 
-      <div className="grid grid-cols-3 gap-4">
+      <div className="grid grid-cols-3 gap-4 items-stretch">
         {Nav2Elems.map((elem, idx) => (
           <RouProSkinNavs
             key={idx}
@@ -133,6 +136,22 @@ const HomePage = () => {
 
       <SkinCheck />
       <AddProducts />
+
+      <Link 
+        to="/event-glow"
+        className="app-card p-4 hover:shadow-xl transition cursor-pointer"
+      >
+        <div className="flex items-center justify-between">
+          <div>
+            <div className="flex items-center gap-2 mb-1">
+              <Sparkles size={20} className="text-[#d85167]" />
+              <h2 className="font-semibold text-gray-900 text-sm">Event Glow Planner</h2>
+            </div>
+            <p className="text-xs text-gray-600">Prepare for your special event</p>
+          </div>
+          <span className="text-2xl">✨</span>
+        </div>
+      </Link>
     </div>
   );
 };
