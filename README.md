@@ -217,7 +217,7 @@ TwaCare – Personalized Skincare Management Application
 
 📜 License
 
-This project was developed for academic and educational purposes as part of a final-year engineering project.
+This project was developed for academic and educational purposes as part of engineering project.
 
 🌸 Tagline
 "Your Glow, Our Care."
