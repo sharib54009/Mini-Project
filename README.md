@@ -207,9 +207,8 @@ User discussions, skincare tips, and expert content.
 
 Mohammed Sharib
 
-Bachelor of Engineering (Computer Science)
+Bachelor of Engineering (Computer Science )
 
-Final Year Project – 2026
 
 📌 Project Title
 
